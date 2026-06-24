@@ -1,0 +1,24 @@
+{
+  "pkg": "apple-style-ds",
+  "globalName": "AppleDS",
+  "projectId": "bd2c8a0a-2fd6-4817-9414-4408d2d74af9",
+  "shape": "storybook",
+  "storybookStatic": ".design-sync/sb-reference",
+  "storybookConfigDir": ".storybook",
+  "buildCmd": "pnpm build",
+  "cssEntry": "dist/index.css",
+  "tokensGlob": "src/styles/tokens.css",
+  "readmeHeader": ".design-sync/conventions.md",
+  "runtimeFontPrefixes": ["SF Pro", "PingFang"],
+  "overrides": {
+    "Disclosure": { "cardMode": "column" },
+    "List": { "cardMode": "column" },
+    "Banner": { "cardMode": "column" },
+    "Button": { "cardMode": "column" },
+    "Tabs": { "cardMode": "column" },
+    "Popover": { "cardMode": "column" },
+    "Alert": { "cardMode": "single", "primaryStory": "Playground" },
+    "Modal": { "cardMode": "single", "primaryStory": "Playground" },
+    "Sheet": { "cardMode": "single", "primaryStory": "Playground" }
+  }
+}
