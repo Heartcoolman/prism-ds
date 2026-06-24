@@ -22,6 +22,9 @@
     "Modal": { "cardMode": "single", "primaryStory": "Playground" },
     "Sheet": { "cardMode": "single", "primaryStory": "Playground" },
     "Material": { "cardMode": "column" },
-    "LiquidGlass": { "cardMode": "column" }
+    "LiquidGlass": { "cardMode": "column" },
+    "Icon": { "cardMode": "column" },
+    "BarChart": { "cardMode": "column" },
+    "Image": { "cardMode": "column" }
   }
 }

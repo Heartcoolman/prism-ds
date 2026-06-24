@@ -1,0 +1,47 @@
+.ads-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 320px;
+  gap: var(--s-3);
+  padding: var(--s-6);
+  text-align: center;
+}
+
+.ads-state__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-pill);
+  background: var(--fill-secondary);
+  color: var(--label-tertiary);
+}
+
+.ads-state[data-variant="error"] .ads-state__icon {
+  color: var(--color-danger);
+}
+.ads-state[data-variant="success"] .ads-state__icon {
+  color: var(--color-success);
+}
+
+.ads-state__title {
+  font: var(--text-headline);
+  color: var(--label-primary);
+}
+
+.ads-state__description {
+  margin: 0;
+  font: var(--text-subhead);
+  color: var(--label-secondary);
+}
+
+.ads-state__action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-3);
+  margin-top: var(--s-2);
+}

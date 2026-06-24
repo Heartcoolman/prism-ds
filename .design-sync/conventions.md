@@ -35,13 +35,14 @@ These are the ONLY global classes; component internals use scoped `ads-*` classe
 
 ## Components — compose these, don't reinvent
 
+- **Foundations** — Icon (`name` from the built-in set — search, chevron*, bell, settings, trash, …; inherits `currentColor`)
 - **Inputs** — Button, TextField, Textarea, SearchField, Checkbox, Radio / RadioGroup, Switch, Select, Slider, Stepper, SegmentedControl
 - **Navigation** — NavBar, TabBar, Breadcrumb, Tabs, Menu, PageControl
-- **Containers** — Card, List / ListRow, Disclosure
+- **Containers** — Card, List / ListRow, Disclosure, Image (fixed ratio + overlay), Grid (responsive 12-col)
 - **Overlays** — Modal, Sheet, Popover, Tooltip (controlled: `open` + `onClose`)
-- **Feedback** — Toast, Banner, Alert, Badge, ProgressBar, Spinner, Skeleton
-- **Data** — Table, Tag, Avatar / AvatarGroup, ProgressRing
-- **Pickers** — DatePicker
+- **Feedback** — Toast, Banner, Alert, Badge, ProgressBar, Spinner, Skeleton, StateView (empty / loading / error / success)
+- **Data** — Table, Tag, Avatar / AvatarGroup, ProgressRing, BarChart, LineChart
+- **Pickers** — DatePicker, WheelPicker
 - **Materials** — Material (frosted blur, 4 thicknesses + progressive), LiquidGlass (translucent floating glass). Use over real content for floating chrome only; the nav/tab bars already use the material tokens internally.
 
 Use `variant` for button/visual weight (`filled` is the single primary action per area), `tone="danger"` for destructive actions.

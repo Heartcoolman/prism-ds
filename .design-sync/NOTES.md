@@ -14,6 +14,12 @@
 ## Materials (added after first sync)
 - `Material` (毛玻璃) + `LiquidGlass` (液态玻璃) live under group `Materials`. They are translucent — stories render them over a vivid gradient `Stage` so the blur/glass reads; without a backdrop they look near-invisible (by design). Both use `cardMode: column` (their stages are wider than a grid cell). The nav/tab bars already consume the `--blur-*`/`--material-bg` tokens internally.
 
+## Gap components (added after guidelines)
+- Icon (built-in ~46-glyph set, `src/components/Icon/icons.ts`), WheelPicker, BarChart, LineChart, StateView (empty/loading/error/success), Image, Grid. Groups: Foundations (Icon), Data (charts), Feedback (StateView), Containers (Image/Grid), Pickers (WheelPicker).
+- Icon/BarChart/Image use `cardMode: column` (wide stories).
+- **LineChart always emits `[RENDER_THIN]`** — it's a text-free 96px SVG chart; validate's "no text / paints nothing" heuristic can't see the stroke. Graded `match` on both panels (line + area render). Accept this warning on every sync; do NOT chase it.
+- StateView imports Icon/Spinner internally (relative); its stories import Button. Tied to those APIs.
+
 ## Re-sync risks (watch-list)
 - **`tokens/` and `guidelines/` ship empty.** `tokensGlob` (`src/styles/tokens.css`) did not populate `tokens/` on the storybook shape; tokens are delivered as CSS vars inside `_ds_bundle.css` (reached via `styles.css`). If a future run wants a separate tokens artifact, investigate the storybook-shape tokens handling. No guidelines `.md` files exist; the source Apple spec HTML lives one dir up (`../Apple风格设计规范.dc.html`) and could be distilled into `guidelines/` later.
 - **Overlay grades depend on storybook under-rendering the fixed reference** (Modal/Sheet/Alert/Popover/Tooltip): the preview renders the real overlay while the storybook `?story=` capture of a fixed element is cropped — graded on the preview render per the §4 "reference is the artifact" rule. A storybook upgrade that changes how it frames fixed elements could shift these sheets.

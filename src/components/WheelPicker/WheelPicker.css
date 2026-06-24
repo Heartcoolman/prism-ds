@@ -1,0 +1,89 @@
+.ads-wheel {
+  display: flex;
+  align-items: stretch;
+  gap: var(--s-2);
+  box-sizing: border-box;
+  padding: var(--s-2);
+  background: var(--bg-elevated);
+  border-radius: var(--radius-card);
+  font: var(--text-body);
+  color: var(--label-primary);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.ads-wheel__column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex: 1 1 0;
+  min-width: 56px;
+  overflow: hidden;
+}
+
+/* Selection band: 1px separators top & bottom of the center slot,
+   plus a faint fill pill behind it. */
+.ads-wheel__band {
+  position: absolute;
+  left: var(--s-1);
+  right: var(--s-1);
+  top: 50%;
+  height: 36px;
+  transform: translateY(-50%);
+  border-top: 1px solid var(--separator);
+  border-bottom: 1px solid var(--separator);
+  background: var(--fill-tertiary);
+  border-radius: var(--radius-sm);
+  pointer-events: none;
+}
+
+.ads-wheel__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 36px;
+  height: 36px;
+  padding: 0 var(--s-2);
+  font: var(--text-subhead);
+  color: var(--label-tertiary);
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    color var(--dur-exit) var(--ease-standard),
+    transform var(--dur-exit) var(--ease-standard),
+    opacity var(--dur-exit) var(--ease-standard);
+}
+
+.ads-wheel__row--pad {
+  cursor: default;
+}
+
+/* Neighbours fade and shrink with distance from the center slot. */
+.ads-wheel__row[data-distance="1"] {
+  color: var(--label-tertiary);
+  transform: scale(0.92);
+}
+.ads-wheel__row[data-distance="2"] {
+  color: var(--label-quaternary);
+  transform: scale(0.84);
+}
+
+.ads-wheel__row--selected {
+  position: relative;
+  font: var(--text-headline);
+  color: var(--label-primary);
+  transform: none;
+  cursor: default;
+}
+
+.ads-wheel__row:not(.ads-wheel__row--selected):hover {
+  color: var(--label-secondary);
+}
+
+.ads-wheel__row:focus-visible {
+  outline: none;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--focus-ring);
+}

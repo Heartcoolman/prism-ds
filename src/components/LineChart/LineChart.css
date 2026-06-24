@@ -1,0 +1,14 @@
+.ads-linechart {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.ads-linechart__line {
+  transition: stroke var(--dur-standard) var(--ease-standard);
+}
+
+.ads-linechart__dot {
+  transition: fill var(--dur-standard) var(--ease-standard);
+}
