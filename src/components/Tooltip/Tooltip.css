@@ -1,0 +1,92 @@
+.ads-tooltip {
+  position: relative;
+  display: inline-flex;
+}
+
+.ads-tooltip__trigger {
+  display: inline-flex;
+}
+
+.ads-tooltip__bubble {
+  position: absolute;
+  z-index: 1;
+  width: max-content;
+  max-width: 240px;
+  padding: var(--s-1) var(--s-2);
+  background: var(--label-primary);
+  color: var(--bg);
+  font: var(--text-footnote);
+  white-space: nowrap;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-2);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity var(--dur-enter) var(--ease-enter),
+    visibility var(--dur-enter) var(--ease-enter);
+}
+
+.ads-tooltip:hover .ads-tooltip__bubble,
+.ads-tooltip:focus-within .ads-tooltip__bubble,
+.ads-tooltip--open .ads-tooltip__bubble {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ads-tooltip__arrow {
+  position: absolute;
+  width: var(--s-2);
+  height: var(--s-2);
+  background: var(--label-primary);
+  transform: rotate(45deg);
+}
+
+/* ---------- Placement ---------- */
+.ads-tooltip--top .ads-tooltip__bubble {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: var(--s-2);
+}
+.ads-tooltip--top .ads-tooltip__arrow {
+  bottom: calc(var(--s-1) * -1);
+  left: 50%;
+  margin-left: calc(var(--s-1) * -1);
+}
+
+.ads-tooltip--bottom .ads-tooltip__bubble {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: var(--s-2);
+}
+.ads-tooltip--bottom .ads-tooltip__arrow {
+  top: calc(var(--s-1) * -1);
+  left: 50%;
+  margin-left: calc(var(--s-1) * -1);
+}
+
+.ads-tooltip--left .ads-tooltip__bubble {
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: var(--s-2);
+}
+.ads-tooltip--left .ads-tooltip__arrow {
+  right: calc(var(--s-1) * -1);
+  top: 50%;
+  margin-top: calc(var(--s-1) * -1);
+}
+
+.ads-tooltip--right .ads-tooltip__bubble {
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: var(--s-2);
+}
+.ads-tooltip--right .ads-tooltip__arrow {
+  left: calc(var(--s-1) * -1);
+  top: 50%;
+  margin-top: calc(var(--s-1) * -1);
+}

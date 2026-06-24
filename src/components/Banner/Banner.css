@@ -1,0 +1,96 @@
+.ads-banner {
+  --_tint: var(--tint-accent-bg);
+  --_accent: var(--color-accent);
+
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s-3);
+  box-sizing: border-box;
+  padding: var(--s-3) var(--s-4);
+  border-radius: var(--radius-input);
+  background: var(--_tint);
+}
+
+/* ---------- Tone ---------- */
+.ads-banner[data-tone="success"] {
+  --_tint: var(--tint-success-bg);
+  --_accent: var(--color-success);
+}
+.ads-banner[data-tone="warning"] {
+  --_tint: var(--tint-warning-bg);
+  --_accent: var(--color-warning);
+}
+.ads-banner[data-tone="danger"] {
+  --_tint: var(--tint-danger-bg);
+  --_accent: var(--color-danger);
+}
+
+.ads-banner__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 1px;
+  color: var(--_accent);
+}
+.ads-banner__icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.ads-banner__main {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-1);
+}
+
+.ads-banner__title {
+  font: var(--text-subhead);
+  font-weight: 600;
+  color: var(--label-primary);
+}
+
+.ads-banner__message {
+  font: var(--text-footnote);
+  color: var(--label-secondary);
+}
+
+.ads-banner__action {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.ads-banner__close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: var(--s-5);
+  height: var(--s-5);
+  margin: -2px -4px -2px 0;
+  padding: 0;
+  border: none;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--label-tertiary);
+  cursor: pointer;
+  transition: background var(--dur-exit) var(--ease-standard),
+    color var(--dur-exit) var(--ease-standard);
+}
+.ads-banner__close:hover {
+  color: var(--label-secondary);
+  background: var(--fill-secondary);
+}
+.ads-banner__close:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+.ads-banner__close svg {
+  width: 16px;
+  height: 16px;
+}

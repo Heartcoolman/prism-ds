@@ -1,0 +1,100 @@
+.ads-field {
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--s-1);
+  box-sizing: border-box;
+}
+
+.ads-field--full {
+  display: flex;
+  width: 100%;
+}
+
+.ads-field__label {
+  font: var(--text-subhead);
+  color: var(--label-secondary);
+}
+
+.ads-field__control {
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: var(--control-h-md);
+  border: 1px solid var(--separator-opaque);
+  border-radius: var(--radius-input);
+  background: var(--bg);
+  transition:
+    border-color var(--dur-exit) var(--ease-standard),
+    box-shadow var(--dur-exit) var(--ease-standard);
+}
+
+.ads-field__control:focus-within {
+  border-color: var(--color-accent);
+  box-shadow: var(--focus-ring);
+}
+
+.ads-field__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-left: 14px;
+  color: var(--label-tertiary);
+}
+
+.ads-field__input {
+  flex: 1 1 auto;
+  width: 100%;
+  min-width: 0;
+  height: var(--control-h-md);
+  margin: 0;
+  padding: 0 14px;
+  border: none;
+  border-radius: var(--radius-input);
+  background: transparent;
+  font: var(--text-body);
+  font-size: 16px;
+  color: var(--label-primary);
+}
+
+.ads-field__icon + .ads-field__input {
+  padding-left: var(--s-2);
+}
+
+.ads-field__input:focus {
+  outline: none;
+}
+
+.ads-field__input::placeholder {
+  color: var(--label-tertiary);
+}
+
+.ads-field__message {
+  margin: 0;
+  font: var(--text-footnote);
+  color: var(--label-tertiary);
+}
+
+.ads-field__message--error {
+  color: var(--color-danger);
+}
+
+/* ---------- Error state ---------- */
+.ads-field--error .ads-field__control {
+  border-color: var(--color-danger);
+}
+.ads-field--error .ads-field__control:focus-within {
+  border-color: var(--color-danger);
+  box-shadow: 0 0 0 3px var(--tint-danger-bg);
+}
+
+/* ---------- Disabled state ---------- */
+.ads-field--disabled {
+  opacity: 0.45;
+}
+.ads-field--disabled .ads-field__input {
+  cursor: not-allowed;
+}

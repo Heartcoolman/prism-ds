@@ -1,0 +1,79 @@
+.ads-avatar {
+  --_size: 40px;
+  --_font: var(--text-subhead);
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: var(--_size);
+  height: var(--_size);
+  box-sizing: border-box;
+  border-radius: var(--radius-pill);
+  background: var(--fill-tertiary);
+  color: var(--label-secondary);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.ads-avatar__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: inherit;
+}
+
+.ads-avatar__initials {
+  font: var(--_font);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.ads-avatar__status {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 28%;
+  height: 28%;
+  border-radius: var(--radius-pill);
+  background: var(--color-success);
+  box-shadow: 0 0 0 2px var(--bg);
+}
+
+/* ---------- Sizes ---------- */
+.ads-avatar--small {
+  --_size: 28px;
+  --_font: var(--text-footnote);
+}
+.ads-avatar--medium {
+  --_size: 40px;
+  --_font: var(--text-subhead);
+}
+.ads-avatar--large {
+  --_size: 56px;
+  --_font: var(--text-headline);
+}
+
+/* ---------- Group ---------- */
+.ads-avatar-group {
+  display: inline-flex;
+  align-items: center;
+}
+
+.ads-avatar-group__item {
+  display: inline-flex;
+}
+.ads-avatar-group__item + .ads-avatar-group__item {
+  margin-left: calc(-1 * var(--s-2));
+}
+
+.ads-avatar-group .ads-avatar {
+  box-shadow: 0 0 0 2px var(--bg);
+}
+
+.ads-avatar-group__more {
+  background: var(--fill-tertiary);
+  color: var(--label-secondary);
+}

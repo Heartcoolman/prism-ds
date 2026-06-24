@@ -1,0 +1,48 @@
+.ads-badge {
+  --_fill: var(--color-danger);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 6px;
+  border-radius: var(--radius-pill);
+  background: var(--_fill);
+  color: #ffffff;
+  font: var(--text-footnote);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* ---------- Tone ---------- */
+.ads-badge[data-tone="accent"] {
+  --_fill: var(--color-accent);
+}
+.ads-badge[data-tone="gray"] {
+  --_fill: var(--label-tertiary);
+}
+
+/* ---------- Dot ---------- */
+.ads-badge--dot {
+  min-width: 0;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+}
+
+/* ---------- Floating over children ---------- */
+.ads-badge-wrap {
+  position: relative;
+  display: inline-flex;
+}
+.ads-badge--floating {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+}

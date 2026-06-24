@@ -1,0 +1,64 @@
+.ads-segmented {
+  display: inline-flex;
+  box-sizing: border-box;
+  padding: 2px;
+  gap: 2px;
+  background: var(--fill-tertiary);
+  border-radius: var(--radius-input);
+}
+
+.ads-segmented--full {
+  display: flex;
+  width: 100%;
+}
+
+.ads-segmented__segment {
+  display: inline-flex;
+  flex: 1 1 0;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: calc(var(--control-h-md) - 4px);
+  padding: 0 var(--s-3);
+  border: none;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  font: var(--text-subhead);
+  font-weight: 500;
+  line-height: 1;
+  color: var(--label-secondary);
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  transition:
+    background var(--dur-exit) var(--ease-standard),
+    color var(--dur-exit) var(--ease-standard),
+    box-shadow var(--dur-exit) var(--ease-standard);
+}
+
+.ads-segmented__segment:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.ads-segmented__segment:hover:not(.ads-segmented__segment--selected) {
+  color: var(--label-primary);
+}
+
+.ads-segmented__segment--selected {
+  background: var(--bg);
+  color: var(--label-primary);
+  box-shadow: var(--shadow-1);
+}
+
+.ads-segmented__label {
+  display: inline-block;
+}
+
+/* ---------- Sizes ---------- */
+.ads-segmented--small .ads-segmented__segment {
+  min-height: calc(var(--control-h-sm) - 4px);
+  padding: 0 var(--s-2);
+  font-size: 13px;
+}

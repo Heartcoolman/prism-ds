@@ -1,0 +1,73 @@
+.ads-menu {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  padding: var(--s-1);
+  background: var(--bg-elevated);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-3);
+}
+
+.ads-menu__item {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  box-sizing: border-box;
+  width: 100%;
+  min-height: var(--size-touch);
+  padding: var(--s-2) var(--s-3);
+  border: none;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  font: var(--text-body);
+  color: var(--label-primary);
+  text-align: left;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  transition: background var(--dur-exit) var(--ease-standard);
+}
+
+.ads-menu__item:hover:not(:disabled) {
+  background: var(--fill-secondary);
+}
+
+.ads-menu__item:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.ads-menu__item:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.ads-menu__item--danger {
+  color: var(--color-danger);
+}
+
+.ads-menu__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  color: var(--label-secondary);
+}
+
+.ads-menu__item--danger .ads-menu__icon {
+  color: var(--color-danger);
+}
+
+.ads-menu__label {
+  flex: 1;
+  min-width: 0;
+}
+
+.ads-menu__separator {
+  height: 1px;
+  margin: var(--s-1) 0;
+  background: var(--separator);
+}

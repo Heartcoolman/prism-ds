@@ -1,0 +1,42 @@
+.ads-modal__scrim {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: var(--s-5);
+  background: var(--bg-overlay);
+  z-index: 1000;
+}
+
+.ads-modal {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 360px;
+  padding: var(--s-5);
+  background: var(--bg);
+  border-radius: var(--radius-modal);
+  box-shadow: var(--shadow-4);
+  text-align: center;
+}
+
+.ads-modal__title {
+  margin: 0;
+  font: var(--text-headline);
+  color: var(--label-primary);
+}
+
+.ads-modal__body {
+  margin-top: var(--s-2);
+  font: var(--text-subhead);
+  color: var(--label-secondary);
+}
+
+.ads-modal__actions {
+  display: flex;
+  gap: var(--s-2);
+  margin-top: var(--s-5);
+}
+
+.ads-modal__actions > * {
+  flex: 1;
+}

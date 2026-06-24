@@ -1,0 +1,42 @@
+.ads-ring {
+  --_accent: var(--color-accent);
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: var(--_size);
+  height: var(--_size);
+  border-radius: var(--radius-pill);
+  background: conic-gradient(
+    var(--_accent) 0% var(--_pct),
+    var(--fill-tertiary) var(--_pct)
+  );
+  transition: background var(--dur-standard) var(--ease-standard);
+}
+
+/* Inner mask carves the disc into a ring. */
+.ads-ring::after {
+  content: "";
+  position: absolute;
+  inset: var(--_thickness);
+  border-radius: var(--radius-pill);
+  background: var(--bg);
+}
+
+.ads-ring__label {
+  position: relative;
+  z-index: 1;
+  font: var(--text-headline);
+  font-variant-numeric: tabular-nums;
+  color: var(--label-primary);
+}
+
+/* ---------- Tone ---------- */
+.ads-ring[data-tone="success"] {
+  --_accent: var(--color-success);
+}
+.ads-ring[data-tone="danger"] {
+  --_accent: var(--color-danger);
+}

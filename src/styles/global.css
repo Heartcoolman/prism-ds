@@ -1,0 +1,112 @@
+/* ============================================================
+   Global base + utility vocabulary
+   Class names here are GLOBAL (not CSS-module scoped) so the
+   design agent can use them directly for its own layout glue.
+   ============================================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Root context: establishes font + color + smoothing. Apply via
+   <AppleProvider> or by adding the .ads-root class / [data-ads-root]. */
+.ads-root,
+[data-ads-root] {
+  font: var(--text-body);
+  font-family: var(--font-sans);
+  color: var(--label-primary);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(0, 102, 204, 0.16);
+}
+
+/* ---------- Typography utilities ---------- */
+.text-large-title {
+  font: var(--text-large-title);
+  letter-spacing: var(--tracking-large-title);
+}
+.text-title-1 {
+  font: var(--text-title-1);
+  letter-spacing: var(--tracking-title-1);
+}
+.text-title-2 {
+  font: var(--text-title-2);
+}
+.text-headline {
+  font: var(--text-headline);
+}
+.text-body {
+  font: var(--text-body);
+}
+.text-subhead {
+  font: var(--text-subhead);
+}
+.text-footnote {
+  font: var(--text-footnote);
+}
+.text-secondary {
+  color: var(--label-secondary);
+}
+.text-tertiary {
+  color: var(--label-tertiary);
+}
+.text-accent {
+  color: var(--color-accent);
+}
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Layout utilities (8pt rhythm, prefer gap) ---------- */
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+}
+.stack-sm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+.stack-lg {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-5);
+}
+
+/* ---------- Accessibility ---------- */
+:where(.ads-root) :focus-visible {
+  outline: 3px solid rgba(0, 102, 204, 0.4);
+  outline-offset: 2px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

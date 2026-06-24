@@ -1,0 +1,36 @@
+.ads-toast {
+  --_icon: var(--label-secondary);
+
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  box-sizing: border-box;
+  max-width: 360px;
+  padding: var(--s-2) var(--s-4);
+  background: var(--bg-elevated);
+  color: var(--label-primary);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-2);
+  font: var(--text-subhead);
+}
+
+.ads-toast[data-variant="success"] {
+  --_icon: var(--color-success);
+}
+.ads-toast[data-variant="error"] {
+  --_icon: var(--color-danger);
+}
+
+.ads-toast__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--_icon);
+}
+
+.ads-toast__message {
+  display: inline-block;
+}

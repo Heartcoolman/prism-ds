@@ -1,0 +1,85 @@
+.ads-check {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  min-height: var(--size-touch);
+  font: var(--text-body);
+  color: var(--label-primary);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.ads-check__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.ads-check__box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  border: 1.5px solid var(--gray-300);
+  border-radius: var(--radius-sm);
+  background: var(--bg-elevated);
+  color: #ffffff;
+  transition:
+    background var(--dur-exit) var(--ease-standard),
+    border-color var(--dur-exit) var(--ease-standard),
+    box-shadow var(--dur-exit) var(--ease-standard);
+}
+
+.ads-check__mark,
+.ads-check__dash {
+  width: 16px;
+  height: 16px;
+  opacity: 0;
+}
+
+/* ---------- Checked ---------- */
+.ads-check__input:checked + .ads-check__box {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+.ads-check__input:checked + .ads-check__box .ads-check__mark {
+  opacity: 1;
+}
+
+/* ---------- Indeterminate ---------- */
+.ads-check__input:indeterminate + .ads-check__box {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+.ads-check__input:indeterminate + .ads-check__box .ads-check__mark {
+  opacity: 0;
+}
+.ads-check__input:indeterminate + .ads-check__box .ads-check__dash {
+  opacity: 1;
+}
+
+/* ---------- Focus ---------- */
+.ads-check__input:focus-visible + .ads-check__box {
+  box-shadow: var(--focus-ring);
+}
+
+/* ---------- Disabled ---------- */
+.ads-check--disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.ads-check__label {
+  display: inline-block;
+}

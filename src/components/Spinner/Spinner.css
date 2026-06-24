@@ -1,0 +1,46 @@
+.ads-spinner {
+  --_size: 24px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+}
+
+.ads-spinner__ring {
+  box-sizing: border-box;
+  width: var(--_size);
+  height: var(--_size);
+  flex-shrink: 0;
+  border: 3px solid var(--fill-tertiary);
+  border-top-color: var(--color-accent);
+  border-radius: 50%;
+  animation: ads-spin 0.8s linear infinite;
+}
+
+.ads-spinner__label {
+  font: var(--text-subhead);
+  color: var(--label-secondary);
+}
+
+/* ---------- Sizes ---------- */
+.ads-spinner--small {
+  --_size: 16px;
+}
+.ads-spinner--medium {
+  --_size: 24px;
+}
+.ads-spinner--large {
+  --_size: 36px;
+}
+
+@keyframes ads-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ads-spinner__ring {
+    animation-duration: 1.6s;
+  }
+}

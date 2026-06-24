@@ -1,0 +1,67 @@
+.ads-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.ads-switch__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ads-switch__track {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: 51px;
+  height: 31px;
+  padding: 2px;
+  border-radius: var(--radius-pill);
+  background: var(--fill-tertiary);
+  transition: background var(--dur-exit) var(--ease-standard);
+}
+
+.ads-switch__knob {
+  width: 27px;
+  height: 27px;
+  border-radius: var(--radius-pill);
+  background: #ffffff;
+  box-shadow: var(--shadow-1);
+  transform: translateX(0);
+  transition: transform var(--dur-exit) var(--ease-standard);
+}
+
+.ads-switch__input:checked ~ .ads-switch__track {
+  background: var(--color-accent);
+}
+.ads-switch__input:checked ~ .ads-switch__track .ads-switch__knob {
+  transform: translateX(20px);
+}
+
+.ads-switch__input:focus-visible ~ .ads-switch__track {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.ads-switch__label {
+  font: var(--text-body);
+  color: var(--label-primary);
+}
+
+.ads-switch--disabled {
+  cursor: not-allowed;
+  opacity: 0.35;
+}

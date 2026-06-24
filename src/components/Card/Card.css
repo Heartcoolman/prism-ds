@@ -1,0 +1,74 @@
+.ads-card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: var(--bg);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  transition:
+    transform var(--dur-exit) var(--ease-standard),
+    box-shadow var(--dur-exit) var(--ease-standard);
+}
+
+.ads-card__media {
+  position: relative;
+  overflow: hidden;
+}
+.ads-card__media :where(img, video, picture) {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ads-card__media-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--fill-tertiary);
+}
+
+.ads-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  padding: var(--s-4) var(--s-5);
+}
+
+.ads-card__eyebrow {
+  font: var(--text-footnote);
+  font-weight: 600;
+  color: var(--label-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.ads-card__title {
+  font: var(--text-title-2);
+  color: var(--label-primary);
+}
+
+.ads-card__description {
+  margin: 0;
+  font: var(--text-body);
+  color: var(--label-secondary);
+}
+
+.ads-card__footer {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  margin-top: var(--s-2);
+}
+
+/* ---------- Interactive ---------- */
+.ads-card--interactive {
+  cursor: pointer;
+}
+.ads-card--interactive:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-2);
+}
+.ads-card--interactive:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}

@@ -1,0 +1,68 @@
+.ads-pagecontrol {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+}
+
+/* Static dot (non-interactive) */
+.ads-pagecontrol__dot {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 7px;
+  height: 7px;
+  border-radius: var(--radius-pill);
+  background: var(--label-quaternary);
+  transition:
+    width var(--dur-standard) var(--ease-standard),
+    background var(--dur-standard) var(--ease-standard);
+}
+
+.ads-pagecontrol__dot--current {
+  width: 18px;
+  background: var(--color-accent);
+}
+
+/* Interactive dot — a 44px hit area wrapping the visible mark */
+.ads-pagecontrol__dot--button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: var(--size-touch);
+  min-width: var(--size-touch);
+  padding: 0;
+  border: none;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  transition: none;
+}
+
+.ads-pagecontrol__dot--button:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.ads-pagecontrol__mark {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 7px;
+  height: 7px;
+  border-radius: var(--radius-pill);
+  background: var(--label-quaternary);
+  transition:
+    width var(--dur-standard) var(--ease-standard),
+    background var(--dur-standard) var(--ease-standard);
+}
+
+.ads-pagecontrol__dot--button.ads-pagecontrol__dot--current .ads-pagecontrol__mark {
+  width: 18px;
+  background: var(--color-accent);
+}
+
+.ads-pagecontrol__dot--button:hover:not(.ads-pagecontrol__dot--current)
+  .ads-pagecontrol__mark {
+  background: var(--label-tertiary);
+}
