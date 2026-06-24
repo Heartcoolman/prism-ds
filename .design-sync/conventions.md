@@ -42,6 +42,7 @@ These are the ONLY global classes; component internals use scoped `ads-*` classe
 - **Feedback** — Toast, Banner, Alert, Badge, ProgressBar, Spinner, Skeleton
 - **Data** — Table, Tag, Avatar / AvatarGroup, ProgressRing
 - **Pickers** — DatePicker
+- **Materials** — Material (frosted blur, 4 thicknesses + progressive), LiquidGlass (translucent floating glass). Use over real content for floating chrome only; the nav/tab bars already use the material tokens internally.
 
 Use `variant` for button/visual weight (`filled` is the single primary action per area), `tone="danger"` for destructive actions.
 

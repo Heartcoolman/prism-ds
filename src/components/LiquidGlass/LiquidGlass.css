@@ -1,0 +1,38 @@
+.ads-liquid-glass {
+  position: relative;
+  padding: var(--s-4);
+  border-radius: var(--radius-card);
+  color: var(--label-primary);
+  /* translucency: white 0.12 -> 0.34 */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.34),
+    rgba(255, 255, 255, 0.12)
+  );
+  /* blur + recolor + a touch brighter */
+  -webkit-backdrop-filter: blur(8px) saturate(180%) brightness(1.06);
+  backdrop-filter: blur(8px) saturate(180%) brightness(1.06);
+  /* specular highlight + 1px bright edge + soft drop shadow */
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.4),
+    0 14px 44px rgba(0, 0, 0, 0.18);
+}
+
+.ads-liquid-glass--pill {
+  border-radius: var(--radius-pill);
+  padding: var(--s-2) var(--s-4);
+}
+
+[data-theme="dark"] .ads-liquid-glass,
+.ads-liquid-glass[data-theme="dark"] {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.22),
+    rgba(255, 255, 255, 0.08)
+  );
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.18),
+    0 14px 44px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,31 @@
+.ads-material {
+  background: var(--material-bg);
+  border-radius: var(--radius-card);
+  color: var(--label-primary);
+  -webkit-backdrop-filter: saturate(180%) blur(var(--blur-regular));
+  backdrop-filter: saturate(180%) blur(var(--blur-regular));
+}
+
+/* Thickness — blur deepens with elevation. */
+.ads-material--ultraThin {
+  -webkit-backdrop-filter: saturate(180%) blur(8px);
+  backdrop-filter: saturate(180%) blur(8px);
+}
+.ads-material--thin {
+  -webkit-backdrop-filter: saturate(180%) blur(var(--blur-thin));
+  backdrop-filter: saturate(180%) blur(var(--blur-thin));
+}
+.ads-material--regular {
+  -webkit-backdrop-filter: saturate(180%) blur(var(--blur-regular));
+  backdrop-filter: saturate(180%) blur(var(--blur-regular));
+}
+.ads-material--thick {
+  -webkit-backdrop-filter: saturate(180%) blur(var(--blur-thick));
+  backdrop-filter: saturate(180%) blur(var(--blur-thick));
+}
+
+/* Progressive blur — dissolves content into the edge instead of a hard line. */
+.ads-material--progressive {
+  -webkit-mask-image: linear-gradient(to top, #000 38%, transparent 100%);
+  mask-image: linear-gradient(to top, #000 38%, transparent 100%);
+}

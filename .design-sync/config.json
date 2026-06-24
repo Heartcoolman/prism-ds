@@ -19,6 +19,8 @@
     "Popover": { "cardMode": "column" },
     "Alert": { "cardMode": "single", "primaryStory": "Playground" },
     "Modal": { "cardMode": "single", "primaryStory": "Playground" },
-    "Sheet": { "cardMode": "single", "primaryStory": "Playground" }
+    "Sheet": { "cardMode": "single", "primaryStory": "Playground" },
+    "Material": { "cardMode": "column" },
+    "LiquidGlass": { "cardMode": "column" }
   }
 }
