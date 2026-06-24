@@ -9,6 +9,7 @@
   "cssEntry": "dist/index.css",
   "tokensGlob": "src/styles/tokens.css",
   "readmeHeader": ".design-sync/conventions.md",
+  "guidelinesGlob": "docs/guides/**/*.md",
   "runtimeFontPrefixes": ["SF Pro", "PingFang"],
   "overrides": {
     "Disclosure": { "cardMode": "column" },
