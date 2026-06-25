@@ -1,7 +1,7 @@
 {
   "pkg": "apple-style-ds",
   "globalName": "AppleDS",
-  "projectId": "bd2c8a0a-2fd6-4817-9414-4408d2d74af9",
+  "projectId": "0550900d-6198-4245-89cd-57122b0c4a30",
   "shape": "storybook",
   "storybookStatic": ".design-sync/sb-reference",
   "storybookConfigDir": ".storybook",

@@ -20,6 +20,9 @@
 - **LineChart always emits `[RENDER_THIN]`** — it's a text-free 96px SVG chart; validate's "no text / paints nothing" heuristic can't see the stroke. Graded `match` on both panels (line + area render). Accept this warning on every sync; do NOT chase it.
 - StateView imports Icon/Spinner internally (relative); its stories import Button. Tied to those APIs.
 
+## Sync target history
+- **2026-06-25**: the original project `bd2c8a0a-2fd6-4817-9414-4408d2d74af9` became unreachable (get_project 404, list_projects empty — deleted upstream or different login). Re-synced into a **new** project `0550900d-6198-4245-89cd-57122b0c4a30` ("Apple-Style Design System"); `config.json` projectId updated to match. Source was unchanged from commit `1d7a2ee`, so all 45 components carried forward (45/45 match, 117 story verdicts, 0 re-graded) and the full build re-uploaded into the empty project. If the old project URL is bookmarked, it's dead — use the new projectId.
+
 ## Re-sync risks (watch-list)
 - **`tokens/` and `guidelines/` ship empty.** `tokensGlob` (`src/styles/tokens.css`) did not populate `tokens/` on the storybook shape; tokens are delivered as CSS vars inside `_ds_bundle.css` (reached via `styles.css`). If a future run wants a separate tokens artifact, investigate the storybook-shape tokens handling. No guidelines `.md` files exist; the source Apple spec HTML lives one dir up (`../Apple风格设计规范.dc.html`) and could be distilled into `guidelines/` later.
 - **Overlay grades depend on storybook under-rendering the fixed reference** (Modal/Sheet/Alert/Popover/Tooltip): the preview renders the real overlay while the storybook `?story=` capture of a fixed element is cropped — graded on the preview render per the §4 "reference is the artifact" rule. A storybook upgrade that changes how it frames fixed elements could shift these sheets.
