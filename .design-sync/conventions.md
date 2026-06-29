@@ -1,21 +1,21 @@
-# Apple-Style Design System — how to build with it
+# Prism — how to build with it
 
-Build every screen from this library's React components, styled with its tokens. Keep the Apple idiom: restrained neutrals, **one accent per view**, pill / continuous radii, soft low shadows, 44px minimum touch targets, generous whitespace on an 8pt rhythm.
+Build every screen from this library's React components, styled with its tokens. Keep the default Prism idiom: restrained neutrals, **one accent per view**, pill / continuous radii, soft low shadows, 44px minimum touch targets, generous whitespace on an 8pt rhythm.
 
 ## Wrap the app
 
-Wrap the tree (or any rendered design) in `AppleProvider` so typography, color and theme resolve. It applies the `.ads-root` base (system font, label color, background) and sets `data-theme`; dark mode also follows `prefers-color-scheme`.
+Wrap the tree (or any rendered design) in `ThemeProvider` so typography, color scheme and brand theme resolve. It applies the `.prism-root` base (system font, label color, background) and sets `data-theme`; dark mode also follows `prefers-color-scheme`. Pass a `theme` object to re-skin (accent / fonts / radii); unset fields fall back to the default preset.
 
 ```tsx
-import { AppleProvider, Card, Button } from "apple-style-ds";
+import { ThemeProvider, Card, Button } from "@prism-ds/react";
 
-<AppleProvider theme="light">{/* theme="dark" for dark mode */}
+<ThemeProvider colorScheme="light">{/* colorScheme="dark" for dark mode */}
   <Card eyebrow="类别" title="卡片标题" description="一到两行的说明文字。" />
   <Button variant="filled" tone="accent">继续</Button>
-</AppleProvider>
+</ThemeProvider>
 ```
 
-Tokens are defined on `:root`, so `var(--*)` resolves anywhere; `AppleProvider` is what supplies the base typography context and dark-mode flip.
+Tokens are defined on `:root`, so `var(--*)` resolves anywhere; `ThemeProvider` supplies the base typography context, the color-scheme flip, and any `theme` overrides as inline CSS variables.
 
 ## Style with tokens — never hard-coded values
 
@@ -29,7 +29,7 @@ Every design value is a CSS variable (primitive → semantic → component). Ref
 
 ## Layout / type utility classes (global — use for your own glue)
 
-These are the ONLY global classes; component internals use scoped `ads-*` classes you never author yourself.
+These are the ONLY global classes; component internals use scoped `prism-*` classes you never author yourself.
 
 `.stack` (column, gap 16) · `.stack-sm` (gap 8) · `.stack-lg` (gap 24) · `.row` (center, gap 8) · `.text-large-title` · `.text-title-1` · `.text-title-2` · `.text-headline` · `.text-body` · `.text-subhead` · `.text-footnote` · `.text-secondary` · `.text-tertiary` · `.text-accent` · `.tabular-nums`
 

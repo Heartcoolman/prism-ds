@@ -1,7 +1,7 @@
 {
-  "pkg": "apple-style-ds",
-  "globalName": "AppleDS",
-  "projectId": "2835812c-99de-486b-b0b0-89c4af723755",
+  "pkg": "@prism-ds/react",
+  "globalName": "PrismDS",
+  "projectId": "53d5b155-7265-45c2-b8ee-98b9c36b9c5c",
   "shape": "storybook",
   "storybookStatic": ".design-sync/sb-reference",
   "storybookConfigDir": ".storybook",
