@@ -34,7 +34,7 @@ export const List = forwardRef<HTMLUListElement, ListProps>(function List(
     <ul
       ref={ref}
       role="list"
-      className={cx("ads-list", inset && "ads-list--inset", className)}
+      className={cx("prism-list", inset && "prism-list--inset", className)}
       {...rest}
     >
       {children}
@@ -57,22 +57,22 @@ export const ListRow = forwardRef<HTMLLIElement, ListRowProps>(function ListRow(
       onClick={onClick}
       role={interactive ? "button" : undefined}
       tabIndex={interactive ? 0 : undefined}
-      className={cx("ads-list__row", interactive && "ads-list__row--interactive", className)}
+      className={cx("prism-list__row", interactive && "prism-list__row--interactive", className)}
       {...rest}
     >
       {leading != null && (
-        <span className="ads-list__leading" aria-hidden="true">
+        <span className="prism-list__leading" aria-hidden="true">
           {leading}
         </span>
       )}
-      <span className="ads-list__main">
-        <span className="ads-list__title">{title}</span>
-        {subtitle != null && <span className="ads-list__subtitle">{subtitle}</span>}
+      <span className="prism-list__main">
+        <span className="prism-list__title">{title}</span>
+        {subtitle != null && <span className="prism-list__subtitle">{subtitle}</span>}
       </span>
-      {trailing != null && <span className="ads-list__trailing">{trailing}</span>}
+      {trailing != null && <span className="prism-list__trailing">{trailing}</span>}
       {chevron && (
         <svg
-          className="ads-list__chevron"
+          className="prism-list__chevron"
           width="18"
           height="18"
           viewBox="0 0 24 24"

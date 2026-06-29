@@ -32,10 +32,10 @@ export const Table = forwardRef<HTMLTableElement, TableProps>(function Table(
   ref
 ) {
   return (
-    <table ref={ref} className={cx("ads-table", className)} {...rest}>
-      {caption != null && <caption className="ads-table__caption">{caption}</caption>}
-      <thead className="ads-table__head">
-        <tr className="ads-table__row">
+    <table ref={ref} className={cx("prism-table", className)} {...rest}>
+      {caption != null && <caption className="prism-table__caption">{caption}</caption>}
+      <thead className="prism-table__head">
+        <tr className="prism-table__row">
           {columns.map((col) => {
             const align = col.align ?? (col.numeric ? "right" : "left");
             return (
@@ -44,7 +44,7 @@ export const Table = forwardRef<HTMLTableElement, TableProps>(function Table(
                 scope="col"
                 data-align={align}
                 data-numeric={col.numeric ? "true" : undefined}
-                className="ads-table__th"
+                className="prism-table__th"
               >
                 {col.header}
               </th>
@@ -52,9 +52,9 @@ export const Table = forwardRef<HTMLTableElement, TableProps>(function Table(
           })}
         </tr>
       </thead>
-      <tbody className="ads-table__body">
+      <tbody className="prism-table__body">
         {rows.map((row, i) => (
-          <tr key={i} className="ads-table__row">
+          <tr key={i} className="prism-table__row">
             {columns.map((col) => {
               const align = col.align ?? (col.numeric ? "right" : "left");
               return (
@@ -62,7 +62,7 @@ export const Table = forwardRef<HTMLTableElement, TableProps>(function Table(
                   key={col.key}
                   data-align={align}
                   data-numeric={col.numeric ? "true" : undefined}
-                  className="ads-table__td"
+                  className="prism-table__td"
                 >
                   {row[col.key]}
                 </td>

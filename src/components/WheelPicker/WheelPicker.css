@@ -1,4 +1,4 @@
-.ads-wheel {
+.prism-wheel {
   display: flex;
   align-items: stretch;
   gap: var(--s-2);
@@ -12,7 +12,7 @@
   -webkit-user-select: none;
 }
 
-.ads-wheel__column {
+.prism-wheel__column {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@
 
 /* Selection band: 1px separators top & bottom of the center slot,
    plus a faint fill pill behind it. */
-.ads-wheel__band {
+.prism-wheel__band {
   position: absolute;
   left: var(--s-1);
   right: var(--s-1);
@@ -38,7 +38,7 @@
   pointer-events: none;
 }
 
-.ads-wheel__row {
+.prism-wheel__row {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,21 +56,21 @@
     opacity var(--dur-exit) var(--ease-standard);
 }
 
-.ads-wheel__row--pad {
+.prism-wheel__row--pad {
   cursor: default;
 }
 
 /* Neighbours fade and shrink with distance from the center slot. */
-.ads-wheel__row[data-distance="1"] {
+.prism-wheel__row[data-distance="1"] {
   color: var(--label-tertiary);
   transform: scale(0.92);
 }
-.ads-wheel__row[data-distance="2"] {
+.prism-wheel__row[data-distance="2"] {
   color: var(--label-quaternary);
   transform: scale(0.84);
 }
 
-.ads-wheel__row--selected {
+.prism-wheel__row--selected {
   position: relative;
   font: var(--text-headline);
   color: var(--label-primary);
@@ -78,11 +78,11 @@
   cursor: default;
 }
 
-.ads-wheel__row:not(.ads-wheel__row--selected):hover {
+.prism-wheel__row:not(.prism-wheel__row--selected):hover {
   color: var(--label-secondary);
 }
 
-.ads-wheel__row:focus-visible {
+.prism-wheel__row:focus-visible {
   outline: none;
   border-radius: var(--radius-sm);
   box-shadow: var(--focus-ring);

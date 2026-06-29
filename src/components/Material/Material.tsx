@@ -26,9 +26,9 @@ export const Material = forwardRef<HTMLDivElement, MaterialProps>(function Mater
     <div
       ref={ref}
       className={cx(
-        "ads-material",
-        `ads-material--${thickness}`,
-        progressive && "ads-material--progressive",
+        "prism-material",
+        `prism-material--${thickness}`,
+        progressive && "prism-material--progressive",
         className
       )}
       {...rest}

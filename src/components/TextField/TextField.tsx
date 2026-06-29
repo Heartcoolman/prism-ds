@@ -44,28 +44,28 @@ export const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
     return (
       <div
         className={cx(
-          "ads-field",
-          fullWidth && "ads-field--full",
-          disabled && "ads-field--disabled",
-          hasError && "ads-field--error",
+          "prism-field",
+          fullWidth && "prism-field--full",
+          disabled && "prism-field--disabled",
+          hasError && "prism-field--error",
           className
         )}
       >
         {label != null && (
-          <label className="ads-field__label" htmlFor={inputId}>
+          <label className="prism-field__label" htmlFor={inputId}>
             {label}
           </label>
         )}
-        <div className="ads-field__control">
+        <div className="prism-field__control">
           {leadingIcon != null && (
-            <span className="ads-field__icon" aria-hidden="true">
+            <span className="prism-field__icon" aria-hidden="true">
               {leadingIcon}
             </span>
           )}
           <input
             ref={ref}
             id={inputId}
-            className="ads-field__input"
+            className="prism-field__input"
             disabled={disabled}
             aria-invalid={hasError || undefined}
             aria-describedby={hasMessage ? messageId : undefined}
@@ -73,12 +73,12 @@ export const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
           />
         </div>
         {hasError ? (
-          <p id={messageId} className="ads-field__message ads-field__message--error">
+          <p id={messageId} className="prism-field__message prism-field__message--error">
             {error}
           </p>
         ) : (
           helpText != null && (
-            <p id={messageId} className="ads-field__message">
+            <p id={messageId} className="prism-field__message">
               {helpText}
             </p>
           )

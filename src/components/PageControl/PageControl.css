@@ -1,11 +1,11 @@
-.ads-pagecontrol {
+.prism-pagecontrol {
   display: inline-flex;
   align-items: center;
   gap: var(--s-2);
 }
 
 /* Static dot (non-interactive) */
-.ads-pagecontrol__dot {
+.prism-pagecontrol__dot {
   display: inline-block;
   box-sizing: border-box;
   width: 7px;
@@ -17,13 +17,13 @@
     background var(--dur-standard) var(--ease-standard);
 }
 
-.ads-pagecontrol__dot--current {
+.prism-pagecontrol__dot--current {
   width: 18px;
   background: var(--color-accent);
 }
 
 /* Interactive dot — a 44px hit area wrapping the visible mark */
-.ads-pagecontrol__dot--button {
+.prism-pagecontrol__dot--button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -40,12 +40,12 @@
   transition: none;
 }
 
-.ads-pagecontrol__dot--button:focus-visible {
+.prism-pagecontrol__dot--button:focus-visible {
   outline: none;
   box-shadow: var(--focus-ring);
 }
 
-.ads-pagecontrol__mark {
+.prism-pagecontrol__mark {
   display: inline-block;
   box-sizing: border-box;
   width: 7px;
@@ -57,12 +57,12 @@
     background var(--dur-standard) var(--ease-standard);
 }
 
-.ads-pagecontrol__dot--button.ads-pagecontrol__dot--current .ads-pagecontrol__mark {
+.prism-pagecontrol__dot--button.prism-pagecontrol__dot--current .prism-pagecontrol__mark {
   width: 18px;
   background: var(--color-accent);
 }
 
-.ads-pagecontrol__dot--button:hover:not(.ads-pagecontrol__dot--current)
-  .ads-pagecontrol__mark {
+.prism-pagecontrol__dot--button:hover:not(.prism-pagecontrol__dot--current)
+  .prism-pagecontrol__mark {
   background: var(--label-tertiary);
 }

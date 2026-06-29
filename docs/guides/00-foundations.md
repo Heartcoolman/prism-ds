@@ -1,4 +1,4 @@
-# Foundations — Apple-Style Design Guidelines
+# Foundations — Prism Design Language (Apple-inspired default theme)
 
 ## Principles
 

@@ -63,21 +63,21 @@ export const Banner = forwardRef<HTMLDivElement, BannerProps>(function Banner(
       ref={ref}
       data-tone={tone}
       role={tone === "danger" ? "alert" : "status"}
-      className={cx("ads-banner", className)}
+      className={cx("prism-banner", className)}
       {...rest}
     >
-      <span className="ads-banner__icon" aria-hidden="true">
+      <span className="prism-banner__icon" aria-hidden="true">
         {icon != null ? icon : defaultIcons[tone]}
       </span>
-      <div className="ads-banner__main">
-        {title != null && <div className="ads-banner__title">{title}</div>}
-        {children != null && <div className="ads-banner__message">{children}</div>}
+      <div className="prism-banner__main">
+        {title != null && <div className="prism-banner__title">{title}</div>}
+        {children != null && <div className="prism-banner__message">{children}</div>}
       </div>
-      {action != null && <div className="ads-banner__action">{action}</div>}
+      {action != null && <div className="prism-banner__action">{action}</div>}
       {onClose != null && (
         <button
           type="button"
-          className="ads-banner__close"
+          className="prism-banner__close"
           aria-label="关闭"
           onClick={onClose}
         >

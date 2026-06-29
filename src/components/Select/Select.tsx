@@ -46,29 +46,29 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(function Select
   return (
     <div
       className={cx(
-        "ads-select",
-        fullWidth && "ads-select--full",
-        hasError && "ads-select--error",
+        "prism-select",
+        fullWidth && "prism-select--full",
+        hasError && "prism-select--error",
         className
       )}
     >
       {label != null && (
-        <label className="ads-select__label" htmlFor={selectId}>
+        <label className="prism-select__label" htmlFor={selectId}>
           {label}
         </label>
       )}
-      <div className="ads-select__field">
+      <div className="prism-select__field">
         <select
           ref={ref}
           id={selectId}
-          className="ads-select__control"
+          className="prism-select__control"
           aria-invalid={hasError || undefined}
           aria-describedby={describedBy}
           {...rest}
         >
           {children}
         </select>
-        <span className="ads-select__chevron" aria-hidden="true">
+        <span className="prism-select__chevron" aria-hidden="true">
           <svg
             width="18"
             height="18"
@@ -84,7 +84,7 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(function Select
         </span>
       </div>
       {(helpText != null || hasError) && (
-        <span className="ads-select__help" id={helpId}>
+        <span className="prism-select__help" id={helpId}>
           {hasError ? error : helpText}
         </span>
       )}

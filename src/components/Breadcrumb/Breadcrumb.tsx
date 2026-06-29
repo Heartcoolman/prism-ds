@@ -19,7 +19,7 @@ export interface BreadcrumbProps extends HTMLAttributes<HTMLElement> {
 
 const ChevronIcon = () => (
   <svg
-    className="ads-breadcrumb__chevron"
+    className="prism-breadcrumb__chevron"
     width="18"
     height="18"
     viewBox="0 0 24 24"
@@ -45,28 +45,28 @@ export const Breadcrumb = forwardRef<HTMLElement, BreadcrumbProps>(
       <nav
         ref={ref}
         aria-label="面包屑"
-        className={cx("ads-breadcrumb", className)}
+        className={cx("prism-breadcrumb", className)}
         {...rest}
       >
-        <ol className="ads-breadcrumb__list">
+        <ol className="prism-breadcrumb__list">
           {items.map((item, index) => {
             const isLast = index === items.length - 1;
             return (
-              <li className="ads-breadcrumb__item" key={index}>
+              <li className="prism-breadcrumb__item" key={index}>
                 {isLast ? (
-                  <span className="ads-breadcrumb__current" aria-current="page">
+                  <span className="prism-breadcrumb__current" aria-current="page">
                     {item.label}
                   </span>
                 ) : onNavigate != null ? (
                   <button
                     type="button"
-                    className="ads-breadcrumb__link"
+                    className="prism-breadcrumb__link"
                     onClick={() => onNavigate(index)}
                   >
                     {item.label}
                   </button>
                 ) : (
-                  <a className="ads-breadcrumb__link" href={item.href}>
+                  <a className="prism-breadcrumb__link" href={item.href}>
                     {item.label}
                   </a>
                 )}

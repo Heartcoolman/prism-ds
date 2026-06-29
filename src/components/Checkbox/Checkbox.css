@@ -1,4 +1,4 @@
-.ads-check {
+.prism-check {
   display: inline-flex;
   align-items: center;
   gap: var(--s-2);
@@ -10,7 +10,7 @@
   -webkit-user-select: none;
 }
 
-.ads-check__input {
+.prism-check__input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -23,7 +23,7 @@
   white-space: nowrap;
 }
 
-.ads-check__box {
+.prism-check__box {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -41,45 +41,45 @@
     box-shadow var(--dur-exit) var(--ease-standard);
 }
 
-.ads-check__mark,
-.ads-check__dash {
+.prism-check__mark,
+.prism-check__dash {
   width: 16px;
   height: 16px;
   opacity: 0;
 }
 
 /* ---------- Checked ---------- */
-.ads-check__input:checked + .ads-check__box {
+.prism-check__input:checked + .prism-check__box {
   background: var(--color-accent);
   border-color: var(--color-accent);
 }
-.ads-check__input:checked + .ads-check__box .ads-check__mark {
+.prism-check__input:checked + .prism-check__box .prism-check__mark {
   opacity: 1;
 }
 
 /* ---------- Indeterminate ---------- */
-.ads-check__input:indeterminate + .ads-check__box {
+.prism-check__input:indeterminate + .prism-check__box {
   background: var(--color-accent);
   border-color: var(--color-accent);
 }
-.ads-check__input:indeterminate + .ads-check__box .ads-check__mark {
+.prism-check__input:indeterminate + .prism-check__box .prism-check__mark {
   opacity: 0;
 }
-.ads-check__input:indeterminate + .ads-check__box .ads-check__dash {
+.prism-check__input:indeterminate + .prism-check__box .prism-check__dash {
   opacity: 1;
 }
 
 /* ---------- Focus ---------- */
-.ads-check__input:focus-visible + .ads-check__box {
+.prism-check__input:focus-visible + .prism-check__box {
   box-shadow: var(--focus-ring);
 }
 
 /* ---------- Disabled ---------- */
-.ads-check--disabled {
+.prism-check--disabled {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.ads-check__label {
+.prism-check__label {
   display: inline-block;
 }

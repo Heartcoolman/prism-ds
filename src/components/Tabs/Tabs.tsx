@@ -46,7 +46,7 @@ export const Tabs = forwardRef<HTMLDivElement, TabsProps>(function Tabs(
       ref={ref}
       role="tablist"
       onKeyDown={onKeyDown}
-      className={cx("ads-tabs", fullWidth && "ads-tabs--full", className)}
+      className={cx("prism-tabs", fullWidth && "prism-tabs--full", className)}
       {...rest}
     >
       {tabs.map((tab) => {
@@ -58,10 +58,10 @@ export const Tabs = forwardRef<HTMLDivElement, TabsProps>(function Tabs(
             role="tab"
             aria-selected={selected}
             tabIndex={selected ? 0 : -1}
-            className={cx("ads-tabs__tab", selected && "ads-tabs__tab--active")}
+            className={cx("prism-tabs__tab", selected && "prism-tabs__tab--active")}
             onClick={() => onChange(tab.key)}
           >
-            <span className="ads-tabs__label">{tab.label}</span>
+            <span className="prism-tabs__label">{tab.label}</span>
           </button>
         );
       })}

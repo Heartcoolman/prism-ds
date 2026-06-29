@@ -1,4 +1,4 @@
-.ads-tabs {
+.prism-tabs {
   display: inline-flex;
   align-items: stretch;
   gap: var(--s-5);
@@ -6,16 +6,16 @@
   border-bottom: 1px solid var(--separator);
 }
 
-.ads-tabs--full {
+.prism-tabs--full {
   display: flex;
   width: 100%;
   gap: 0;
 }
-.ads-tabs--full .ads-tabs__tab {
+.prism-tabs--full .prism-tabs__tab {
   flex: 1 1 0;
 }
 
-.ads-tabs__tab {
+.prism-tabs__tab {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -35,22 +35,22 @@
     color var(--dur-exit) var(--ease-standard);
 }
 
-.ads-tabs__tab:hover {
+.prism-tabs__tab:hover {
   color: var(--label-primary);
 }
 
-.ads-tabs__tab:focus-visible {
+.prism-tabs__tab:focus-visible {
   outline: none;
   border-radius: var(--radius-sm);
   box-shadow: var(--focus-ring);
 }
 
-.ads-tabs__tab--active {
+.prism-tabs__tab--active {
   color: var(--label-primary);
   font-weight: 600;
 }
 
-.ads-tabs__tab--active::after {
+.prism-tabs__tab--active::after {
   content: "";
   position: absolute;
   left: 0;
@@ -60,6 +60,6 @@
   background: var(--color-accent);
 }
 
-.ads-tabs__label {
+.prism-tabs__label {
   display: inline-block;
 }

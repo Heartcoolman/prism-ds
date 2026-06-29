@@ -1,9 +1,29 @@
 {
-  "name": "apple-style-ds",
+  "name": "@prism-ds/react",
   "version": "1.0.0",
-  "private": true,
   "type": "module",
-  "description": "Apple-style React design system — faithful implementation of the internal Apple-Style Design Guidelines.",
+  "description": "Prism — a themeable React + TypeScript design system. 46 components driven by CSS-variable tokens; ships an Apple-inspired default theme and a neutral preset, or supply your own brand.",
+  "license": "MIT",
+  "author": "Prism DS contributors",
+  "homepage": "https://github.com/prism-ds/react#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prism-ds/react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prism-ds/react/issues"
+  },
+  "keywords": [
+    "react",
+    "design-system",
+    "component-library",
+    "ui",
+    "components",
+    "themeable",
+    "design-tokens",
+    "css-variables",
+    "typescript"
+  ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -18,6 +38,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "sideEffects": [
     "**/*.css"
   ],

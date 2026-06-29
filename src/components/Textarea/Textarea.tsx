@@ -33,27 +33,27 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
     return (
       <div
         className={cx(
-          "ads-textarea",
-          fullWidth && "ads-textarea--full",
-          hasError && "ads-textarea--error",
+          "prism-textarea",
+          fullWidth && "prism-textarea--full",
+          hasError && "prism-textarea--error",
           className
         )}
       >
         {label != null && (
-          <label className="ads-textarea__label" htmlFor={fieldId}>
+          <label className="prism-textarea__label" htmlFor={fieldId}>
             {label}
           </label>
         )}
         <textarea
           ref={ref}
           id={fieldId}
-          className="ads-textarea__field"
+          className="prism-textarea__field"
           aria-invalid={hasError || undefined}
           aria-describedby={description != null ? describedById : undefined}
           {...rest}
         />
         {description != null && (
-          <p className="ads-textarea__desc" id={describedById}>
+          <p className="prism-textarea__desc" id={describedById}>
             {description}
           </p>
         )}

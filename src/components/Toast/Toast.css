@@ -1,4 +1,4 @@
-.ads-toast {
+.prism-toast {
   --_icon: var(--label-secondary);
 
   display: inline-flex;
@@ -14,14 +14,14 @@
   font: var(--text-subhead);
 }
 
-.ads-toast[data-variant="success"] {
+.prism-toast[data-variant="success"] {
   --_icon: var(--color-success);
 }
-.ads-toast[data-variant="error"] {
+.prism-toast[data-variant="error"] {
   --_icon: var(--color-danger);
 }
 
-.ads-toast__icon {
+.prism-toast__icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -31,6 +31,6 @@
   color: var(--_icon);
 }
 
-.ads-toast__message {
+.prism-toast__message {
   display: inline-block;
 }

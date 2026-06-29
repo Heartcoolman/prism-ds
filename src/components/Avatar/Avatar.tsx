@@ -35,20 +35,20 @@ export const Avatar = forwardRef<HTMLSpanElement, AvatarProps>(function Avatar(
   return (
     <span
       ref={ref}
-      className={cx("ads-avatar", `ads-avatar--${size}`, className)}
+      className={cx("prism-avatar", `prism-avatar--${size}`, className)}
       role="img"
       aria-label={name || undefined}
       {...rest}
     >
       {src != null ? (
-        <img className="ads-avatar__img" src={src} alt={name} />
+        <img className="prism-avatar__img" src={src} alt={name} />
       ) : (
-        <span className="ads-avatar__initials" aria-hidden="true">
+        <span className="prism-avatar__initials" aria-hidden="true">
           {initials}
         </span>
       )}
       {status === "online" && (
-        <span className="ads-avatar__status" aria-hidden="true" />
+        <span className="prism-avatar__status" aria-hidden="true" />
       )}
     </span>
   );
@@ -73,20 +73,20 @@ export const AvatarGroup = forwardRef<HTMLDivElement, AvatarGroupProps>(
     const overflow = items.length - shown.length;
 
     return (
-      <div ref={ref} className={cx("ads-avatar-group", className)} {...rest}>
+      <div ref={ref} className={cx("prism-avatar-group", className)} {...rest}>
         {shown.map((child, i) => (
-          <span className="ads-avatar-group__item" key={i}>
+          <span className="prism-avatar-group__item" key={i}>
             {child}
           </span>
         ))}
         {overflow > 0 && (
-          <span className="ads-avatar-group__item">
+          <span className="prism-avatar-group__item">
             <span
-              className="ads-avatar ads-avatar--medium ads-avatar-group__more"
+              className="prism-avatar prism-avatar--medium prism-avatar-group__more"
               role="img"
               aria-label={`其余 ${overflow} 人`}
             >
-              <span className="ads-avatar__initials" aria-hidden="true">
+              <span className="prism-avatar__initials" aria-hidden="true">
                 +{overflow}
               </span>
             </span>

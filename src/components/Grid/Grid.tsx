@@ -21,7 +21,7 @@ export const Grid = forwardRef<HTMLDivElement, GridProps>(function Grid(
   ref
 ) {
   const vars: CSSProperties = {
-    ...(columns != null ? { "--ads-grid-cols": columns } : {}),
+    ...(columns != null ? { "--prism-grid-cols": columns } : {}),
     ...(gap != null
       ? { gap: typeof gap === "number" ? `${gap}px` : gap }
       : {}),
@@ -31,7 +31,7 @@ export const Grid = forwardRef<HTMLDivElement, GridProps>(function Grid(
     <div
       ref={ref}
       data-cols={columns != null ? columns : undefined}
-      className={cx("ads-grid", className)}
+      className={cx("prism-grid", className)}
       style={{ ...vars, ...style }}
       {...rest}
     >

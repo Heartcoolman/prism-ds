@@ -1,9 +1,9 @@
-.ads-breadcrumb {
+.prism-breadcrumb {
   display: block;
   font: var(--text-subhead);
 }
 
-.ads-breadcrumb__list {
+.prism-breadcrumb__list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -12,17 +12,17 @@
   list-style: none;
 }
 
-.ads-breadcrumb__item {
+.prism-breadcrumb__item {
   display: inline-flex;
   align-items: center;
   gap: var(--s-1);
 }
 
-.ads-breadcrumb__item + .ads-breadcrumb__item {
+.prism-breadcrumb__item + .prism-breadcrumb__item {
   margin-left: var(--s-1);
 }
 
-.ads-breadcrumb__link {
+.prism-breadcrumb__link {
   appearance: none;
   margin: 0;
   padding: 0;
@@ -36,21 +36,21 @@
   transition: color var(--dur-exit) var(--ease-standard);
 }
 
-.ads-breadcrumb__link:hover {
+.prism-breadcrumb__link:hover {
   color: var(--color-accent-hover);
   text-decoration: underline;
 }
 
-.ads-breadcrumb__link:focus-visible {
+.prism-breadcrumb__link:focus-visible {
   outline: none;
   box-shadow: var(--focus-ring);
 }
 
-.ads-breadcrumb__current {
+.prism-breadcrumb__current {
   color: var(--label-primary);
 }
 
-.ads-breadcrumb__chevron {
+.prism-breadcrumb__chevron {
   flex-shrink: 0;
   width: 18px;
   height: 18px;

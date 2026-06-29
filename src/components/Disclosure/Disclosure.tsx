@@ -42,18 +42,18 @@ export const Disclosure = forwardRef<HTMLDivElement, DisclosureProps>(
     return (
       <div
         ref={ref}
-        className={cx("ads-disclosure", isOpen && "ads-disclosure--open", className)}
+        className={cx("prism-disclosure", isOpen && "prism-disclosure--open", className)}
         {...rest}
       >
         <button
           type="button"
-          className="ads-disclosure__summary"
+          className="prism-disclosure__summary"
           aria-expanded={isOpen}
           aria-controls={regionId}
           onClick={handleToggle}
         >
-          <span className="ads-disclosure__title">{title}</span>
-          <span className="ads-disclosure__chevron" aria-hidden="true">
+          <span className="prism-disclosure__title">{title}</span>
+          <span className="prism-disclosure__chevron" aria-hidden="true">
             <svg
               viewBox="0 0 24 24"
               fill="none"
@@ -66,8 +66,8 @@ export const Disclosure = forwardRef<HTMLDivElement, DisclosureProps>(
             </svg>
           </span>
         </button>
-        <div id={regionId} role="region" className="ads-disclosure__region" hidden={!isOpen}>
-          <div className="ads-disclosure__content">{children}</div>
+        <div id={regionId} role="region" className="prism-disclosure__region" hidden={!isOpen}>
+          <div className="prism-disclosure__content">{children}</div>
         </div>
       </div>
     );

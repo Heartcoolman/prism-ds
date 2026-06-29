@@ -44,7 +44,7 @@ export const WithMedia: Story = {
   render: () => (
     <div style={{ width: 320 }}>
       <Card
-        media={<div className="ads-card__media-placeholder" />}
+        media={<div className="prism-card__media-placeholder" />}
         eyebrow="精选"
         title="带媒体的卡片"
         description="顶部为 16:9 的媒体区域，下方承载文本与操作。"
@@ -58,7 +58,7 @@ export const Interactive: Story = {
     <div style={{ width: 320 }}>
       <Card
         interactive
-        media={<div className="ads-card__media-placeholder" />}
+        media={<div className="prism-card__media-placeholder" />}
         eyebrow="可点击"
         title="交互卡片"
         description="悬停时整张卡片会轻微上浮并加深阴影。"

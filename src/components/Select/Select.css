@@ -1,4 +1,4 @@
-.ads-select {
+.prism-select {
   display: inline-flex;
   flex-direction: column;
   gap: var(--s-1);
@@ -6,23 +6,23 @@
   text-align: left;
 }
 
-.ads-select--full {
+.prism-select--full {
   display: flex;
   width: 100%;
 }
 
-.ads-select__label {
+.prism-select__label {
   font: var(--text-subhead);
   font-weight: 500;
   color: var(--label-secondary);
 }
 
-.ads-select__field {
+.prism-select__field {
   position: relative;
   display: block;
 }
 
-.ads-select__control {
+.prism-select__control {
   box-sizing: border-box;
   width: 100%;
   height: var(--control-h-md);
@@ -41,22 +41,22 @@
     box-shadow var(--dur-exit) var(--ease-standard);
 }
 
-.ads-select__control:hover:not(:disabled) {
+.prism-select__control:hover:not(:disabled) {
   border-color: var(--label-quaternary);
 }
 
-.ads-select__control:focus-visible {
+.prism-select__control:focus-visible {
   outline: none;
   border-color: var(--color-accent);
   box-shadow: var(--focus-ring);
 }
 
-.ads-select__control:disabled {
+.prism-select__control:disabled {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.ads-select__chevron {
+.prism-select__chevron {
   position: absolute;
   top: 50%;
   right: 12px;
@@ -70,19 +70,19 @@
   pointer-events: none;
 }
 
-.ads-select__help {
+.prism-select__help {
   font: var(--text-footnote);
   color: var(--label-tertiary);
 }
 
-.ads-select--error .ads-select__control {
+.prism-select--error .prism-select__control {
   border-color: var(--color-danger);
 }
 
-.ads-select--error .ads-select__control:focus-visible {
+.prism-select--error .prism-select__control:focus-visible {
   box-shadow: var(--focus-ring);
 }
 
-.ads-select--error .ads-select__help {
+.prism-select--error .prism-select__help {
   color: var(--color-danger);
 }

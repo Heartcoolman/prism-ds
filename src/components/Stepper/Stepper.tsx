@@ -78,22 +78,22 @@ export const Stepper = forwardRef<HTMLDivElement, StepperProps>(function Stepper
     <div
       ref={ref}
       role="group"
-      className={cx("ads-stepper", disabled && "ads-stepper--disabled", className)}
+      className={cx("prism-stepper", disabled && "prism-stepper--disabled", className)}
       {...rest}
     >
       <button
         type="button"
-        className="ads-stepper__btn"
+        className="prism-stepper__btn"
         aria-label="减少"
         disabled={disabled || atMin}
         onClick={decrement}
       >
         <MinusIcon />
       </button>
-      <span className="ads-stepper__value">{value}</span>
+      <span className="prism-stepper__value">{value}</span>
       <button
         type="button"
-        className="ads-stepper__btn"
+        className="prism-stepper__btn"
         aria-label="增加"
         disabled={disabled || atMax}
         onClick={increment}

@@ -1,22 +1,22 @@
-.ads-grid {
+.prism-grid {
   display: grid;
   gap: var(--s-5);
 }
 
-.ads-grid:not([data-cols]) {
+.prism-grid:not([data-cols]) {
   grid-template-columns: repeat(4, 1fr);
 }
 @media (min-width: 600px) {
-  .ads-grid:not([data-cols]) {
+  .prism-grid:not([data-cols]) {
     grid-template-columns: repeat(8, 1fr);
   }
 }
 @media (min-width: 1024px) {
-  .ads-grid:not([data-cols]) {
+  .prism-grid:not([data-cols]) {
     grid-template-columns: repeat(12, 1fr);
   }
 }
 
-.ads-grid[data-cols] {
-  grid-template-columns: repeat(var(--ads-grid-cols), 1fr);
+.prism-grid[data-cols] {
+  grid-template-columns: repeat(var(--prism-grid-cols), 1fr);
 }

@@ -36,14 +36,14 @@ export const Skeleton = forwardRef<HTMLDivElement, SkeletonProps>(function Skele
         ref={ref}
         role="presentation"
         aria-hidden="true"
-        className={cx("ads-skeleton", "ads-skeleton--text-group", className)}
+        className={cx("prism-skeleton", "prism-skeleton--text-group", className)}
         style={style}
         {...rest}
       >
         {Array.from({ length: count }, (_, i) => (
           <span
             key={i}
-            className="ads-skeleton__line"
+            className="prism-skeleton__line"
             style={
               i === count - 1 && count > 1
                 ? ({ width: "60%" } as CSSProperties)
@@ -66,7 +66,7 @@ export const Skeleton = forwardRef<HTMLDivElement, SkeletonProps>(function Skele
       ref={ref}
       role="presentation"
       aria-hidden="true"
-      className={cx("ads-skeleton", `ads-skeleton--${variant}`, className)}
+      className={cx("prism-skeleton", `prism-skeleton--${variant}`, className)}
       style={sizeStyle}
       {...rest}
     />

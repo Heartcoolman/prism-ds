@@ -49,22 +49,22 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button
       type={type}
       data-tone={tone}
       className={cx(
-        "ads-btn",
-        `ads-btn--${variant}`,
-        `ads-btn--${size}`,
-        fullWidth && "ads-btn--full",
+        "prism-btn",
+        `prism-btn--${variant}`,
+        `prism-btn--${size}`,
+        fullWidth && "prism-btn--full",
         className
       )}
       {...rest}
     >
       {leadingIcon != null && (
-        <span className="ads-btn__icon" aria-hidden="true">
+        <span className="prism-btn__icon" aria-hidden="true">
           {leadingIcon}
         </span>
       )}
-      {children != null && <span className="ads-btn__label">{children}</span>}
+      {children != null && <span className="prism-btn__label">{children}</span>}
       {trailingIcon != null && (
-        <span className="ads-btn__icon" aria-hidden="true">
+        <span className="prism-btn__icon" aria-hidden="true">
           {trailingIcon}
         </span>
       )}

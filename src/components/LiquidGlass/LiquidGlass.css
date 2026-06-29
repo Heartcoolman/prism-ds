@@ -1,4 +1,4 @@
-.ads-liquid-glass {
+.prism-liquid-glass {
   position: relative;
   padding: var(--s-4);
   border-radius: var(--radius-card);
@@ -19,13 +19,13 @@
     0 14px 44px rgba(0, 0, 0, 0.18);
 }
 
-.ads-liquid-glass--pill {
+.prism-liquid-glass--pill {
   border-radius: var(--radius-pill);
   padding: var(--s-2) var(--s-4);
 }
 
-[data-theme="dark"] .ads-liquid-glass,
-.ads-liquid-glass[data-theme="dark"] {
+[data-theme="dark"] .prism-liquid-glass,
+.prism-liquid-glass[data-theme="dark"] {
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.22),

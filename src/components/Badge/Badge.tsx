@@ -39,9 +39,9 @@ export const Badge = forwardRef<HTMLSpanElement, BadgeProps>(function Badge(
       role="status"
       aria-label={label}
       className={cx(
-        "ads-badge",
-        dot && "ads-badge--dot",
-        children != null && "ads-badge--floating",
+        "prism-badge",
+        dot && "prism-badge--dot",
+        children != null && "prism-badge--floating",
         className
       )}
       {...rest}
@@ -53,7 +53,7 @@ export const Badge = forwardRef<HTMLSpanElement, BadgeProps>(function Badge(
   if (children == null) return badge;
 
   return (
-    <span className="ads-badge-wrap">
+    <span className="prism-badge-wrap">
       {children}
       {badge}
     </span>

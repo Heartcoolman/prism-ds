@@ -34,18 +34,18 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
     }, [indeterminate]);
 
     return (
-      <label className={cx("ads-check", disabled && "ads-check--disabled", className)}>
+      <label className={cx("prism-check", disabled && "prism-check--disabled", className)}>
         <input
           ref={setRef}
           type="checkbox"
-          className="ads-check__input"
+          className="prism-check__input"
           disabled={disabled}
           aria-checked={indeterminate ? "mixed" : undefined}
           {...rest}
         />
-        <span className="ads-check__box" aria-hidden="true">
+        <span className="prism-check__box" aria-hidden="true">
           <svg
-            className="ads-check__mark"
+            className="prism-check__mark"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -56,7 +56,7 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
             <path d="M5 13l4 4L19 7" />
           </svg>
           <svg
-            className="ads-check__dash"
+            className="prism-check__dash"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -67,7 +67,7 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
             <path d="M6 12h12" />
           </svg>
         </span>
-        {label != null && <span className="ads-check__label">{label}</span>}
+        {label != null && <span className="prism-check__label">{label}</span>}
       </label>
     );
   }

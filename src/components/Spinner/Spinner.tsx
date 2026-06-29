@@ -28,11 +28,11 @@ export const Spinner = forwardRef<HTMLDivElement, SpinnerProps>(function Spinner
       ref={ref}
       role="status"
       aria-label={label}
-      className={cx("ads-spinner", `ads-spinner--${size}`, className)}
+      className={cx("prism-spinner", `prism-spinner--${size}`, className)}
       {...rest}
     >
-      <span className="ads-spinner__ring" aria-hidden="true" />
-      <span className={showLabel ? "ads-spinner__label" : "visually-hidden"}>
+      <span className="prism-spinner__ring" aria-hidden="true" />
+      <span className={showLabel ? "prism-spinner__label" : "visually-hidden"}>
         {label}
       </span>
     </div>

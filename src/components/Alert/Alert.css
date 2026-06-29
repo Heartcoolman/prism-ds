@@ -1,4 +1,4 @@
-.ads-alert__scrim {
+.prism-alert__scrim {
   position: fixed;
   inset: 0;
   background: var(--bg-overlay);
@@ -9,7 +9,7 @@
   z-index: 1000;
 }
 
-.ads-alert {
+.prism-alert {
   background: var(--bg);
   border-radius: var(--radius-modal);
   box-shadow: var(--shadow-4);
@@ -19,31 +19,31 @@
   overflow: hidden;
 }
 
-.ads-alert__content {
+.prism-alert__content {
   padding: var(--s-5);
 }
 
-.ads-alert__title {
+.prism-alert__title {
   font: var(--text-headline);
   color: var(--label-primary);
 }
 
-.ads-alert__message {
+.prism-alert__message {
   font: var(--text-footnote);
   color: var(--label-secondary);
   margin-top: var(--s-2);
 }
 
 /* ---------- Actions ---------- */
-.ads-alert__actions {
+.prism-alert__actions {
   display: flex;
   border-top: 1px solid var(--separator);
 }
-.ads-alert__actions--stacked {
+.prism-alert__actions--stacked {
   flex-direction: column;
 }
 
-.ads-alert__action {
+.prism-alert__action {
   flex: 1 1 0;
   min-height: var(--size-touch);
   padding: var(--s-3) var(--s-4);
@@ -56,27 +56,27 @@
   -webkit-user-select: none;
   transition: background var(--dur-exit) var(--ease-standard);
 }
-.ads-alert__action:hover {
+.prism-alert__action:hover {
   background: var(--fill-secondary);
 }
-.ads-alert__action:focus-visible {
+.prism-alert__action:focus-visible {
   outline: none;
   box-shadow: var(--focus-ring);
 }
 
-.ads-alert__action--confirm {
+.prism-alert__action--confirm {
   font-weight: 600;
 }
-.ads-alert__action--confirm[data-destructive="true"] {
+.prism-alert__action--confirm[data-destructive="true"] {
   color: var(--color-danger);
 }
 
 /* separator between side-by-side buttons */
-.ads-alert__actions:not(.ads-alert__actions--stacked)
-  .ads-alert__action--confirm {
+.prism-alert__actions:not(.prism-alert__actions--stacked)
+  .prism-alert__action--confirm {
   border-left: 1px solid var(--separator);
 }
 /* separator between stacked buttons */
-.ads-alert__actions--stacked .ads-alert__action--confirm {
+.prism-alert__actions--stacked .prism-alert__action--confirm {
   border-top: 1px solid var(--separator);
 }

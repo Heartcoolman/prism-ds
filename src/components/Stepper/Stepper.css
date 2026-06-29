@@ -1,4 +1,4 @@
-.ads-stepper {
+.prism-stepper {
   display: inline-flex;
   align-items: stretch;
   box-sizing: border-box;
@@ -10,7 +10,7 @@
   -webkit-user-select: none;
 }
 
-.ads-stepper__btn {
+.prism-stepper__btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -29,25 +29,25 @@
     transform var(--dur-exit) var(--ease-standard);
 }
 
-.ads-stepper__btn:hover:not(:disabled) {
+.prism-stepper__btn:hover:not(:disabled) {
   background: var(--fill-quaternary);
 }
 
-.ads-stepper__btn:active:not(:disabled) {
+.prism-stepper__btn:active:not(:disabled) {
   transform: scale(0.94);
 }
 
-.ads-stepper__btn:focus-visible {
+.prism-stepper__btn:focus-visible {
   outline: none;
   box-shadow: var(--focus-ring);
 }
 
-.ads-stepper__btn:disabled {
+.prism-stepper__btn:disabled {
   color: var(--label-quaternary);
   cursor: not-allowed;
 }
 
-.ads-stepper__value {
+.prism-stepper__value {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -60,6 +60,6 @@
   color: var(--label-primary);
 }
 
-.ads-stepper--disabled {
+.prism-stepper--disabled {
   opacity: 0.45;
 }

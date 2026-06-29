@@ -1,4 +1,4 @@
-.ads-navbar {
+.prism-navbar {
   position: sticky;
   top: 0;
   z-index: 10;
@@ -9,7 +9,7 @@
   border-bottom: 1px solid var(--separator);
 }
 
-.ads-navbar__row {
+.prism-navbar__row {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
@@ -17,21 +17,21 @@
   min-height: var(--size-touch);
 }
 
-.ads-navbar__leading {
+.prism-navbar__leading {
   display: inline-flex;
   align-items: center;
   justify-self: start;
   min-width: 0;
 }
 
-.ads-navbar__trailing {
+.prism-navbar__trailing {
   display: inline-flex;
   align-items: center;
   justify-self: end;
   min-width: 0;
 }
 
-.ads-navbar__title {
+.prism-navbar__title {
   grid-column: 2;
   margin: 0;
   font: var(--text-headline);
@@ -43,7 +43,7 @@
   max-width: 100%;
 }
 
-.ads-navbar__large-title {
+.prism-navbar__large-title {
   margin: 0;
   padding-bottom: var(--s-2);
   font: var(--text-large-title);
@@ -52,7 +52,7 @@
   text-align: left;
 }
 
-.ads-navbar__back {
+.prism-navbar__back {
   display: inline-flex;
   align-items: center;
   gap: var(--s-1);
@@ -68,20 +68,20 @@
   user-select: none;
 }
 
-.ads-navbar__back:focus-visible {
+.prism-navbar__back:focus-visible {
   outline: none;
   box-shadow: var(--focus-ring);
   border-radius: var(--radius-sm);
 }
 
-.ads-navbar__back:active {
+.prism-navbar__back:active {
   filter: brightness(0.9);
 }
 
-.ads-navbar__back-icon {
+.prism-navbar__back-icon {
   flex-shrink: 0;
 }
 
-.ads-navbar__back-label {
+.prism-navbar__back-label {
   display: inline-block;
 }

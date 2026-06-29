@@ -35,7 +35,7 @@ export const Multiple: Story = {
       </Disclosure>
       <div style={{ height: 1, background: "var(--separator)", marginInline: "var(--s-4)" }} />
       <Disclosure title="支持哪些支付方式？">
-        支持 Apple Pay、信用卡及借记卡，部分地区支持运营商代扣。
+        支持信用卡、借记卡及主流移动支付，部分地区支持运营商代扣。
       </Disclosure>
     </div>
   ),

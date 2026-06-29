@@ -49,7 +49,7 @@ export const LineChart = forwardRef<SVGSVGElement, LineChartProps>(
     const innerW = width - PAD * 2;
     const innerH = height - PAD * 2;
     const baseline = height - PAD;
-    const gradientId = "ads-linechart-grad";
+    const gradientId = "prism-linechart-grad";
 
     const points = data.map((value, i) => {
       const x = n > 1 ? PAD + (innerW * i) / (n - 1) : width / 2;
@@ -76,7 +76,7 @@ export const LineChart = forwardRef<SVGSVGElement, LineChartProps>(
         width={width}
         height={height}
         preserveAspectRatio="none"
-        className={cx("ads-linechart", className)}
+        className={cx("prism-linechart", className)}
         style={{ maxWidth: width, ...style }}
         {...rest}
       >
@@ -98,7 +98,7 @@ export const LineChart = forwardRef<SVGSVGElement, LineChartProps>(
         )}
         {area && areaD && (
           <path
-            className="ads-linechart__area"
+            className="prism-linechart__area"
             d={areaD}
             fill={`url(#${gradientId})`}
             stroke="none"
@@ -106,7 +106,7 @@ export const LineChart = forwardRef<SVGSVGElement, LineChartProps>(
         )}
         {n > 0 && (
           <polyline
-            className="ads-linechart__line"
+            className="prism-linechart__line"
             points={polylinePoints}
             fill="none"
             stroke="var(--color-accent)"
@@ -117,7 +117,7 @@ export const LineChart = forwardRef<SVGSVGElement, LineChartProps>(
         )}
         {last && (
           <circle
-            className="ads-linechart__dot"
+            className="prism-linechart__dot"
             cx={last[0]}
             cy={last[1]}
             r={3}

@@ -42,11 +42,11 @@ export const NavBar = forwardRef<HTMLElement, NavBarProps>(function NavBar(
       : onBack != null && (
           <button
             type="button"
-            className="ads-navbar__back"
+            className="prism-navbar__back"
             onClick={onBack}
           >
             <svg
-              className="ads-navbar__back-icon"
+              className="prism-navbar__back-icon"
               width="18"
               height="18"
               viewBox="0 0 24 24"
@@ -59,25 +59,25 @@ export const NavBar = forwardRef<HTMLElement, NavBarProps>(function NavBar(
             >
               <path d="m15 18-6-6 6-6" />
             </svg>
-            <span className="ads-navbar__back-label">{backLabel}</span>
+            <span className="prism-navbar__back-label">{backLabel}</span>
           </button>
         );
 
   return (
     <header
       ref={ref}
-      className={cx("ads-navbar", large && "ads-navbar--large", className)}
+      className={cx("prism-navbar", large && "prism-navbar--large", className)}
       {...rest}
     >
-      <div className="ads-navbar__row">
-        <div className="ads-navbar__leading">{leadingContent}</div>
+      <div className="prism-navbar__row">
+        <div className="prism-navbar__leading">{leadingContent}</div>
         {!large && title != null && (
-          <h1 className="ads-navbar__title">{title}</h1>
+          <h1 className="prism-navbar__title">{title}</h1>
         )}
-        <div className="ads-navbar__trailing">{trailing}</div>
+        <div className="prism-navbar__trailing">{trailing}</div>
       </div>
       {large && title != null && (
-        <h1 className="ads-navbar__large-title">{title}</h1>
+        <h1 className="prism-navbar__large-title">{title}</h1>
       )}
     </header>
   );

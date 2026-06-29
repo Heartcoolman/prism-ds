@@ -56,11 +56,11 @@ export const ProgressRing = forwardRef<HTMLDivElement, ProgressRingProps>(
         aria-valuemin={0}
         aria-valuemax={100}
         data-tone={tone}
-        className={cx("ads-ring", className)}
+        className={cx("prism-ring", className)}
         style={{ ...vars, ...style }}
         {...rest}
       >
-        <span className="ads-ring__label">{label ?? `${pct}%`}</span>
+        <span className="prism-ring__label">{label ?? `${pct}%`}</span>
       </div>
     );
   }

@@ -1,4 +1,4 @@
-@keyframes ads-skeleton-pulse {
+@keyframes prism-skeleton-pulse {
   0% {
     opacity: 1;
   }
@@ -10,15 +10,15 @@
   }
 }
 
-.ads-skeleton {
+.prism-skeleton {
   box-sizing: border-box;
   background: var(--fill-quaternary);
   border-radius: var(--radius-sm);
-  animation: ads-skeleton-pulse 1.4s ease-in-out infinite;
+  animation: prism-skeleton-pulse 1.4s ease-in-out infinite;
 }
 
 /* ---------- Text ---------- */
-.ads-skeleton--text-group {
+.prism-skeleton--text-group {
   display: flex;
   flex-direction: column;
   /* group itself is just a container, not a tinted block */
@@ -26,32 +26,32 @@
   animation: none;
 }
 
-.ads-skeleton__line {
+.prism-skeleton__line {
   display: block;
   width: 100%;
   height: 0.8em;
   margin-bottom: var(--s-2);
   background: var(--fill-quaternary);
   border-radius: var(--radius-sm);
-  animation: ads-skeleton-pulse 1.4s ease-in-out infinite;
+  animation: prism-skeleton-pulse 1.4s ease-in-out infinite;
 }
-.ads-skeleton__line:last-child {
+.prism-skeleton__line:last-child {
   margin-bottom: 0;
 }
 
 /* ---------- Rect ---------- */
-.ads-skeleton--rect {
+.prism-skeleton--rect {
   border-radius: var(--radius-sm);
 }
 
 /* ---------- Circle ---------- */
-.ads-skeleton--circle {
+.prism-skeleton--circle {
   border-radius: 50%;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .ads-skeleton,
-  .ads-skeleton__line {
+  .prism-skeleton,
+  .prism-skeleton__line {
     animation: none;
   }
 }

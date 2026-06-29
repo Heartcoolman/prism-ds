@@ -20,19 +20,19 @@ export const Switch = forwardRef<HTMLInputElement, SwitchProps>(function Switch(
   ref
 ) {
   return (
-    <label className={cx("ads-switch", disabled && "ads-switch--disabled", className)}>
+    <label className={cx("prism-switch", disabled && "prism-switch--disabled", className)}>
       <input
         ref={ref}
         type="checkbox"
         role="switch"
-        className="ads-switch__input"
+        className="prism-switch__input"
         disabled={disabled}
         {...rest}
       />
-      <span className="ads-switch__track" aria-hidden="true">
-        <span className="ads-switch__knob" />
+      <span className="prism-switch__track" aria-hidden="true">
+        <span className="prism-switch__knob" />
       </span>
-      {label != null && <span className="ads-switch__label">{label}</span>}
+      {label != null && <span className="prism-switch__label">{label}</span>}
     </label>
   );
 });

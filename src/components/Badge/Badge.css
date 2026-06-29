@@ -1,4 +1,4 @@
-.ads-badge {
+.prism-badge {
   --_fill: var(--color-danger);
 
   display: inline-flex;
@@ -20,15 +20,15 @@
 }
 
 /* ---------- Tone ---------- */
-.ads-badge[data-tone="accent"] {
+.prism-badge[data-tone="accent"] {
   --_fill: var(--color-accent);
 }
-.ads-badge[data-tone="gray"] {
+.prism-badge[data-tone="gray"] {
   --_fill: var(--label-tertiary);
 }
 
 /* ---------- Dot ---------- */
-.ads-badge--dot {
+.prism-badge--dot {
   min-width: 0;
   width: 8px;
   height: 8px;
@@ -36,11 +36,11 @@
 }
 
 /* ---------- Floating over children ---------- */
-.ads-badge-wrap {
+.prism-badge-wrap {
   position: relative;
   display: inline-flex;
 }
-.ads-badge--floating {
+.prism-badge--floating {
   position: absolute;
   top: 0;
   right: 0;

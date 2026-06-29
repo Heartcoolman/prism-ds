@@ -1,4 +1,4 @@
-.ads-spinner {
+.prism-spinner {
   --_size: 24px;
 
   display: inline-flex;
@@ -6,7 +6,7 @@
   gap: var(--s-2);
 }
 
-.ads-spinner__ring {
+.prism-spinner__ring {
   box-sizing: border-box;
   width: var(--_size);
   height: var(--_size);
@@ -14,33 +14,33 @@
   border: 3px solid var(--fill-tertiary);
   border-top-color: var(--color-accent);
   border-radius: 50%;
-  animation: ads-spin 0.8s linear infinite;
+  animation: prism-spin 0.8s linear infinite;
 }
 
-.ads-spinner__label {
+.prism-spinner__label {
   font: var(--text-subhead);
   color: var(--label-secondary);
 }
 
 /* ---------- Sizes ---------- */
-.ads-spinner--small {
+.prism-spinner--small {
   --_size: 16px;
 }
-.ads-spinner--medium {
+.prism-spinner--medium {
   --_size: 24px;
 }
-.ads-spinner--large {
+.prism-spinner--large {
   --_size: 36px;
 }
 
-@keyframes ads-spin {
+@keyframes prism-spin {
   to {
     transform: rotate(360deg);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .ads-spinner__ring {
+  .prism-spinner__ring {
     animation-duration: 1.6s;
   }
 }

@@ -1,21 +1,21 @@
-.ads-field {
+.prism-field {
   display: inline-flex;
   flex-direction: column;
   gap: var(--s-1);
   box-sizing: border-box;
 }
 
-.ads-field--full {
+.prism-field--full {
   display: flex;
   width: 100%;
 }
 
-.ads-field__label {
+.prism-field__label {
   font: var(--text-subhead);
   color: var(--label-secondary);
 }
 
-.ads-field__control {
+.prism-field__control {
   position: relative;
   display: flex;
   align-items: center;
@@ -29,12 +29,12 @@
     box-shadow var(--dur-exit) var(--ease-standard);
 }
 
-.ads-field__control:focus-within {
+.prism-field__control:focus-within {
   border-color: var(--color-accent);
   box-shadow: var(--focus-ring);
 }
 
-.ads-field__icon {
+.prism-field__icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -45,7 +45,7 @@
   color: var(--label-tertiary);
 }
 
-.ads-field__input {
+.prism-field__input {
   flex: 1 1 auto;
   width: 100%;
   min-width: 0;
@@ -60,41 +60,41 @@
   color: var(--label-primary);
 }
 
-.ads-field__icon + .ads-field__input {
+.prism-field__icon + .prism-field__input {
   padding-left: var(--s-2);
 }
 
-.ads-field__input:focus {
+.prism-field__input:focus {
   outline: none;
 }
 
-.ads-field__input::placeholder {
+.prism-field__input::placeholder {
   color: var(--label-tertiary);
 }
 
-.ads-field__message {
+.prism-field__message {
   margin: 0;
   font: var(--text-footnote);
   color: var(--label-tertiary);
 }
 
-.ads-field__message--error {
+.prism-field__message--error {
   color: var(--color-danger);
 }
 
 /* ---------- Error state ---------- */
-.ads-field--error .ads-field__control {
+.prism-field--error .prism-field__control {
   border-color: var(--color-danger);
 }
-.ads-field--error .ads-field__control:focus-within {
+.prism-field--error .prism-field__control:focus-within {
   border-color: var(--color-danger);
   box-shadow: 0 0 0 3px var(--tint-danger-bg);
 }
 
 /* ---------- Disabled state ---------- */
-.ads-field--disabled {
+.prism-field--disabled {
   opacity: 0.45;
 }
-.ads-field--disabled .ads-field__input {
+.prism-field--disabled .prism-field__input {
   cursor: not-allowed;
 }

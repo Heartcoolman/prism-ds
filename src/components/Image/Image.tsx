@@ -49,7 +49,7 @@ export const Image = forwardRef<HTMLDivElement, ImageProps>(function Image(
   return (
     <div
       ref={ref}
-      className={cx("ads-image", className)}
+      className={cx("prism-image", className)}
       style={{
         aspectRatio: RATIO_CSS[ratio],
         borderRadius:
@@ -63,9 +63,9 @@ export const Image = forwardRef<HTMLDivElement, ImageProps>(function Image(
       {...rest}
     >
       {src != null ? (
-        <img className="ads-image__img" src={src} alt={alt} />
+        <img className="prism-image__img" src={src} alt={alt} />
       ) : (
-        <span className="ads-image__placeholder" aria-hidden="true">
+        <span className="prism-image__placeholder" aria-hidden="true">
           <svg
             width="40"
             height="40"
@@ -82,8 +82,8 @@ export const Image = forwardRef<HTMLDivElement, ImageProps>(function Image(
           </svg>
         </span>
       )}
-      {overlay && <span className="ads-image__overlay" aria-hidden="true" />}
-      {children != null && <div className="ads-image__content">{children}</div>}
+      {overlay && <span className="prism-image__overlay" aria-hidden="true" />}
+      {children != null && <div className="prism-image__content">{children}</div>}
     </div>
   );
 });

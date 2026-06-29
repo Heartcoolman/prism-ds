@@ -1,16 +1,16 @@
-.ads-sheet {
+.prism-sheet {
   position: fixed;
   inset: 0;
   z-index: 1000;
 }
 
-.ads-sheet__scrim {
+.prism-sheet__scrim {
   position: fixed;
   inset: 0;
   background: var(--bg-overlay);
 }
 
-.ads-sheet__panel {
+.prism-sheet__panel {
   position: fixed;
   left: 0;
   right: 0;
@@ -23,10 +23,10 @@
   background: var(--bg);
   border-radius: var(--radius-sheet) var(--radius-sheet) 0 0;
   box-shadow: var(--shadow-4);
-  animation: ads-sheet-enter var(--dur-emphasized) var(--ease-emphasized);
+  animation: prism-sheet-enter var(--dur-emphasized) var(--ease-emphasized);
 }
 
-@keyframes ads-sheet-enter {
+@keyframes prism-sheet-enter {
   from {
     transform: translateY(100%);
   }
@@ -35,7 +35,7 @@
   }
 }
 
-.ads-sheet__handle {
+.prism-sheet__handle {
   width: 36px;
   height: 5px;
   margin: 0 auto var(--s-4);
@@ -43,19 +43,19 @@
   background: var(--separator-opaque);
 }
 
-.ads-sheet__title {
+.prism-sheet__title {
   margin-bottom: var(--s-4);
   font: var(--text-headline);
   color: var(--label-primary);
   text-align: left;
 }
 
-.ads-sheet__body {
+.prism-sheet__body {
   color: var(--label-primary);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .ads-sheet__panel {
+  .prism-sheet__panel {
     animation: none;
   }
 }

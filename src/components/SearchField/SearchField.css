@@ -1,4 +1,4 @@
-.ads-search {
+.prism-search {
   display: inline-flex;
   align-items: center;
   gap: var(--s-2);
@@ -13,16 +13,16 @@
   transition: box-shadow var(--dur-exit) var(--ease-standard);
 }
 
-.ads-search:focus-within {
+.prism-search:focus-within {
   box-shadow: var(--focus-ring);
 }
 
-.ads-search--full {
+.prism-search--full {
   display: flex;
   width: 100%;
 }
 
-.ads-search__icon {
+.prism-search__icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -32,7 +32,7 @@
   color: var(--label-tertiary);
 }
 
-.ads-search__input {
+.prism-search__input {
   flex: 1 1 auto;
   min-width: 0;
   margin: 0;
@@ -44,18 +44,18 @@
   font: var(--text-body);
 }
 
-.ads-search__input::placeholder {
+.prism-search__input::placeholder {
   color: var(--label-tertiary);
 }
 
 /* Hide native search clear/decoration to use our own. */
-.ads-search__input::-webkit-search-cancel-button,
-.ads-search__input::-webkit-search-decoration {
+.prism-search__input::-webkit-search-cancel-button,
+.prism-search__input::-webkit-search-decoration {
   -webkit-appearance: none;
   appearance: none;
 }
 
-.ads-search__clear {
+.prism-search__clear {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -72,11 +72,11 @@
   transition: filter var(--dur-exit) var(--ease-standard);
 }
 
-.ads-search__clear:hover {
+.prism-search__clear:hover {
   filter: brightness(0.95);
 }
 
-.ads-search__clear:focus-visible {
+.prism-search__clear:focus-visible {
   outline: none;
   box-shadow: var(--focus-ring);
 }

@@ -63,7 +63,7 @@ export const WithLeading: Story = {
             </span>
           }
           title="李伟"
-          subtitle="个人 Apple 账户"
+          subtitle="个人账户"
           chevron
           onClick={() => {}}
         />

@@ -31,19 +31,19 @@ export const Tooltip = forwardRef<HTMLSpanElement, TooltipProps>(function Toolti
     <span
       ref={ref}
       className={cx(
-        "ads-tooltip",
-        `ads-tooltip--${placement}`,
-        open && "ads-tooltip--open",
+        "prism-tooltip",
+        `prism-tooltip--${placement}`,
+        open && "prism-tooltip--open",
         className
       )}
       {...rest}
     >
-      <span className="ads-tooltip__trigger" aria-describedby={bubbleId}>
+      <span className="prism-tooltip__trigger" aria-describedby={bubbleId}>
         {children}
       </span>
-      <span id={bubbleId} role="tooltip" className="ads-tooltip__bubble">
+      <span id={bubbleId} role="tooltip" className="prism-tooltip__bubble">
         {label}
-        <span className="ads-tooltip__arrow" aria-hidden="true" />
+        <span className="prism-tooltip__arrow" aria-hidden="true" />
       </span>
     </span>
   );

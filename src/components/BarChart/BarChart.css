@@ -1,4 +1,4 @@
-.ads-barchart {
+.prism-barchart {
   display: flex;
   align-items: flex-end;
   gap: var(--s-3);
@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-.ads-barchart__col {
+.prism-barchart__col {
   display: flex;
   flex: 1 1 0;
   flex-direction: column;
@@ -14,7 +14,7 @@
   min-width: 0;
 }
 
-.ads-barchart__plot {
+.prism-barchart__plot {
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -23,7 +23,7 @@
   height: var(--_h);
 }
 
-.ads-barchart__bar {
+.prism-barchart__bar {
   position: relative;
   width: 100%;
   min-height: 2px;
@@ -32,11 +32,11 @@
   transition: height var(--dur-standard) var(--ease-standard);
 }
 
-.ads-barchart__bar--highlight {
+.prism-barchart__bar--highlight {
   background: var(--color-accent);
 }
 
-.ads-barchart__value {
+.prism-barchart__value {
   position: absolute;
   bottom: 100%;
   left: 50%;
@@ -48,7 +48,7 @@
   font-variant-numeric: tabular-nums;
 }
 
-.ads-barchart__label {
+.prism-barchart__label {
   margin-top: var(--s-2);
   font: var(--text-footnote);
   color: var(--label-tertiary);

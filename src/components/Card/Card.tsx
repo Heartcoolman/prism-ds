@@ -44,21 +44,21 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(function Card(
   return (
     <div
       ref={ref}
-      className={cx("ads-card", interactive && "ads-card--interactive", className)}
+      className={cx("prism-card", interactive && "prism-card--interactive", className)}
       {...rest}
     >
-      <div className="ads-card__media" aria-hidden={media == null ? true : undefined}>
-        {media != null ? media : <div className="ads-card__media-placeholder" />}
+      <div className="prism-card__media" aria-hidden={media == null ? true : undefined}>
+        {media != null ? media : <div className="prism-card__media-placeholder" />}
       </div>
       {hasBody && (
-        <div className="ads-card__body">
-          {eyebrow != null && <div className="ads-card__eyebrow">{eyebrow}</div>}
-          {title != null && <div className="ads-card__title">{title}</div>}
+        <div className="prism-card__body">
+          {eyebrow != null && <div className="prism-card__eyebrow">{eyebrow}</div>}
+          {title != null && <div className="prism-card__title">{title}</div>}
           {description != null && (
-            <p className="ads-card__description">{description}</p>
+            <p className="prism-card__description">{description}</p>
           )}
           {children}
-          {footer != null && <div className="ads-card__footer">{footer}</div>}
+          {footer != null && <div className="prism-card__footer">{footer}</div>}
         </div>
       )}
     </div>

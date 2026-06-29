@@ -51,15 +51,15 @@ export function Popover({
   }, [open, onClose]);
 
   return (
-    <span className="ads-popover" ref={rootRef}>
+    <span className="prism-popover" ref={rootRef}>
       {children}
       {open && (
         <div
           role="dialog"
-          className={cx("ads-popover__card", `ads-popover__card--${placement}`, className)}
+          className={cx("prism-popover__card", `prism-popover__card--${placement}`, className)}
           {...rest}
         >
-          <span className="ads-popover__arrow" aria-hidden="true" />
+          <span className="prism-popover__arrow" aria-hidden="true" />
           {content}
         </div>
       )}

@@ -1,14 +1,14 @@
-.ads-linechart {
+.prism-linechart {
   display: block;
   width: 100%;
   height: auto;
   overflow: visible;
 }
 
-.ads-linechart__line {
+.prism-linechart__line {
   transition: stroke var(--dur-standard) var(--ease-standard);
 }
 
-.ads-linechart__dot {
+.prism-linechart__dot {
   transition: fill var(--dur-standard) var(--ease-standard);
 }

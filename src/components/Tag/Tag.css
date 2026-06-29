@@ -1,4 +1,4 @@
-.ads-tag {
+.prism-tag {
   --_bg: var(--fill-tertiary);
   --_fg: var(--label-secondary);
 
@@ -20,44 +20,44 @@
 }
 
 /* ---------- Tone ---------- */
-.ads-tag[data-tone="accent"] {
+.prism-tag[data-tone="accent"] {
   --_bg: var(--tint-accent-bg);
   --_fg: var(--color-accent);
 }
-.ads-tag[data-tone="success"] {
+.prism-tag[data-tone="success"] {
   --_bg: var(--tint-success-bg);
   --_fg: var(--color-success);
 }
-.ads-tag[data-tone="warning"] {
+.prism-tag[data-tone="warning"] {
   --_bg: var(--tint-warning-bg);
   --_fg: var(--color-warning);
 }
-.ads-tag[data-tone="danger"] {
+.prism-tag[data-tone="danger"] {
   --_bg: var(--tint-danger-bg);
   --_fg: var(--color-danger);
 }
 
 /* ---------- Selected ---------- */
-.ads-tag--selected {
+.prism-tag--selected {
   --_bg: var(--tint-accent-bg);
   --_fg: var(--color-accent);
   box-shadow: inset 0 0 0 1px var(--color-accent);
 }
 
 /* ---------- Interactive ---------- */
-.ads-tag--interactive {
+.prism-tag--interactive {
   cursor: pointer;
 }
-.ads-tag--interactive:hover {
+.prism-tag--interactive:hover {
   filter: brightness(0.97);
 }
-.ads-tag--interactive:focus-visible {
+.prism-tag--interactive:focus-visible {
   outline: none;
   box-shadow: var(--focus-ring);
 }
 
 /* ---------- Remove ---------- */
-.ads-tag__remove {
+.prism-tag__remove {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -73,10 +73,10 @@
   opacity: 0.7;
   transition: opacity var(--dur-exit) var(--ease-standard);
 }
-.ads-tag__remove:hover {
+.prism-tag__remove:hover {
   opacity: 1;
 }
-.ads-tag__remove:focus-visible {
+.prism-tag__remove:focus-visible {
   outline: none;
   box-shadow: var(--focus-ring);
 }

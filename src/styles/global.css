@@ -10,9 +10,9 @@
 }
 
 /* Root context: establishes font + color + smoothing. Apply via
-   <AppleProvider> or by adding the .ads-root class / [data-ads-root]. */
-.ads-root,
-[data-ads-root] {
+   <ThemeProvider> or by adding the .prism-root class / [data-prism-root]. */
+.prism-root,
+[data-prism-root] {
   font: var(--text-body);
   font-family: var(--font-sans);
   color: var(--label-primary);
@@ -85,7 +85,7 @@
 }
 
 /* ---------- Accessibility ---------- */
-:where(.ads-root) :focus-visible {
+:where(.prism-root) :focus-visible {
   outline: 3px solid rgba(0, 102, 204, 0.4);
   outline-offset: 2px;
 }

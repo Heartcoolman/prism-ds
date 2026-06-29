@@ -73,15 +73,15 @@ export const Toast = forwardRef<HTMLDivElement, ToastProps>(function Toast(
       role="status"
       aria-live="polite"
       data-variant={variant}
-      className={cx("ads-toast", className)}
+      className={cx("prism-toast", className)}
       {...rest}
     >
       {resolvedIcon != null && (
-        <span className="ads-toast__icon" aria-hidden="true">
+        <span className="prism-toast__icon" aria-hidden="true">
           {resolvedIcon}
         </span>
       )}
-      <span className="ads-toast__message">{message}</span>
+      <span className="prism-toast__message">{message}</span>
     </div>
   );
 });

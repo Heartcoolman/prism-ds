@@ -19,16 +19,16 @@ export const Radio = forwardRef<HTMLInputElement, RadioProps>(function Radio(
   ref
 ) {
   return (
-    <label className={cx("ads-radio", disabled && "ads-radio--disabled", className)}>
+    <label className={cx("prism-radio", disabled && "prism-radio--disabled", className)}>
       <input
         ref={ref}
         type="radio"
-        className="ads-radio__input"
+        className="prism-radio__input"
         disabled={disabled}
         {...rest}
       />
-      <span className="ads-radio__control" aria-hidden="true" />
-      {label != null && <span className="ads-radio__label">{label}</span>}
+      <span className="prism-radio__control" aria-hidden="true" />
+      {label != null && <span className="prism-radio__label">{label}</span>}
     </label>
   );
 });
@@ -76,7 +76,7 @@ export function RadioGroup({
     <div
       role="radiogroup"
       aria-label={ariaLabel}
-      className={cx("ads-radio-group", `ads-radio-group--${orientation}`, className)}
+      className={cx("prism-radio-group", `prism-radio-group--${orientation}`, className)}
     >
       {options.map((option) => (
         <Radio

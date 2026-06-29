@@ -40,14 +40,14 @@ export const PageControl = forwardRef<HTMLDivElement, PageControlProps>(
         ref={ref}
         role={interactive ? "tablist" : "group"}
         aria-label={ariaLabel}
-        className={cx("ads-pagecontrol", className)}
+        className={cx("prism-pagecontrol", className)}
         {...rest}
       >
         {dots.map((i) => {
           const current = i === index;
           const dotClass = cx(
-            "ads-pagecontrol__dot",
-            current && "ads-pagecontrol__dot--current"
+            "prism-pagecontrol__dot",
+            current && "prism-pagecontrol__dot--current"
           );
 
           if (interactive) {
@@ -58,10 +58,10 @@ export const PageControl = forwardRef<HTMLDivElement, PageControlProps>(
                 role="tab"
                 aria-selected={current}
                 aria-label={`第 ${i + 1} 页`}
-                className={cx(dotClass, "ads-pagecontrol__dot--button")}
+                className={cx(dotClass, "prism-pagecontrol__dot--button")}
                 onClick={() => onChange?.(i)}
               >
-                <span className="ads-pagecontrol__mark" aria-hidden="true" />
+                <span className="prism-pagecontrol__mark" aria-hidden="true" />
               </button>
             );
           }

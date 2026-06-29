@@ -48,12 +48,12 @@ export const Menu = forwardRef<HTMLDivElement, MenuProps>(function Menu(
     <div
       ref={ref}
       role="menu"
-      className={cx("ads-menu", className)}
+      className={cx("prism-menu", className)}
       {...rest}
     >
       {items.map((entry, i) => {
         if (isSeparator(entry)) {
-          return <div key={i} className="ads-menu__separator" role="separator" />;
+          return <div key={i} className="prism-menu__separator" role="separator" />;
         }
 
         const { label, icon, danger, disabled, onSelect } = entry;
@@ -63,18 +63,18 @@ export const Menu = forwardRef<HTMLDivElement, MenuProps>(function Menu(
             type="button"
             role="menuitem"
             disabled={disabled}
-            className={cx("ads-menu__item", danger && "ads-menu__item--danger")}
+            className={cx("prism-menu__item", danger && "prism-menu__item--danger")}
             onClick={() => {
               onSelect?.();
               onClose?.();
             }}
           >
             {icon != null && (
-              <span className="ads-menu__icon" aria-hidden="true">
+              <span className="prism-menu__icon" aria-hidden="true">
                 {icon}
               </span>
             )}
-            <span className="ads-menu__label">{label}</span>
+            <span className="prism-menu__label">{label}</span>
           </button>
         );
       })}

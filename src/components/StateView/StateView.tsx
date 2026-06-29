@@ -59,17 +59,17 @@ export const StateView = forwardRef<HTMLDivElement, StateViewProps>(
         ref={ref}
         role={role}
         data-variant={variant}
-        className={cx("ads-state", className)}
+        className={cx("prism-state", className)}
         {...rest}
       >
-        <div className="ads-state__icon" aria-hidden="true">
+        <div className="prism-state__icon" aria-hidden="true">
           {icon ?? defaultIcon(variant)}
         </div>
-        <div className="ads-state__title">{title}</div>
+        <div className="prism-state__title">{title}</div>
         {description != null && (
-          <p className="ads-state__description">{description}</p>
+          <p className="prism-state__description">{description}</p>
         )}
-        {action != null && <div className="ads-state__action">{action}</div>}
+        {action != null && <div className="prism-state__action">{action}</div>}
       </div>
     );
   }

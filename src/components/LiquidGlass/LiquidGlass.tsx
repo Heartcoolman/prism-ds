@@ -20,7 +20,7 @@ export const LiquidGlass = forwardRef<HTMLDivElement, LiquidGlassProps>(
     return (
       <div
         ref={ref}
-        className={cx("ads-liquid-glass", pill && "ads-liquid-glass--pill", className)}
+        className={cx("prism-liquid-glass", pill && "prism-liquid-glass--pill", className)}
         {...rest}
       >
         {children}

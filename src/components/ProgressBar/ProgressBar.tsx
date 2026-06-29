@@ -33,14 +33,14 @@ export const ProgressBar = forwardRef<HTMLDivElement, ProgressBarProps>(
         aria-valuemin={indeterminate ? undefined : 0}
         aria-valuemax={indeterminate ? undefined : 100}
         className={cx(
-          "ads-progress",
-          indeterminate && "ads-progress--indeterminate",
+          "prism-progress",
+          indeterminate && "prism-progress--indeterminate",
           className
         )}
         {...rest}
       >
         <div
-          className="ads-progress__fill"
+          className="prism-progress__fill"
           style={indeterminate ? undefined : { width: `${clamped}%` }}
         />
       </div>

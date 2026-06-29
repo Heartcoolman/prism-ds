@@ -48,9 +48,9 @@ export const SegmentedControl = forwardRef<HTMLDivElement, SegmentedControlProps
         ref={ref}
         role="group"
         className={cx(
-          "ads-segmented",
-          `ads-segmented--${size}`,
-          fullWidth && "ads-segmented--full",
+          "prism-segmented",
+          `prism-segmented--${size}`,
+          fullWidth && "prism-segmented--full",
           className
         )}
         {...rest}
@@ -63,12 +63,12 @@ export const SegmentedControl = forwardRef<HTMLDivElement, SegmentedControlProps
               type="button"
               aria-pressed={selected}
               className={cx(
-                "ads-segmented__segment",
-                selected && "ads-segmented__segment--selected"
+                "prism-segmented__segment",
+                selected && "prism-segmented__segment--selected"
               )}
               onClick={() => onChange(option.value)}
             >
-              <span className="ads-segmented__label">{option.label}</span>
+              <span className="prism-segmented__label">{option.label}</span>
             </button>
           );
         })}

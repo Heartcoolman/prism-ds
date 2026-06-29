@@ -32,9 +32,9 @@ export const SearchField = forwardRef<HTMLInputElement, SearchFieldProps>(
     return (
       <div
         role="search"
-        className={cx("ads-search", fullWidth && "ads-search--full", className)}
+        className={cx("prism-search", fullWidth && "prism-search--full", className)}
       >
-        <span className="ads-search__icon" aria-hidden="true">
+        <span className="prism-search__icon" aria-hidden="true">
           <svg
             width="18"
             height="18"
@@ -53,7 +53,7 @@ export const SearchField = forwardRef<HTMLInputElement, SearchFieldProps>(
           ref={ref}
           type="search"
           aria-label="搜索"
-          className="ads-search__input"
+          className="prism-search__input"
           placeholder={placeholder}
           value={value}
           {...rest}
@@ -61,7 +61,7 @@ export const SearchField = forwardRef<HTMLInputElement, SearchFieldProps>(
         {hasValue && (
           <button
             type="button"
-            className="ads-search__clear"
+            className="prism-search__clear"
             aria-label="清除"
             onClick={onClear}
           >

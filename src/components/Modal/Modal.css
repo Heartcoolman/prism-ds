@@ -1,4 +1,4 @@
-.ads-modal__scrim {
+.prism-modal__scrim {
   position: fixed;
   inset: 0;
   display: grid;
@@ -8,7 +8,7 @@
   z-index: 1000;
 }
 
-.ads-modal {
+.prism-modal {
   box-sizing: border-box;
   width: 100%;
   max-width: 360px;
@@ -19,24 +19,24 @@
   text-align: center;
 }
 
-.ads-modal__title {
+.prism-modal__title {
   margin: 0;
   font: var(--text-headline);
   color: var(--label-primary);
 }
 
-.ads-modal__body {
+.prism-modal__body {
   margin-top: var(--s-2);
   font: var(--text-subhead);
   color: var(--label-secondary);
 }
 
-.ads-modal__actions {
+.prism-modal__actions {
   display: flex;
   gap: var(--s-2);
   margin-top: var(--s-5);
 }
 
-.ads-modal__actions > * {
+.prism-modal__actions > * {
   flex: 1;
 }

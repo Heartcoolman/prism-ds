@@ -62,7 +62,7 @@ export const BarChart = forwardRef<HTMLDivElement, BarChartProps>(
         ref={ref}
         role="img"
         aria-label={summary}
-        className={cx("ads-barchart", className)}
+        className={cx("prism-barchart", className)}
         style={{ ...vars, ...style }}
         {...rest}
       >
@@ -70,21 +70,21 @@ export const BarChart = forwardRef<HTMLDivElement, BarChartProps>(
           const pct = max > 0 ? (d.value / max) * 100 : 0;
           const highlighted = i === accentIndex;
           return (
-            <div className="ads-barchart__col" key={i}>
-              <div className="ads-barchart__plot">
+            <div className="prism-barchart__col" key={i}>
+              <div className="prism-barchart__plot">
                 <div
                   className={cx(
-                    "ads-barchart__bar",
-                    highlighted && "ads-barchart__bar--highlight"
+                    "prism-barchart__bar",
+                    highlighted && "prism-barchart__bar--highlight"
                   )}
                   style={{ height: `${pct}%` }}
                 >
                   {showValues && highlighted && (
-                    <span className="ads-barchart__value">{d.value}</span>
+                    <span className="prism-barchart__value">{d.value}</span>
                   )}
                 </div>
               </div>
-              <div className="ads-barchart__label">{d.label}</div>
+              <div className="prism-barchart__label">{d.label}</div>
             </div>
           );
         })}

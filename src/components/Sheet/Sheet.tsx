@@ -37,21 +37,21 @@ export const Sheet = forwardRef<HTMLDivElement, SheetProps>(function Sheet(
   if (!open) return null;
 
   return (
-    <div className="ads-sheet">
+    <div className="prism-sheet">
       <div
-        className="ads-sheet__scrim"
+        className="prism-sheet__scrim"
         onClick={dismissOnScrim ? () => onClose?.() : undefined}
       />
       <div
         ref={ref}
         role="dialog"
         aria-modal="true"
-        className={cx("ads-sheet__panel", className)}
+        className={cx("prism-sheet__panel", className)}
         {...rest}
       >
-        <div className="ads-sheet__handle" aria-hidden="true" />
-        {title != null && <div className="ads-sheet__title">{title}</div>}
-        <div className="ads-sheet__body">{children}</div>
+        <div className="prism-sheet__handle" aria-hidden="true" />
+        {title != null && <div className="prism-sheet__title">{title}</div>}
+        <div className="prism-sheet__body">{children}</div>
       </div>
     </div>
   );

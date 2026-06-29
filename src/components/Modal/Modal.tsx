@@ -55,23 +55,23 @@ export const Modal = forwardRef<HTMLDivElement, ModalProps>(function Modal(
   }
 
   return (
-    <div className="ads-modal__scrim" onClick={onScrimClick}>
+    <div className="prism-modal__scrim" onClick={onScrimClick}>
       <div
         ref={ref}
         role="dialog"
         aria-modal="true"
         aria-label={title == null ? "对话框" : undefined}
         aria-labelledby={title == null ? undefined : titleId}
-        className={cx("ads-modal", className)}
+        className={cx("prism-modal", className)}
         {...rest}
       >
         {title != null && (
-          <h2 id={titleId} className="ads-modal__title">
+          <h2 id={titleId} className="prism-modal__title">
             {title}
           </h2>
         )}
-        {children != null && <div className="ads-modal__body">{children}</div>}
-        {actions != null && <div className="ads-modal__actions">{actions}</div>}
+        {children != null && <div className="prism-modal__body">{children}</div>}
+        {actions != null && <div className="prism-modal__actions">{actions}</div>}
       </div>
     </div>
   );

@@ -23,19 +23,19 @@ export const Slider = forwardRef<HTMLInputElement, SliderProps>(function Slider(
   const hasHeader = label != null || showValue;
 
   return (
-    <div className={cx("ads-slider", className)}>
+    <div className={cx("prism-slider", className)}>
       {hasHeader && (
-        <div className="ads-slider__header">
-          {label != null && <span className="ads-slider__label">{label}</span>}
+        <div className="prism-slider__header">
+          {label != null && <span className="prism-slider__label">{label}</span>}
           {showValue && (
-            <span className="ads-slider__value">{current ?? ""}</span>
+            <span className="prism-slider__value">{current ?? ""}</span>
           )}
         </div>
       )}
       <input
         ref={ref}
         type="range"
-        className="ads-slider__input"
+        className="prism-slider__input"
         value={value}
         defaultValue={defaultValue}
         {...rest}

@@ -58,15 +58,15 @@ export const DatePicker = forwardRef<HTMLDivElement, DatePickerProps>(
     return (
       <div
         ref={ref}
-        className={cx("ads-datepicker", className)}
+        className={cx("prism-datepicker", className)}
         role="group"
         aria-label={label}
         {...rest}
       >
-        <div className="ads-datepicker__header">
+        <div className="prism-datepicker__header">
           <button
             type="button"
-            className="ads-datepicker__nav"
+            className="prism-datepicker__nav"
             aria-label="上个月"
             onClick={() => goTo(-1)}
           >
@@ -74,10 +74,10 @@ export const DatePicker = forwardRef<HTMLDivElement, DatePickerProps>(
               <path d="m15 18-6-6 6-6" />
             </svg>
           </button>
-          <span className="ads-datepicker__title">{label}</span>
+          <span className="prism-datepicker__title">{label}</span>
           <button
             type="button"
-            className="ads-datepicker__nav"
+            className="prism-datepicker__nav"
             aria-label="下个月"
             onClick={() => goTo(1)}
           >
@@ -87,15 +87,15 @@ export const DatePicker = forwardRef<HTMLDivElement, DatePickerProps>(
           </button>
         </div>
 
-        <div className="ads-datepicker__weekdays" aria-hidden="true">
+        <div className="prism-datepicker__weekdays" aria-hidden="true">
           {WEEKDAYS.map((w) => (
-            <span key={w} className="ads-datepicker__weekday">
+            <span key={w} className="prism-datepicker__weekday">
               {w}
             </span>
           ))}
         </div>
 
-        <div className="ads-datepicker__grid" role="grid">
+        <div className="prism-datepicker__grid" role="grid">
           {days.map((day) => {
             const outside = day.getMonth() !== month;
             const selected = value != null && isSameDay(day, value);
@@ -107,10 +107,10 @@ export const DatePicker = forwardRef<HTMLDivElement, DatePickerProps>(
                 role="gridcell"
                 aria-selected={selected}
                 className={cx(
-                  "ads-datepicker__day",
-                  outside && "ads-datepicker__day--outside",
-                  selected && "ads-datepicker__day--selected",
-                  !selected && isToday && "ads-datepicker__day--today"
+                  "prism-datepicker__day",
+                  outside && "prism-datepicker__day--outside",
+                  selected && "prism-datepicker__day--selected",
+                  !selected && isToday && "prism-datepicker__day--today"
                 )}
                 onClick={() => onChange?.(day)}
               >

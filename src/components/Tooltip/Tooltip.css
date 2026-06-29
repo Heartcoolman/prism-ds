@@ -1,13 +1,13 @@
-.ads-tooltip {
+.prism-tooltip {
   position: relative;
   display: inline-flex;
 }
 
-.ads-tooltip__trigger {
+.prism-tooltip__trigger {
   display: inline-flex;
 }
 
-.ads-tooltip__bubble {
+.prism-tooltip__bubble {
   position: absolute;
   z-index: 1;
   width: max-content;
@@ -27,14 +27,14 @@
     visibility var(--dur-enter) var(--ease-enter);
 }
 
-.ads-tooltip:hover .ads-tooltip__bubble,
-.ads-tooltip:focus-within .ads-tooltip__bubble,
-.ads-tooltip--open .ads-tooltip__bubble {
+.prism-tooltip:hover .prism-tooltip__bubble,
+.prism-tooltip:focus-within .prism-tooltip__bubble,
+.prism-tooltip--open .prism-tooltip__bubble {
   opacity: 1;
   visibility: visible;
 }
 
-.ads-tooltip__arrow {
+.prism-tooltip__arrow {
   position: absolute;
   width: var(--s-2);
   height: var(--s-2);
@@ -43,49 +43,49 @@
 }
 
 /* ---------- Placement ---------- */
-.ads-tooltip--top .ads-tooltip__bubble {
+.prism-tooltip--top .prism-tooltip__bubble {
   bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: var(--s-2);
 }
-.ads-tooltip--top .ads-tooltip__arrow {
+.prism-tooltip--top .prism-tooltip__arrow {
   bottom: calc(var(--s-1) * -1);
   left: 50%;
   margin-left: calc(var(--s-1) * -1);
 }
 
-.ads-tooltip--bottom .ads-tooltip__bubble {
+.prism-tooltip--bottom .prism-tooltip__bubble {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
   margin-top: var(--s-2);
 }
-.ads-tooltip--bottom .ads-tooltip__arrow {
+.prism-tooltip--bottom .prism-tooltip__arrow {
   top: calc(var(--s-1) * -1);
   left: 50%;
   margin-left: calc(var(--s-1) * -1);
 }
 
-.ads-tooltip--left .ads-tooltip__bubble {
+.prism-tooltip--left .prism-tooltip__bubble {
   right: 100%;
   top: 50%;
   transform: translateY(-50%);
   margin-right: var(--s-2);
 }
-.ads-tooltip--left .ads-tooltip__arrow {
+.prism-tooltip--left .prism-tooltip__arrow {
   right: calc(var(--s-1) * -1);
   top: 50%;
   margin-top: calc(var(--s-1) * -1);
 }
 
-.ads-tooltip--right .ads-tooltip__bubble {
+.prism-tooltip--right .prism-tooltip__bubble {
   left: 100%;
   top: 50%;
   transform: translateY(-50%);
   margin-left: var(--s-2);
 }
-.ads-tooltip--right .ads-tooltip__arrow {
+.prism-tooltip--right .prism-tooltip__arrow {
   left: calc(var(--s-1) * -1);
   top: 50%;
   margin-top: calc(var(--s-1) * -1);

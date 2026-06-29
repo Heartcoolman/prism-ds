@@ -44,18 +44,18 @@ export const Tag = forwardRef<HTMLSpanElement, TagProps>(function Tag(
       aria-pressed={interactive ? selected : undefined}
       onClick={onClick}
       className={cx(
-        "ads-tag",
-        selected && "ads-tag--selected",
-        interactive && "ads-tag--interactive",
+        "prism-tag",
+        selected && "prism-tag--selected",
+        interactive && "prism-tag--interactive",
         className
       )}
       {...rest}
     >
-      <span className="ads-tag__label">{children}</span>
+      <span className="prism-tag__label">{children}</span>
       {onRemove != null && (
         <button
           type="button"
-          className="ads-tag__remove"
+          className="prism-tag__remove"
           aria-label="移除"
           onClick={(e) => {
             e.stopPropagation();

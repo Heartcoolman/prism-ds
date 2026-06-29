@@ -1,4 +1,4 @@
-.ads-ring {
+.prism-ring {
   --_accent: var(--color-accent);
 
   position: relative;
@@ -17,7 +17,7 @@
 }
 
 /* Inner mask carves the disc into a ring. */
-.ads-ring::after {
+.prism-ring::after {
   content: "";
   position: absolute;
   inset: var(--_thickness);
@@ -25,7 +25,7 @@
   background: var(--bg);
 }
 
-.ads-ring__label {
+.prism-ring__label {
   position: relative;
   z-index: 1;
   font: var(--text-headline);
@@ -34,9 +34,9 @@
 }
 
 /* ---------- Tone ---------- */
-.ads-ring[data-tone="success"] {
+.prism-ring[data-tone="success"] {
   --_accent: var(--color-success);
 }
-.ads-ring[data-tone="danger"] {
+.prism-ring[data-tone="danger"] {
   --_accent: var(--color-danger);
 }

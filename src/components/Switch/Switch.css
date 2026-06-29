@@ -1,4 +1,4 @@
-.ads-switch {
+.prism-switch {
   display: inline-flex;
   align-items: center;
   gap: var(--s-2);
@@ -7,7 +7,7 @@
   -webkit-user-select: none;
 }
 
-.ads-switch__input {
+.prism-switch__input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -20,7 +20,7 @@
   white-space: nowrap;
 }
 
-.ads-switch__track {
+.prism-switch__track {
   position: relative;
   box-sizing: border-box;
   display: inline-flex;
@@ -34,7 +34,7 @@
   transition: background var(--dur-exit) var(--ease-standard);
 }
 
-.ads-switch__knob {
+.prism-switch__knob {
   width: 27px;
   height: 27px;
   border-radius: var(--radius-pill);
@@ -44,24 +44,24 @@
   transition: transform var(--dur-exit) var(--ease-standard);
 }
 
-.ads-switch__input:checked ~ .ads-switch__track {
+.prism-switch__input:checked ~ .prism-switch__track {
   background: var(--color-accent);
 }
-.ads-switch__input:checked ~ .ads-switch__track .ads-switch__knob {
+.prism-switch__input:checked ~ .prism-switch__track .prism-switch__knob {
   transform: translateX(20px);
 }
 
-.ads-switch__input:focus-visible ~ .ads-switch__track {
+.prism-switch__input:focus-visible ~ .prism-switch__track {
   outline: none;
   box-shadow: var(--focus-ring);
 }
 
-.ads-switch__label {
+.prism-switch__label {
   font: var(--text-body);
   color: var(--label-primary);
 }
 
-.ads-switch--disabled {
+.prism-switch--disabled {
   cursor: not-allowed;
   opacity: 0.35;
 }

@@ -35,7 +35,7 @@ export const TabBar = forwardRef<HTMLDivElement, TabBarProps>(function TabBar(
     <div
       ref={ref}
       role="tablist"
-      className={cx("ads-tabbar", className)}
+      className={cx("prism-tabbar", className)}
       {...rest}
     >
       {items.map((item) => {
@@ -48,15 +48,15 @@ export const TabBar = forwardRef<HTMLDivElement, TabBarProps>(function TabBar(
             aria-selected={selected}
             aria-label={typeof item.label === "string" ? item.label : item.key}
             className={cx(
-              "ads-tabbar__tab",
-              selected && "ads-tabbar__tab--selected"
+              "prism-tabbar__tab",
+              selected && "prism-tabbar__tab--selected"
             )}
             onClick={() => onChange(item.key)}
           >
-            <span className="ads-tabbar__icon" aria-hidden="true">
+            <span className="prism-tabbar__icon" aria-hidden="true">
               {item.icon}
             </span>
-            <span className="ads-tabbar__label">{item.label}</span>
+            <span className="prism-tabbar__label">{item.label}</span>
           </button>
         );
       })}

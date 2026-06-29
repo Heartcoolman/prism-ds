@@ -63,7 +63,7 @@ export const Alert = forwardRef<HTMLDivElement, AlertProps>(function Alert(
 
   return (
     <div
-      className="ads-alert__scrim"
+      className="prism-alert__scrim"
       onClick={() => onClose?.()}
       onKeyDown={handleScrimKeyDown}
     >
@@ -71,32 +71,32 @@ export const Alert = forwardRef<HTMLDivElement, AlertProps>(function Alert(
         ref={ref}
         role="alertdialog"
         aria-modal="true"
-        className={cx("ads-alert", className)}
+        className={cx("prism-alert", className)}
         onClick={(event) => event.stopPropagation()}
         {...rest}
       >
-        <div className="ads-alert__content">
-          <div className="ads-alert__title">{title}</div>
+        <div className="prism-alert__content">
+          <div className="prism-alert__title">{title}</div>
           {message != null && (
-            <div className="ads-alert__message">{message}</div>
+            <div className="prism-alert__message">{message}</div>
           )}
         </div>
         <div
           className={cx(
-            "ads-alert__actions",
-            stacked && "ads-alert__actions--stacked"
+            "prism-alert__actions",
+            stacked && "prism-alert__actions--stacked"
           )}
         >
           <button
             type="button"
-            className="ads-alert__action ads-alert__action--cancel"
+            className="prism-alert__action prism-alert__action--cancel"
             onClick={() => onClose?.()}
           >
             {cancelLabel}
           </button>
           <button
             type="button"
-            className="ads-alert__action ads-alert__action--confirm"
+            className="prism-alert__action prism-alert__action--confirm"
             data-destructive={destructive ? "true" : undefined}
             onClick={() => onConfirm?.()}
           >

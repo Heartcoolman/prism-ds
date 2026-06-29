@@ -1,4 +1,4 @@
-.ads-avatar {
+.prism-avatar {
   --_size: 40px;
   --_font: var(--text-subhead);
 
@@ -17,7 +17,7 @@
   -webkit-user-select: none;
 }
 
-.ads-avatar__img {
+.prism-avatar__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -25,13 +25,13 @@
   border-radius: inherit;
 }
 
-.ads-avatar__initials {
+.prism-avatar__initials {
   font: var(--_font);
   font-weight: 600;
   line-height: 1;
 }
 
-.ads-avatar__status {
+.prism-avatar__status {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -43,37 +43,37 @@
 }
 
 /* ---------- Sizes ---------- */
-.ads-avatar--small {
+.prism-avatar--small {
   --_size: 28px;
   --_font: var(--text-footnote);
 }
-.ads-avatar--medium {
+.prism-avatar--medium {
   --_size: 40px;
   --_font: var(--text-subhead);
 }
-.ads-avatar--large {
+.prism-avatar--large {
   --_size: 56px;
   --_font: var(--text-headline);
 }
 
 /* ---------- Group ---------- */
-.ads-avatar-group {
+.prism-avatar-group {
   display: inline-flex;
   align-items: center;
 }
 
-.ads-avatar-group__item {
+.prism-avatar-group__item {
   display: inline-flex;
 }
-.ads-avatar-group__item + .ads-avatar-group__item {
+.prism-avatar-group__item + .prism-avatar-group__item {
   margin-left: calc(-1 * var(--s-2));
 }
 
-.ads-avatar-group .ads-avatar {
+.prism-avatar-group .prism-avatar {
   box-shadow: 0 0 0 2px var(--bg);
 }
 
-.ads-avatar-group__more {
+.prism-avatar-group__more {
   background: var(--fill-tertiary);
   color: var(--label-secondary);
 }

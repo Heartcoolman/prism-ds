@@ -1,4 +1,4 @@
-.ads-progress {
+.prism-progress {
   --_fill: var(--color-accent);
 
   position: relative;
@@ -10,15 +10,15 @@
 }
 
 /* ---------- Tone ---------- */
-.ads-progress[data-tone="success"] {
+.prism-progress[data-tone="success"] {
   --_fill: var(--color-success);
 }
-.ads-progress[data-tone="danger"] {
+.prism-progress[data-tone="danger"] {
   --_fill: var(--color-danger);
 }
 
 /* ---------- Fill ---------- */
-.ads-progress__fill {
+.prism-progress__fill {
   height: 100%;
   background: var(--_fill);
   border-radius: var(--radius-pill);
@@ -26,15 +26,15 @@
 }
 
 /* ---------- Indeterminate ---------- */
-.ads-progress--indeterminate .ads-progress__fill {
+.prism-progress--indeterminate .prism-progress__fill {
   width: 40%;
   transition: none;
-  animation: ads-progress-slide var(--dur-standard) var(--ease-standard)
+  animation: prism-progress-slide var(--dur-standard) var(--ease-standard)
     infinite;
   animation-duration: 1.2s;
 }
 
-@keyframes ads-progress-slide {
+@keyframes prism-progress-slide {
   0% {
     transform: translateX(-100%);
   }

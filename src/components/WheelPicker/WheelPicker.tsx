@@ -69,17 +69,17 @@ export const WheelPicker = forwardRef<HTMLDivElement, WheelPickerProps>(
     const count = visibleCount % 2 === 0 ? visibleCount + 1 : visibleCount;
 
     return (
-      <div ref={ref} className={cx("ads-wheel", className)} {...rest}>
+      <div ref={ref} className={cx("prism-wheel", className)} {...rest}>
         {columns.map((column, columnIndex) => {
           const rows = buildRows(column, count);
           return (
             <div
               key={column.key ?? columnIndex}
               role="listbox"
-              className="ads-wheel__column"
+              className="prism-wheel__column"
               style={{ height: `calc(36px * ${count})` }}
             >
-              <div className="ads-wheel__band" aria-hidden="true" />
+              <div className="prism-wheel__band" aria-hidden="true" />
               {rows.map((row, rowIndex) => {
                 const selected = row.offset === 0 && row.option != null;
                 const distance = Math.min(Math.abs(row.offset), 2);
@@ -87,7 +87,7 @@ export const WheelPicker = forwardRef<HTMLDivElement, WheelPickerProps>(
                   return (
                     <div
                       key={`pad-${rowIndex}`}
-                      className="ads-wheel__row ads-wheel__row--pad"
+                      className="prism-wheel__row prism-wheel__row--pad"
                       aria-hidden="true"
                     />
                   );
@@ -99,8 +99,8 @@ export const WheelPicker = forwardRef<HTMLDivElement, WheelPickerProps>(
                     aria-selected={selected}
                     data-distance={distance}
                     className={cx(
-                      "ads-wheel__row",
-                      selected && "ads-wheel__row--selected"
+                      "prism-wheel__row",
+                      selected && "prism-wheel__row--selected"
                     )}
                     onClick={
                       selected
