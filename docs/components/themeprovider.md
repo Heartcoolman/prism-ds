@@ -2,6 +2,11 @@
 
 The root theme entry point. `PrismTheme` provides every Prism design token (colors, typography, spacing, radius, elevation, motion, materials) plus a Material3 base, so all Prism and Material3 controls resolve correctly. Wrap your app (or any rendered subtree) in it. See [Styling](/styling) for token details and brand overrides.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=themeprovider" loading="lazy" title="themeprovider demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

@@ -2,6 +2,11 @@
 
 A pill-track toggle with a sliding white thumb for a single on/off setting. Off uses a neutral fill, on uses the accent color. Pass a `label` to make the whole row toggleable.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=switch" loading="lazy" title="switch demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

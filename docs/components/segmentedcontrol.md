@@ -2,6 +2,11 @@
 
 iOS-style single-select control — a group of equal segments over a tertiary-fill track. The selected segment lifts onto a `bg` pill. Use for a small set of mutually exclusive options. Controlled.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=segmentedcontrol" loading="lazy" title="segmentedcontrol demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

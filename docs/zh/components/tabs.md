@@ -2,6 +2,11 @@
 
 下划线标签页——一行标签按钮位于 1px 分隔轨道之上。激活的标签会被强调（半粗体）并带有 2px 的强调色下划线。用于在屏幕内的同级视图间切换。受控。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=tabs" loading="lazy" title="tabs demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

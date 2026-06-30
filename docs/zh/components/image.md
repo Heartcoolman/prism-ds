@@ -2,6 +2,11 @@
 
 固定宽高比的媒体框，带圆角、可选的底部渐变遮罩（用于叠加文字）以及左下角的内容插槽。此处不涉及网络加载——用一个柔和的占位图标代替照片；真实图片请在调用处使用 Coil/`AsyncImage`。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=image" loading="lazy" title="image demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

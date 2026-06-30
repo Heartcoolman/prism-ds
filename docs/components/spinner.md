@@ -2,6 +2,11 @@
 
 An activity spinner — a continuously rotating accent-colored ring indicating indeterminate progress, in three sizes. `label` is the accessible status text; set `showLabel` to render it beside the ring (otherwise it stays in semantics only).
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=spinner" loading="lazy" title="spinner demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

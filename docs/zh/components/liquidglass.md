@@ -2,6 +2,11 @@
 
 一种漂浮于 UI 之上的半透明动态材质——基于 Prism 材质表面构建的圆角、抬升的胶囊。仅用于浮动的控制层（导航、工具栏、弹出框）；切勿玻璃叠玻璃，也切勿全屏使用。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=liquidglass" loading="lazy" title="liquidglass demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

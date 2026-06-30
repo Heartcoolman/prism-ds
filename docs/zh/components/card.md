@@ -2,6 +2,11 @@
 
 一个中性的内容表面，包含顶部媒体槽位（省略时显示占位符）、eyebrow/title/description 文本块、自由形式的主体内容以及可选的页脚。设置 `interactive` 或传入 `onClick` 可得到一个可点击、带抬升效果的卡片。用它把相关内容组合成一个可点按的单元。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=card" loading="lazy" title="card demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

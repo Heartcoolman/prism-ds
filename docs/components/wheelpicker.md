@@ -2,6 +2,11 @@
 
 A drum/wheel selector: a scrolling list with snap-to-center fling where the centered row is full-opacity while neighbours fade and shrink. Use the single-column form for a short list, or the multi-column form for compound values such as hour / minute / second.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=wheelpicker" loading="lazy" title="wheelpicker demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

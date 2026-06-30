@@ -2,6 +2,11 @@
 
 带填充背景的搜索输入框，前导有放大镜图标，尾部有仅在存在值时才出现的清除按钮。输入框无边框且在三级填充色上透明。用它来过滤或查询列表。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=searchfield" loading="lazy" title="searchfield demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

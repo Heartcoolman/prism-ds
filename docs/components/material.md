@@ -2,6 +2,11 @@
 
 A translucent frosted-glass surface that sits over content and lets it show through — layered, never opaque. Use it for floating chrome such as nav bars, popovers, and bottom sheets.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=material" loading="lazy" title="material demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

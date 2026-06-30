@@ -2,6 +2,11 @@
 
 用于单一决策的居中确认对话框，映射到 Material 3 `AlertDialog`：包含标题、可选的消息文本以及取消 + 确认操作。当 `destructive` 为 true 时，确认操作会变为 `danger` 配色；`stacked` 会将两个操作垂直排列而非并排。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=alert" loading="lazy" title="alert demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

@@ -2,6 +2,11 @@
 
 A filled search input with a leading magnifier and a trailing clear button that appears only when a value is present. The input is borderless and transparent over a tertiary fill. Use it to filter or query a list.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=searchfield" loading="lazy" title="searchfield demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

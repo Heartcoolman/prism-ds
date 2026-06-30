@@ -2,6 +2,11 @@
 
 绘制在 Compose `Canvas` 上的趋势折线图。它将数据缩放到视口内，绘制带末端圆点的圆角强调色折线，并可选地用渐隐的强调色渐变填充下方区域。适用于紧凑的迷你折线（sparkline）式趋势。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=linechart" loading="lazy" title="linechart demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

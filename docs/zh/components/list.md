@@ -2,6 +2,11 @@
 
 一个分组列表容器：由若干 `PrismListRow` 组成、经过裁剪、带卡片圆角的列。每一行自行绘制发丝分隔线，并带有 leading 槽位、标题（+ 可选副标题）、trailing 槽位以及可选的 disclosure chevron。用它实现设置项、详情行和可导航条目。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=list" loading="lazy" title="list demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

@@ -2,6 +2,11 @@
 
 用于布尔或混合选择的三态复选框——选中、不确定或关闭。可用于单独的选项勾选，或用作"全选"控件，其 `indeterminate` 状态反映子项的部分选中情况。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=checkbox" loading="lazy" title="checkbox demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

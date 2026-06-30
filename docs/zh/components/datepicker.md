@@ -2,6 +2,11 @@
 
 自包含的日历月份网格，用于选取单个日期。显示的月份由内部管理（依次以 `defaultMonth`、`value`、`today` 作为种子），并通过头部的箭头进行导航。日期运算为纯 Kotlin 实现——不依赖日期库，也不读取系统时钟。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=datepicker" loading="lazy" title="datepicker demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

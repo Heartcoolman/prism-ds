@@ -2,6 +2,11 @@
 
 一行页面圆点，当前页以更宽的强调色胶囊形状高亮显示。用它来指示在分页轮播或引导流程中的位置。提供 `onChange` 即可让圆点可点击。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=pagecontrol" loading="lazy" title="pagecontrol demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

@@ -2,6 +2,11 @@
 
 内联状态横幅。通过着色的背景和与 tone 同色的前导图标来传达 tone；它将加粗标题与较弱的消息文本配对，并可选地附带操作和关闭按钮（×）。`Danger` 会向辅助技术发出强提示。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=banner" loading="lazy" title="banner demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

@@ -2,6 +2,11 @@
 
 A floating card anchored to a trigger on one of four sides. The anchor stays in flow; the card floats in a focusable `Popup` so an outside click or Escape dismisses it. Use it for lightweight contextual content (details, small forms) attached to a control.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=popover" loading="lazy" title="popover demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

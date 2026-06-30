@@ -2,6 +2,11 @@
 
 A single circular selection control. Use `PrismRadio` for a standalone option, or `PrismRadioGroup` for a managed single-choice set.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=radio" loading="lazy" title="radio demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

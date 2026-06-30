@@ -2,6 +2,11 @@
 
 数据表格，采用 footnote 字重的表头，下方为以发丝线分隔的 subhead 字重数据行。用它展示小规模、只读的表格数据；数值列右对齐并使用等宽数字（tabular figures）。每个单元格的值都通过其列的 `key` 在行映射中查找，各列等分宽度。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=table" loading="lazy" title="table demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

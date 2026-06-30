@@ -2,6 +2,11 @@
 
 底部弹出面板：遮罩层使页面变暗，同时一个面板从底部边缘向上滑出，带有抓取手柄、可选标题以及可滚动内容。适用于不值得占用整屏的次要任务或上下文操作。关闭时不渲染任何内容；将它放在根 `Box` 的末尾，使其叠加在上层。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=sheet" loading="lazy" title="sheet demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

@@ -2,6 +2,11 @@
 
 基于 Material 3 `NavigationBar` 构建的底部标签栏。半透明的 `materialBg` 背景，顶部带有细线分隔；每个标签将一个 24px 图标叠在脚注标签之上。选中的标签使用强调色，其余为三级色。受控。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=tabbar" loading="lazy" title="tabbar demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

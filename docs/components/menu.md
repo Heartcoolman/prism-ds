@@ -2,6 +2,11 @@
 
 A dropdown / context menu of rows with optional leading icons, danger styling, and separators. Built on Material 3 `DropdownMenu` and controlled via `expanded`. Selecting a row runs its `onSelect`, then requests dismissal. Anchor it by placing it inside the `Box` that holds the trigger.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=menu" loading="lazy" title="menu demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

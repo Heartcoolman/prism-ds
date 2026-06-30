@@ -2,6 +2,11 @@
 
 用于标签、筛选和令牌的紧凑胶囊。`tone` 设置颜色（默认 `Neutral` 灰色），`selected` 升起一个强调色边框环，`onClick` 使胶囊成为按钮，`onRemove` 在尾部附加一个可用的 × 控件，其点击不会触发 `onClick`。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=tag" loading="lazy" title="tag demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

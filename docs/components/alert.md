@@ -2,6 +2,11 @@
 
 Centered confirmation dialog for a single decision, mapped to Material 3 `AlertDialog`: title, optional message, and cancel + confirm actions. The confirm action turns `danger`-colored when `destructive`; `stacked` lays the two actions vertically instead of side by side.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=alert" loading="lazy" title="alert demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

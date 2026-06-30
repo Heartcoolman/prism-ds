@@ -2,6 +2,11 @@
 
 A count or dot badge. Use it standalone, or wrap `content` to float the mark at the content's top-right corner (e.g. over an icon). `max` caps the displayed count to `${max}+`.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=badge" loading="lazy" title="badge demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

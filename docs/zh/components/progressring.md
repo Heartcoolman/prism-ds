@@ -2,6 +2,11 @@
 
 绘制在 Compose `Canvas` 上的环形进度条，在中性轨道上叠加一段圆头弧线，并带有中心标签。用于表示 0 到 100 之间的单一有界完成值。中心默认显示 `${value}%`。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=progressring" loading="lazy" title="progressring demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

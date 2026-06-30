@@ -2,6 +2,11 @@
 
 克制的垂直柱状图。各柱共享可用宽度，并按系列最大值成比例升高；单一强调色标记某一根柱（默认为最大值柱）。没有坐标轴或网格线——用于一目了然的对比，而非精确读数。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=barchart" loading="lazy" title="barchart demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

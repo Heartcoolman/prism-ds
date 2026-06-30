@@ -2,6 +2,11 @@
 
 A draggable control for choosing a value within a continuous (or stepped) range, drawn as an accent fill on a pill track. An optional header row shows a `label` and live value readout.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=slider" loading="lazy" title="slider demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

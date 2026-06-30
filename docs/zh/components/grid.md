@@ -2,6 +2,11 @@
 
 响应式布局栅格，将各项排入等宽的轨道中。不指定 `columns` 时，它会根据可用宽度自适应（小于 600dp 为 4 列，小于 1024dp 为 8 列，否则为 12 列）。指定 `columns` 时则精确渲染相应数量的轨道。最后一行会用空轨道补齐，以保持宽度均匀。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=grid" loading="lazy" title="grid demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

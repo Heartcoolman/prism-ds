@@ -2,6 +2,11 @@
 
 Breadcrumb trail showing the path to the current page — a row of crumbs separated by chevrons. Non-last crumbs are accent-colored and clickable when `onNavigate` is set; the last crumb is the current page.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=breadcrumb" loading="lazy" title="breadcrumb demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

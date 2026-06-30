@@ -2,6 +2,11 @@
 
 Bottom tab bar built on Material 3 `NavigationBar`. Translucent `materialBg` background with a hairline top separator; each tab stacks a 24px icon over a footnote label. The selected tab uses the accent color, the rest are tertiary. Controlled.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=tabbar" loading="lazy" title="tabbar demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

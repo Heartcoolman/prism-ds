@@ -2,6 +2,11 @@
 
 A labeled dropdown over a list of options. The label sits above; help or error text sits below. The read-only anchor shows the selected option and a rotating chevron. Use it to pick one value from a small, known set.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=select" loading="lazy" title="select demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

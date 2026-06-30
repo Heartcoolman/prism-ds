@@ -2,6 +2,11 @@
 
 胶囊轨道式开关，配有可滑动的白色滑块，用于单个的开/关设置。关闭时使用中性填充色，开启时使用强调色。传入 `label` 可让整行都可切换。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=switch" loading="lazy" title="switch demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

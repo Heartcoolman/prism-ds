@@ -2,6 +2,11 @@
 
 将内置图标集中的字形渲染为带色调的矢量图。默认作为装饰元素；传入 `contentDescription` 可将其暴露给屏幕阅读器。继承本地内容颜色。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=icon" loading="lazy" title="icon demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

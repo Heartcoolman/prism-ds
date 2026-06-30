@@ -2,6 +2,11 @@
 
 A pill-shaped button for the primary actions in a view. Hierarchy is expressed through fill strength across four variants, with semantic `tone`, three sizes, and optional leading/trailing icons. Use a single `Filled` button per area for the main action.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=button" loading="lazy" title="button demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

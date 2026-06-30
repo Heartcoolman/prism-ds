@@ -2,6 +2,11 @@
 
 An inline status banner. A tinted background and tone-colored leading icon carry the tone; it pairs a bold title with a quieter message, plus an optional action and close (×). `Danger` announces assertively to assistive tech.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=banner" loading="lazy" title="banner demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

@@ -2,6 +2,11 @@
 
 An accordion whose summary row toggles a content region below it. The trailing chevron rotates 90deg and the region animates its height. Works uncontrolled (`defaultOpen`) or controlled (`open` + `onToggle`). Use it to progressively reveal secondary detail.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=disclosure" loading="lazy" title="disclosure demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

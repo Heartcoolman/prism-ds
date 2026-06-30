@@ -2,6 +2,11 @@
 
 吸附在顶部的导航栏，位于半透明的 `materialBg` 背景之上，底部带有细线分隔。三列布局：前导 | 居中标题 | 尾随。当设置了 `onBack` 且未提供 `leading` 槽时，会显示默认的返回按钮（chevron + 标签）。`large` 变体会在导航栏下方添加一行左对齐的大标题。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=navbar" loading="lazy" title="navbar demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

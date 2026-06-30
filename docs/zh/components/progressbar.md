@@ -2,6 +2,11 @@
 
 线性进度指示器。传入 `0..1` 范围的 `progress` 值表示确定进度填充，或保持 `null` 表示不确定的滑动段。`tone` 设置填充颜色，可被显式的 `color` 覆盖。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=progressbar" loading="lazy" title="progressbar demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

@@ -2,6 +2,11 @@
 
 主题的根入口。`PrismTheme` 提供所有 Prism 设计令牌（颜色、排版、间距、圆角、阴影高度、动效、材质）以及一个 Material3 基础层，使所有 Prism 与 Material3 控件都能正确解析。请用它包裹你的应用（或任意渲染的子树）。令牌详情与品牌覆盖请参见 [Styling](/zh/styling)。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=themeprovider" loading="lazy" title="themeprovider demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

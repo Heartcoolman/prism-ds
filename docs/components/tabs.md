@@ -2,6 +2,11 @@
 
 Underline tabs — a row of tab buttons over a 1px separator track. The active tab is emphasized (semibold) with a 2px accent underline. Use for switching between sibling views within a screen. Controlled.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=tabs" loading="lazy" title="tabs demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

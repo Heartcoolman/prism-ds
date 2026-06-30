@@ -2,6 +2,11 @@
 
 用于视图中主要操作的胶囊形按钮。层级通过四个变体之间的填充强度来表达，并配以语义化的 `tone`、三种尺寸以及可选的前置/后置图标。每个区域只使用一个 `Filled` 按钮作为主操作。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=button" loading="lazy" title="button demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

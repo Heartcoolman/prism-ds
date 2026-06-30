@@ -2,6 +2,11 @@
 
 内容加载时显示的脉动占位符。用它来预留布局空间并提示加载状态，而无需使用 spinner。它纯粹用于装饰，会被辅助技术跳过。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=skeleton" loading="lazy" title="skeleton demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

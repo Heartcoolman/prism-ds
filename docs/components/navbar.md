@@ -2,6 +2,11 @@
 
 Sticky top navigation bar over a translucent `materialBg` background with a hairline bottom separator. Three-column layout: leading | centered title | trailing. A default back button (chevron + label) is shown when `onBack` is set and no `leading` slot is given. The `large` variant adds a left-aligned large-title row below the bar.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=navbar" loading="lazy" title="navbar demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

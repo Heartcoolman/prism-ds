@@ -2,6 +2,11 @@
 
 Renders a glyph from the built-in icon set as a tinted vector. Decorative by default; pass a `contentDescription` to expose it to screen readers. Inherits the local content color.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=icon" loading="lazy" title="icon demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

@@ -2,6 +2,11 @@
 
 Centered dialog card over a dimmed scrim, mapped to a foundation `Dialog`. Closes on back/Escape and on scrim click (when `dismissOnScrim`). Use for focused tasks that need title, body, and one or two actions. The `actions` slot is a `RowScope`, so callers can apply `Modifier.weight(1f)` to fill the row.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=modal" loading="lazy" title="modal demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

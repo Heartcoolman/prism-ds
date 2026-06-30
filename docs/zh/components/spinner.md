@@ -2,6 +2,11 @@
 
 活动指示器——一个持续旋转的 accent 色圆环，表示不确定进度，提供三种尺寸。`label` 是无障碍状态文本；设置 `showLabel` 可将其渲染在圆环旁边（否则它只存在于语义信息中）。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=spinner" loading="lazy" title="spinner demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

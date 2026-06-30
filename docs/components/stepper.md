@@ -2,6 +2,11 @@
 
 A segmented [−] value [+] control for adjusting an integer by a fixed step within optional bounds. Each button disables at its bound. Use it for small, precise quantities (counts, copies) where a slider would be imprecise.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=stepper" loading="lazy" title="stepper demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

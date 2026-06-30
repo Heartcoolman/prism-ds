@@ -2,6 +2,11 @@
 
 一个由多行组成的下拉/上下文菜单，支持可选的前导图标、danger 样式以及分隔符。基于 Material 3 `DropdownMenu` 构建，并通过 `expanded` 控制。选中某一行会运行其 `onSelect`，然后请求关闭。将它放置在承载触发器的 `Box` 内即可完成锚定。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=menu" loading="lazy" title="menu demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

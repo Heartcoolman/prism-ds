@@ -2,6 +2,11 @@
 
 A floating feedback card. It is presentation-only with no auto-dismiss timer — drive visibility yourself via `open`. A variant-colored leading icon is resolved automatically, or overridden via `icon`. Renders nothing when `open` is `false`.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=toast" loading="lazy" title="toast demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

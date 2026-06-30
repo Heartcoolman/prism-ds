@@ -2,6 +2,11 @@
 
 Circular avatar showing centered initials on a neutral fill, with an optional success presence dot bottom-right. There is no network image loading here — the initials fallback is the only rendering; use Coil/`AsyncImage` at the call site for real photos. Use `PrismAvatarGroup` to stack several avatars with a "+N" overflow chip.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=avatar" loading="lazy" title="avatar demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

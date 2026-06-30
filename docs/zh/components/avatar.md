@@ -2,6 +2,11 @@
 
 圆形头像，在中性填充上居中显示首字母缩写，右下角可选带一个表示在线状态的 success 圆点。此处不进行网络图片加载——首字母缩写回退是唯一的渲染方式；如需真实照片，请在调用处使用 Coil/`AsyncImage`。使用 `PrismAvatarGroup` 可将多个头像堆叠，并带一个 "+N" 溢出 chip。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=avatar" loading="lazy" title="avatar demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

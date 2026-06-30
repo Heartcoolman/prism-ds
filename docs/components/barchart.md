@@ -2,6 +2,11 @@
 
 Restrained vertical bar chart. Bars share the available width and rise proportionally to the series max; a single accent marks one bar (the max-value bar by default). No axes or gridlines — use it for at-a-glance comparisons rather than precise reads.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=barchart" loading="lazy" title="barchart demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

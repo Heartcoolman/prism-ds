@@ -2,6 +2,11 @@
 
 iOS 风格的单选控件——一组等宽分段位于三级填充（tertiary-fill）轨道之上。选中的分段会浮起到一个 `bg` 胶囊上。用于一小组互斥选项。受控。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=segmentedcontrol" loading="lazy" title="segmentedcontrol demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

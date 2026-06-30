@@ -2,6 +2,11 @@
 
 Trend line chart drawn on a Compose `Canvas`. It scales the data into the viewport, draws a rounded accent polyline with an end dot, and optionally fills the area below with a fading accent gradient. Use it for compact sparkline-style trends.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=linechart" loading="lazy" title="linechart demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

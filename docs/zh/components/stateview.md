@@ -2,6 +2,11 @@
 
 用于空 / 加载 / 错误 / 成功页面的页面状态模式：一个居中的列，包含图标圆圈、标题、可选的描述以及可选的操作。用它来填充没有内容、正在加载、加载失败或刚刚成功的区域。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=stateview" loading="lazy" title="stateview demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

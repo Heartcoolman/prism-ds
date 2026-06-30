@@ -2,6 +2,11 @@
 
 A self-contained calendar month grid for picking a single day. The displayed month is managed internally (seeded from `defaultMonth`, then `value`, then `today`) and navigated with the header chevrons. Date math is pure Kotlin — no date library and no system clock is read.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=datepicker" loading="lazy" title="datepicker demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

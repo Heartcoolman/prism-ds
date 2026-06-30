@@ -2,6 +2,11 @@
 
 Responsive layout grid that flows items into equal-width tracks. Without `columns` it adapts to the available width (4 columns below 600dp, 8 below 1024dp, otherwise 12). With `columns` it renders exactly that many tracks. The last row is padded with empty tracks so widths stay even.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=grid" loading="lazy" title="grid demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

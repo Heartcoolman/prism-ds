@@ -2,6 +2,11 @@
 
 A tri-state box for boolean or mixed selection — checked, indeterminate, or off. Use it for individual opt-ins or for a "select all" control whose `indeterminate` state reflects a partial child selection.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=checkbox" loading="lazy" title="checkbox demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

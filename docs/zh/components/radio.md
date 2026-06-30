@@ -2,6 +2,11 @@
 
 单个圆形选择控件。使用 `PrismRadio` 表示独立选项，或使用 `PrismRadioGroup` 表示受管理的单选集合。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=radio" loading="lazy" title="radio demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

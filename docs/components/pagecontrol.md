@@ -2,6 +2,11 @@
 
 A row of page dots where the active page is highlighted as a wider accent pill. Use it to indicate position within a paged carousel or onboarding flow. Supply `onChange` to make the dots tappable.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=pagecontrol" loading="lazy" title="pagecontrol demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

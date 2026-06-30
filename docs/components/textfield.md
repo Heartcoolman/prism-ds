@@ -2,6 +2,11 @@
 
 A labeled single-line text input. The label sits above the control; help or error text sits below. Use it for short, free-form values such as names, emails, or passwords.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=textfield" loading="lazy" title="textfield demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

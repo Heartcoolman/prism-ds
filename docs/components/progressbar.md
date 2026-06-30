@@ -2,6 +2,11 @@
 
 A linear progress indicator. Pass `progress` as a `0..1` value for determinate fill, or leave it `null` for an indeterminate sliding segment. `tone` sets the fill color, overridden by an explicit `color`.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=progressbar" loading="lazy" title="progressbar demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

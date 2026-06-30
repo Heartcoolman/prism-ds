@@ -2,6 +2,11 @@
 
 A page-state pattern for empty / loading / error / success screens: a centered column with an icon circle, a title, an optional description, and an optional action. Use it to fill a region that has no content, is loading, failed, or just succeeded.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=stateview" loading="lazy" title="stateview demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

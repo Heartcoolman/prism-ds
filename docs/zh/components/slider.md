@@ -2,6 +2,11 @@
 
 用于在连续（或分步）范围内选择数值的可拖动控件，绘制为胶囊轨道上的强调色填充。可选的头部行会显示 `label` 和实时数值读数。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=slider" loading="lazy" title="slider demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

@@ -2,6 +2,11 @@
 
 Fixed aspect-ratio media box with rounded corners, an optional bottom gradient scrim for overlaid text, and a bottom-left content slot. There is no network loading here — a muted placeholder glyph stands in for the photo; use Coil/`AsyncImage` at the call site for real images.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=image" loading="lazy" title="image demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

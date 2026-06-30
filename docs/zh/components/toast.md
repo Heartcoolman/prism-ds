@@ -2,6 +2,11 @@
 
 浮动的反馈卡片。它仅负责展示，没有自动消失计时器——需要你自己通过 `open` 来控制可见性。前导图标会根据 variant 自动确定其颜色，也可以通过 `icon` 覆盖。当 `open` 为 `false` 时不渲染任何内容。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=toast" loading="lazy" title="toast demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

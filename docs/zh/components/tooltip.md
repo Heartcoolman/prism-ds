@@ -2,6 +2,11 @@
 
 在触发器被悬停或聚焦时显示的小型深色气泡。其反转配色（背景上的标签文本）以及不可获得焦点的 `Popup` 意味着它永远不会抢走输入焦点。适用于为纯图标控件提供简短的补充标签。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=tooltip" loading="lazy" title="tooltip demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

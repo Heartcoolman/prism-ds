@@ -2,6 +2,11 @@
 
 一种半透明的磨砂玻璃表面，浮于内容之上并让其透出——分层呈现，绝不完全不透明。用于浮动的界面外框（chrome），例如导航栏、弹出框和底部抽屉。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=material" loading="lazy" title="material demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

@@ -2,6 +2,11 @@
 
 A translucent dynamic material that floats above the UI — a rounded, elevated capsule built on the Prism material surface. Use it ONLY for floating control layers (nav, toolbars, popovers); never glass-on-glass and never full-screen.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=liquidglass" loading="lazy" title="liquidglass demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

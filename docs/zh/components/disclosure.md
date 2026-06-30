@@ -2,6 +2,11 @@
 
 一种折叠面板，其摘要行用于切换下方的内容区域。尾部的 chevron 会旋转 90 度，内容区域则对高度进行动画过渡。支持非受控（`defaultOpen`）或受控（`open` + `onToggle`）两种用法。用它来渐进式地展开次要细节。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=disclosure" loading="lazy" title="disclosure demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

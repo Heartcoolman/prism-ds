@@ -1,0 +1,32 @@
+html,
+body {
+  margin: 0;
+  background: transparent;
+}
+
+.case-root {
+  padding: 20px 24px;
+  min-height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: var(--text-body);
+  font-family: var(--font-sans);
+  color: var(--label-primary);
+}
+
+.case {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  max-width: 640px;
+}
+
+.case-error {
+  color: var(--color-danger);
+  padding: 16px;
+  text-align: center;
+}

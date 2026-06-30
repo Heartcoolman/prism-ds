@@ -2,6 +2,11 @@
 
 一个锚定在触发器某一侧（四个方向之一）的浮动卡片。锚点保持在正常布局流中；卡片浮动在一个可获得焦点的 `Popup` 中，因此点击外部或按 Escape 即可关闭。适用于附着在控件上的轻量上下文内容（详情、小型表单）。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=popover" loading="lazy" title="popover demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

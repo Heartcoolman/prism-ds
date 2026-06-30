@@ -2,6 +2,11 @@
 
 A grouped list container: a clipped, card-radius column of `PrismListRow`s. Rows draw their own hairline separators and carry a leading slot, title (+ optional subtitle), trailing slot, and an optional disclosure chevron. Use it for settings, detail rows, and navigable items.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=list" loading="lazy" title="list demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

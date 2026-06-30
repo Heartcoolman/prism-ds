@@ -2,6 +2,11 @@
 
 A labeled multiline text input. It shares the label / help / error chrome of [TextField](/components/textfield); the control is sized by `minLines`. Use it for longer free-form text such as comments or bios.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=textarea" loading="lazy" title="textarea demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

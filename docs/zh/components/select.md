@@ -2,6 +2,11 @@
 
 基于选项列表的带标签下拉框。标签位于上方；帮助或错误文本位于下方。只读的锚点显示已选选项和一个旋转的箭头。用它来从一个小型的、已知的集合中选择一个值。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=select" loading="lazy" title="select demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

@@ -2,6 +2,11 @@
 
 A compact pill for labels, filters, and tokens. `tone` sets the color (`Neutral` gray by default), `selected` raises an accent ring, `onClick` makes the pill a button, and `onRemove` appends a working trailing × control whose click does not trigger `onClick`.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=tag" loading="lazy" title="tag demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

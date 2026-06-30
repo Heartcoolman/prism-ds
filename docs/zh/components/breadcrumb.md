@@ -2,6 +2,11 @@
 
 面包屑导航，显示通往当前页面的路径——一行由 chevron 分隔的面包屑。当设置了 `onNavigate` 时，非末尾的面包屑为强调色且可点击；末尾的面包屑即当前页面。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=breadcrumb" loading="lazy" title="breadcrumb demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

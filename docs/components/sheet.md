@@ -2,6 +2,11 @@
 
 Bottom sheet: a scrim dims the page while a panel slides up from the bottom edge with a grab handle, optional title, and scrollable content. Use it for secondary tasks or contextual actions that don't warrant a full screen. Renders nothing when closed; place it at the end of a root `Box` so it overlays.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=sheet" loading="lazy" title="sheet demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

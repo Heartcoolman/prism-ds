@@ -2,6 +2,11 @@
 
 Data table with footnote-weight headings over subhead body rows separated by hairlines. Use it for small, read-only tabular data; numeric columns right-align with tabular figures. Each cell value is looked up in the row map by its column `key`, and columns share width equally.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=table" loading="lazy" title="table demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

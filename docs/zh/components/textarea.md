@@ -2,6 +2,11 @@
 
 带标签的多行文本输入框。它与 [TextField](/zh/components/textfield) 共享标签 / 帮助 / 错误的外观结构；控件的尺寸由 `minLines` 决定。用它来输入较长的自由格式文本，例如评论或个人简介。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=textarea" loading="lazy" title="textarea demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

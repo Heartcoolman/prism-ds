@@ -2,6 +2,11 @@
 
 A neutral content surface with a top media slot (placeholder when omitted), an eyebrow/title/description text block, free-form body, and an optional footer. Set `interactive` or pass `onClick` for a clickable, lifted card. Use it to group related content into a tappable unit.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=card" loading="lazy" title="card demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

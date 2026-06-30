@@ -2,6 +2,11 @@
 
 滚筒/滚轮选择器：带有吸附居中惯性滚动的列表，居中的行为全不透明，相邻行则淡出并缩小。短列表使用单列形式，时/分/秒等复合值则使用多列形式。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=wheelpicker" loading="lazy" title="wheelpicker demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

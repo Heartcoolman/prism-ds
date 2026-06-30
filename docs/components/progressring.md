@@ -2,6 +2,11 @@
 
 Circular progress ring drawn on a Compose `Canvas` with a round-capped arc over a neutral track and a center label. Use it for a single bounded completion value from 0 to 100. The center defaults to `${value}%`.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=progressring" loading="lazy" title="progressring demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

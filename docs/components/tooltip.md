@@ -2,6 +2,11 @@
 
 A small dark bubble revealed while the trigger is hovered or focused. Inverted colors (label on background) and a non-focusable `Popup` mean it never steals input. Use it for brief, supplementary labels on icon-only controls.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=tooltip" loading="lazy" title="tooltip demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

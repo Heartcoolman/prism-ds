@@ -2,6 +2,11 @@
 
 A pulsing placeholder shown while content loads. Use it to reserve layout space and signal loading without a spinner. It is purely decorative and skipped by assistive tech.
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=skeleton" loading="lazy" title="skeleton demo"></iframe>
+</div>
+
 ## Import
 
 ```kotlin

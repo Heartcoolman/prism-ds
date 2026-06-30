@@ -2,6 +2,11 @@
 
 数字或圆点徽标。可以独立使用，也可以包裹 `content`，让标记浮动到内容的右上角（例如覆盖在图标上）。`max` 会将显示的计数上限设为 `${max}+`。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=badge" loading="lazy" title="badge demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin

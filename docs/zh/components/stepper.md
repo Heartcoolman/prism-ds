@@ -2,6 +2,11 @@
 
 分段式 [−] 数值 [+] 控件，用于在可选边界内以固定步长调整整数。每个按钮在到达其边界时禁用。适用于小而精确的数量（计数、份数）等滑块会不够精确的场景。
 
+
+<div class="prism-demo">
+  <iframe class="prism-demo-frame" src="/prism-ds/embed/?id=stepper" loading="lazy" title="stepper demo"></iframe>
+</div>
+
 ## 导入
 
 ```kotlin
