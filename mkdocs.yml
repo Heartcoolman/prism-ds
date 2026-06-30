@@ -1,0 +1,73 @@
+site_name: Prism
+site_description: A themeable, Apple-inspired design system for Compose Multiplatform and React.
+site_url: https://heartcoolman.github.io/prism-ds/
+repo_url: https://github.com/Heartcoolman/prism-ds
+repo_name: Heartcoolman/prism-ds
+edit_uri: ""
+docs_dir: docs
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+    - search.suggest
+    - search.highlight
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Home: index.md
+  - Get Started: install.md
+  - Theming: styling.md
+  - Components: components.md
+  - Design Guide:
+      - Foundations: guides/00-foundations.md
+      - Materials & Motion: guides/01-materials-motion.md
+      - Components: guides/02-components.md
+      - Interaction & States: guides/03-interaction-states.md
+      - Accessibility: guides/04-accessibility.md
+      - Brand & Platforms: guides/05-content-platforms-governance.md
+  - Architecture:
+      - Compose migration: COMPOSE-MIGRATION.md
+      - CSS theming (web): THEMING.md

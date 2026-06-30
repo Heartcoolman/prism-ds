@@ -4,10 +4,10 @@ storybook-static
 *.log
 .DS_Store
 
-# design-sync transient state (durable config/notes/previews ARE committed)
-.design-sync/sb-reference/
-.design-sync/learnings/
-.design-sync/.cache/
-.design-sync/node_modules
+# design-sync is local tooling state — not part of the public repo
+.design-sync/
 .ds-sync/
 ds-bundle/
+
+# MkDocs build output
+site/
