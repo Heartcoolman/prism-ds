@@ -1,0 +1,376 @@
+/* ============================================================
+   Demo-only styles. Two jobs:
+   1. Re-assert a full LIGHT token set on [data-theme="light"] so the
+      light view stays light even when the OS prefers dark (tokens.css
+      only resets colors for the dark selector).
+   2. Page scaffolding (sidebar, sections, swatches) — built from tokens,
+      never hard-coded brand values.
+   ============================================================ */
+
+.prism-root[data-theme="light"] {
+  --color-accent: #0066cc;
+  --color-accent-hover: #0058b3;
+  --color-accent-pressed: #004a99;
+  --color-success: #1d8a4e;
+  --color-warning: #c2410c;
+  --color-danger: #c5283d;
+  --bg: #ffffff;
+  --bg-elevated: #f5f5f7;
+  --bg-secondary: #f5f5f7;
+  --bg-overlay: rgba(0, 0, 0, 0.4);
+  --label-primary: #1d1d1f;
+  --label-secondary: #6e6e73;
+  --label-tertiary: #86868b;
+  --label-quaternary: #aeaeb2;
+  --label-on-accent: #ffffff;
+  --separator: rgba(0, 0, 0, 0.08);
+  --separator-opaque: #e8e8ed;
+  --fill-secondary: #f5f5f7;
+  --fill-tertiary: #e8e8ed;
+  --fill-quaternary: #ececed;
+  --tint-accent-bg: #e8eefb;
+  --tint-success-bg: #e6f4ec;
+  --tint-warning-bg: #fdeee6;
+  --tint-danger-bg: #fbe9ec;
+  --material-bg: rgba(255, 255, 255, 0.72);
+  --focus-ring: 0 0 0 3px rgba(0, 102, 204, 0.4);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.demo-root {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+/* ---------- App shell: sticky header + sidebar + content ---------- */
+.demo-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-radius: 0;
+  border-bottom: 1px solid var(--separator);
+}
+.demo-header-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 10px var(--s-5);
+  display: flex;
+  align-items: center;
+  gap: var(--s-4);
+  flex-wrap: wrap;
+}
+.demo-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  font: var(--text-title-2);
+  margin-right: auto;
+}
+.demo-brand-mark {
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  background: linear-gradient(135deg, var(--color-accent), var(--color-danger) 45%, var(--color-warning) 75%, var(--color-success));
+}
+.demo-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--s-4);
+  flex-wrap: wrap;
+}
+.demo-accent-input {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid var(--separator);
+  border-radius: 8px;
+  background: none;
+  cursor: pointer;
+}
+
+.demo-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: var(--s-6);
+  padding: var(--s-6) var(--s-5) var(--s-7);
+}
+.demo-nav {
+  position: sticky;
+  top: 76px;
+  align-self: start;
+  max-height: calc(100vh - 96px);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.demo-nav a {
+  display: block;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  color: var(--label-secondary);
+  text-decoration: none;
+  font: var(--text-subhead);
+}
+.demo-nav a:hover {
+  background: var(--fill-tertiary);
+  color: var(--label-primary);
+}
+.demo-nav .demo-nav-group {
+  font: var(--text-footnote);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--label-tertiary);
+  padding: 12px 10px 4px;
+}
+.demo-content {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-7);
+}
+
+.demo-hero {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  padding: var(--s-5) 0 var(--s-2);
+}
+.demo-hero p {
+  margin: 0;
+  max-width: 60ch;
+}
+.demo-stat-row {
+  display: flex;
+  gap: var(--s-6);
+  flex-wrap: wrap;
+  margin-top: var(--s-3);
+}
+.demo-stat b {
+  font: var(--text-title-1);
+  letter-spacing: var(--tracking-title-1);
+  display: block;
+}
+
+/* ---------- Section + component blocks ---------- */
+.demo-section {
+  scroll-margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-5);
+}
+.demo-section-head {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-bottom: 1px solid var(--separator);
+  padding-bottom: var(--s-3);
+}
+.demo-block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+}
+.demo-block-title {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s-2);
+}
+.demo-block-title code {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--label-tertiary);
+}
+.demo-canvas {
+  border: 1px solid var(--separator);
+  border-radius: var(--radius-card);
+  background: var(--bg-elevated);
+  padding: var(--s-5);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--s-4);
+}
+.demo-canvas.col {
+  flex-direction: column;
+  align-items: stretch;
+}
+.demo-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-4);
+  align-items: center;
+}
+.demo-wrap.top {
+  align-items: flex-start;
+}
+
+/* ---------- Foundations ---------- */
+.demo-swatches {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: var(--s-3);
+  width: 100%;
+}
+.demo-swatch {
+  border: 1px solid var(--separator);
+  border-radius: var(--radius-input);
+  overflow: hidden;
+}
+.demo-swatch-chip {
+  height: 56px;
+}
+.demo-swatch-meta {
+  padding: 8px 10px;
+}
+.demo-swatch-meta .n {
+  font: var(--text-subhead);
+  font-weight: 600;
+}
+.demo-swatch-meta .v {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--label-tertiary);
+}
+
+.demo-type-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s-4);
+  padding: var(--s-2) 0;
+  border-bottom: 1px solid var(--separator);
+  width: 100%;
+}
+.demo-type-row .spec {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--label-tertiary);
+  white-space: nowrap;
+}
+
+.demo-space-row {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  width: 100%;
+}
+.demo-space-bar {
+  height: 16px;
+  background: var(--color-accent);
+  border-radius: 4px;
+}
+
+.demo-radius-grid,
+.demo-shadow-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: var(--s-4);
+  width: 100%;
+}
+.demo-radius-box {
+  height: 80px;
+  background: var(--fill-tertiary);
+  border: 1px solid var(--separator);
+  display: flex;
+  align-items: flex-end;
+  padding: 6px 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--label-secondary);
+}
+.demo-shadow-box {
+  height: 80px;
+  background: var(--bg);
+  border-radius: var(--radius-card);
+  display: flex;
+  align-items: flex-end;
+  padding: 6px 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--label-secondary);
+}
+
+.demo-icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
+  gap: var(--s-2);
+  width: 100%;
+}
+.demo-icon-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 6px;
+  border: 1px solid var(--separator);
+  border-radius: var(--radius-input);
+  color: var(--label-primary);
+}
+.demo-icon-cell span {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--label-tertiary);
+  text-align: center;
+  word-break: break-all;
+}
+
+/* ---------- Mini canvases for chrome components ---------- */
+.demo-device {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: var(--radius-modal);
+  border: 1px solid var(--separator);
+  overflow: hidden;
+  background:
+    linear-gradient(160deg, rgba(0, 102, 204, 0.18), transparent 60%),
+    linear-gradient(20deg, rgba(197, 40, 61, 0.16), transparent 55%),
+    var(--bg);
+  display: flex;
+  flex-direction: column;
+}
+.demo-device-scroll {
+  flex: 1;
+  overflow: auto;
+  padding: var(--s-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+}
+.demo-photobg {
+  position: relative;
+  border-radius: var(--radius-card);
+  padding: var(--s-5);
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-4);
+  align-items: center;
+  background: linear-gradient(120deg, #1d4ed8, #7c3aed 40%, #db2777 70%, #f59e0b);
+  min-height: 150px;
+}
+.demo-popover-stage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px;
+  padding: 48px;
+  justify-content: center;
+}
+
+@media (max-width: 860px) {
+  .demo-shell {
+    grid-template-columns: 1fr;
+  }
+  .demo-nav {
+    display: none;
+  }
+}
