@@ -1,0 +1,190 @@
+{
+  "$schema": "internal/prism-tokens",
+  "$meta": {
+    "name": "Prism Design Tokens",
+    "description": "Single source of truth. Generates both CSS custom properties (web / @prism-ds/react) and Kotlin token data classes (prism-core / Compose Multiplatform). See COMPOSE-MIGRATION.md decision #6.",
+    "layers": "primitive -> semantic -> component"
+  },
+
+  "primitive": {
+    "color": {
+      "gray-0": "#ffffff",
+      "gray-50": "#f5f5f7",
+      "gray-100": "#e8e8ed",
+      "gray-200": "#d2d2d7",
+      "gray-300": "#aeaeb2",
+      "gray-400": "#86868b",
+      "gray-500": "#6e6e73",
+      "gray-600": "#424245",
+      "gray-800": "#1d1d1f",
+      "gray-900": "#000000",
+      "blue-600": "#0066cc",
+      "blue-500": "#3393ff",
+      "green-600": "#1d8a4e",
+      "orange-600": "#c2410c",
+      "red-600": "#c5283d"
+    }
+  },
+
+  "semantic": {
+    "color": {
+      "light": {
+        "color-accent": { "ref": "blue-600" },
+        "color-accent-hover": "#0058b3",
+        "color-accent-pressed": "#004a99",
+        "color-success": { "ref": "green-600" },
+        "color-warning": { "ref": "orange-600" },
+        "color-danger": { "ref": "red-600" },
+        "bg": { "ref": "gray-0" },
+        "bg-elevated": { "ref": "gray-50" },
+        "bg-secondary": { "ref": "gray-50" },
+        "bg-overlay": "rgba(0, 0, 0, 0.4)",
+        "label-primary": { "ref": "gray-800" },
+        "label-secondary": { "ref": "gray-500" },
+        "label-tertiary": { "ref": "gray-400" },
+        "label-quaternary": { "ref": "gray-300" },
+        "label-on-accent": "#ffffff",
+        "separator": "rgba(0, 0, 0, 0.08)",
+        "separator-opaque": { "ref": "gray-100" },
+        "fill-secondary": { "ref": "gray-50" },
+        "fill-tertiary": { "ref": "gray-100" },
+        "fill-quaternary": "#ececed",
+        "tint-accent-bg": "#e8eefb",
+        "tint-success-bg": "#e6f4ec",
+        "tint-warning-bg": "#fdeee6",
+        "tint-danger-bg": "#fbe9ec"
+      },
+      "dark": {
+        "color-accent": { "ref": "blue-500" },
+        "bg": "#000000",
+        "bg-elevated": "#1c1c1e",
+        "bg-secondary": "#1c1c1e",
+        "bg-overlay": "rgba(0, 0, 0, 0.6)",
+        "label-primary": "#f5f5f7",
+        "label-secondary": "#aeaeb2",
+        "label-tertiary": "#8e8e93",
+        "label-quaternary": "#636366",
+        "separator": "rgba(255, 255, 255, 0.12)",
+        "separator-opaque": "#2c2c2e",
+        "fill-secondary": "#1c1c1e",
+        "fill-tertiary": "#2c2c2e",
+        "fill-quaternary": "#3a3a3c",
+        "tint-accent-bg": "rgba(51, 147, 255, 0.16)",
+        "tint-success-bg": "rgba(29, 138, 78, 0.18)",
+        "tint-warning-bg": "rgba(194, 65, 12, 0.2)",
+        "tint-danger-bg": "rgba(197, 40, 61, 0.2)"
+      }
+    },
+
+    "typography": {
+      "families": {
+        "sans": "-apple-system, \"SF Pro Text\", \"SF Pro Display\", \"Helvetica Neue\", \"PingFang SC\", system-ui, sans-serif",
+        "mono": "\"SF Mono\", ui-monospace, Menlo, monospace"
+      },
+      "styles": {
+        "large-title": { "weight": 700, "size": 34, "lineHeight": 1.1, "family": "sans", "tracking": "-0.02em" },
+        "title-1": { "weight": 640, "size": 28, "lineHeight": 1.15, "family": "sans", "tracking": "-0.015em" },
+        "title-2": { "weight": 600, "size": 22, "lineHeight": 1.2, "family": "sans" },
+        "headline": { "weight": 600, "size": 17, "lineHeight": 1.3, "family": "sans" },
+        "body": { "weight": 400, "size": 17, "lineHeight": 1.5, "family": "sans" },
+        "subhead": { "weight": 400, "size": 15, "lineHeight": 1.45, "family": "sans" },
+        "footnote": { "weight": 400, "size": 13, "lineHeight": 1.4, "family": "sans" }
+      }
+    },
+
+    "spacing": {
+      "s-1": 4,
+      "s-2": 8,
+      "s-3": 12,
+      "s-4": 16,
+      "s-5": 24,
+      "s-6": 32,
+      "s-7": 64
+    },
+
+    "radius": {
+      "pill": 980,
+      "card": 18,
+      "modal": 20,
+      "sheet": 20,
+      "input": 10,
+      "inner": 10,
+      "image": 14,
+      "sm": 6
+    },
+
+    "elevation": {
+      "shadow-1": { "css": "0 1px 2px rgba(0, 0, 0, 0.06)", "dp": 1 },
+      "shadow-2": { "css": "0 4px 12px rgba(0, 0, 0, 0.08)", "dp": 4 },
+      "shadow-3": { "css": "0 12px 32px rgba(0, 0, 0, 0.12)", "dp": 12 },
+      "shadow-4": { "css": "0 24px 60px rgba(0, 0, 0, 0.18)", "dp": 24 },
+      "shadow-card": { "css": "0 1px 3px rgba(0, 0, 0, 0.08), 0 8px 24px rgba(0, 0, 0, 0.04)", "dp": 2 }
+    },
+
+    "motion": {
+      "ease-standard": { "bezier": [0.4, 0, 0.2, 1] },
+      "ease-enter": { "bezier": [0, 0, 0.2, 1] },
+      "ease-exit": { "bezier": [0.4, 0, 1, 1] },
+      "ease-emphasized": { "bezier": [0.2, 0, 0, 1] },
+      "dur-standard": { "ms": 300 },
+      "dur-enter": { "ms": 250 },
+      "dur-exit": { "ms": 200 },
+      "dur-emphasized": { "ms": 500 }
+    }
+  },
+
+  "component": {
+    "dimensions": {
+      "size-touch": 44,
+      "control-h-sm": 28,
+      "control-h-md": 44,
+      "control-h-lg": 50
+    },
+    "materials": {
+      "blur-thin": 16,
+      "blur-regular": 24,
+      "blur-thick": 40,
+      "material-bg": {
+        "light": "rgba(255, 255, 255, 0.72)",
+        "dark": "rgba(30, 30, 32, 0.72)"
+      }
+    },
+    "focus": {
+      "focus-ring": {
+        "light": "0 0 0 3px rgba(0, 102, 204, 0.4)",
+        "dark": "0 0 0 3px rgba(51, 147, 255, 0.5)"
+      }
+    }
+  },
+
+  "brand": {
+    "apple": {
+      "accent": "#0066cc",
+      "accentHover": "#0058b3",
+      "accentPressed": "#004a99",
+      "success": "#1d8a4e",
+      "warning": "#c2410c",
+      "danger": "#c5283d",
+      "radiusPill": 980,
+      "radiusCard": 18,
+      "radiusModal": 20,
+      "radiusInput": 10,
+      "radiusImage": 14,
+      "radiusSm": 6
+    },
+    "neutral": {
+      "accent": "#4f46e5",
+      "accentHover": "#4338ca",
+      "accentPressed": "#3730a3",
+      "success": "#15803d",
+      "warning": "#b45309",
+      "danger": "#b91c1c",
+      "radiusPill": 8,
+      "radiusCard": 12,
+      "radiusModal": 14,
+      "radiusInput": 8,
+      "radiusImage": 10,
+      "radiusSm": 4
+    }
+  }
+}
