@@ -1,60 +1,57 @@
 # prism-compose
 
-**English** · [简体中文](./README.zh-CN.md)
+**简体中文** · [English](./README.en.md)
 
-Kotlin / Compose Multiplatform port of the **Prism** design system — the App-side
-track of the hybrid strategy in [`../docs/COMPOSE-MIGRATION.md`](../docs/COMPOSE-MIGRATION.md).
-Web stays on `@prism-ds/react`; this covers Android / iOS / Desktop and shares ONE
-token source with the web so the two libraries cannot drift.
+**Prism** 设计系统的 Kotlin / Compose Multiplatform 移植——混合策略中的 App 端轨道,
+详见 [`../docs/COMPOSE-MIGRATION.md`](../docs/COMPOSE-MIGRATION.md)。Web 端继续用
+`@prism-ds/react`;本模块覆盖 Android / iOS / 桌面,并与 Web 端**共享同一份 token 源**,
+确保两套库不会漂移。
 
-## Status — full component migration, cross-verified
+## 状态 —— 组件全量迁移完成,已交叉验证
 
-All **46 components** ported and compiling, on **two targets verified here**
-(Desktop/JVM + Android). ~4.8k lines of Kotlin.
+全部 **46 个组件** 移植并编译通过,在**本机验证了两个 target**(桌面/JVM + Android),约 4.8k 行 Kotlin。
 
-| Area | Status |
-|------|--------|
-| Single token source → CSS **and** Kotlin (decision #6) | ✅ generated; CSS value-identical to `src/styles/tokens.css` (107 tokens, auto-checked) |
-| Theme layer `PrismTheme` (Material3 base + 8 CompositionLocals, light/dark, apple/neutral brand) | ✅ + 9 token tests |
-| Icons — 46-icon set, SVG→ImageVector, runtime strokeWidth | ✅ + 4 tests |
-| **46 components** (prism-ui 41 · prism-charts 3 · prism-glass 2) | ✅ all compile; all 46 instantiated in `sample/Gallery.kt` |
-| Accessibility — Material3 built-ins + `semantics{}` on custom-drawn components | ✅ (liveRegion / role / state / contentDescription) |
-| Targets — Desktop (JVM) + **Android (minSdk 31)** | ✅ both compile |
-| iOS target | ⏳ declared; needs Xcode / macOS CI to link |
-| Maven Central publish · screenshot/pixel-parity regression · on-device TalkBack/VoiceOver | ⏳ external infra (see migration doc §7–9) |
+| 范围 | 状态 |
+|------|------|
+| 单一 token 源 → 同时生成 CSS **与** Kotlin(决策 #6) | ✅ 已生成;CSS 与 `src/styles/tokens.css` 值级一致(107 个 token,自动校验) |
+| 主题层 `PrismTheme`(Material3 底座 + 8 个 CompositionLocal,明暗,apple/neutral 品牌) | ✅ + 9 个 token 测试 |
+| 图标 —— 46 个图标集,SVG→ImageVector,运行时 strokeWidth | ✅ + 4 个测试 |
+| **46 个组件**(prism-ui 41 · prism-charts 3 · prism-glass 2) | ✅ 全部编译;46 个全在 `sample/Gallery.kt` 实例化 |
+| 无障碍 —— Material3 内建 + 自绘组件手写 `semantics{}` | ✅(liveRegion / role / state / contentDescription) |
+| Target —— 桌面(JVM)+ **Android(minSdk 31)** | ✅ 两者均编译 |
+| iOS target | ⏳ 已声明;链接需 Xcode / macOS CI |
+| Maven Central 发布 · 截图/像素回归 · 真机 TalkBack/VoiceOver | ⏳ 外部基建(见迁移文档 §7–9) |
 
-## Module layout (plan §2)
+## 模块结构(计划 §2)
 
 ```
-tokens/prism-tokens.json     single source of truth → build-tokens.mjs → CSS + PrismGeneratedTokens.kt
-prism-core/                  token data classes + CompositionLocals + PrismTheme (token→Material3 ColorScheme)
-prism-icons/                 Icon set (icons.ts → build-icons.mjs → PrismIconPaths.kt) + PrismIcon
-prism-charts/                BarChart / LineChart / ProgressRing (Canvas)
-prism-glass/                 Material / LiquidGlass (translucent approximation; Haze/RenderEffect plugs in here)
-prism-ui/                    the 41 standard components (Material3 base + tokens + semantics)
-sample/                      runnable desktop showcase — Gallery.kt instantiates all 46 (Storybook replacement, §7)
+tokens/prism-tokens.json     唯一真源 → build-tokens.mjs → CSS + PrismGeneratedTokens.kt
+prism-core/                  token 数据类 + CompositionLocal + PrismTheme(token→Material3 ColorScheme)
+prism-icons/                 图标集(icons.ts → build-icons.mjs → PrismIconPaths.kt)+ PrismIcon
+prism-charts/                BarChart / LineChart / ProgressRing(Canvas)
+prism-glass/                 Material / LiquidGlass(半透明近似;Haze/RenderEffect 在此接入)
+prism-ui/                    41 个标准组件(Material3 底座 + token + semantics)
+sample/                      可运行的桌面示例 —— Gallery.kt 实例化全部 46 个(替代 Storybook,§7)
 ```
 
-Token/icon **values** are generated; the **schemas** (data classes, component APIs)
-are hand-written. Change a color → edit `prism-tokens.json` + re-run the generator;
-never hand-edit two files.
+token / 图标的**取值**是生成的;**结构**(数据类、组件 API)是手写的。改一个颜色 →
+编辑 `prism-tokens.json` 再跑生成器;绝不手敲两份。
 
-## Build & verify
+## 构建与验证
 
-JDK 17+ (`JAVA_HOME`), Node 18+. Android SDK for the Android target (`local.properties` → `sdk.dir`).
+JDK 17+(`JAVA_HOME`)、Node 18+。Android target 需 Android SDK(`local.properties` → `sdk.dir`)。
 
 ```bash
-./verify.sh                 # token parity + icon regen + desktop compile/tests + android compile (the full gate)
+./verify.sh                 # token 比对 + 图标重生成 + 桌面编译/测试 + android 编译(完整闸门)
 ./gradlew :prism-core:desktopTest :prism-icons:desktopTest
-./gradlew :sample:run       # launch the desktop gallery
+./gradlew :sample:run       # 启动桌面示例
 ```
 
-## Honest scope notes
+## 诚实的范围说明
 
-- **Glass** (`prism-glass`) ships the dependency-free translucent-material tier that
-  compiles on every target. True backdrop blur (Haze / `RenderEffect`, Android 12+;
-  Skia shader elsewhere) plugs in behind the same API. Per §5 the App-side glass is an
-  *approximation* of Apple-native glass by design — pixel-faithful glass is web-only.
-- **Avatar/Image** render initials/placeholder (no Coil network loading wired).
-- Pixel-parity vs the browser, Maven publishing, and on-device screen-reader testing
-  are the plan's remaining phases — they need external CI/infra, not more code here.
+- **玻璃**(`prism-glass`)提供无依赖的半透明材质层,在每个 target 上都能编译。真正的
+  背景模糊(Haze / `RenderEffect`,Android 12+;其他端 Skia shader)在同一 API 背后接入。
+  按 §5,App 端玻璃在设计上就是对苹果原生玻璃的**近似**——像素级保真的玻璃仅 Web 端可得。
+- **Avatar/Image** 渲染首字母/占位图(未接 Coil 网络加载)。
+- 与浏览器的像素对齐、Maven 发布、真机读屏测试是计划剩余阶段——需要外部 CI/基建,
+  而非这里再加代码。

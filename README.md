@@ -1,27 +1,27 @@
 # Prism
 
-**English** · [简体中文](./README.zh-CN.md)
+**简体中文** · [English](./README.en.md)
 
-> 📖 Docs: <https://heartcoolman.github.io/prism-ds/> — also available for **Compose Multiplatform** (Android / iOS / Desktop), see [`prism-compose/`](./prism-compose/).
+> 📖 文档:<https://heartcoolman.github.io/prism-ds/> —— 同时提供 **Compose Multiplatform** 版本(Android / iOS / 桌面),见 [`prism-compose/`](./prism-compose/)。
 
-A themeable **React + TypeScript** design system. 46 components driven entirely by CSS-variable tokens (primitive → semantic → component). Prism ships with an **Apple-inspired default theme** and a **neutral preset** — or pass your own brand and every component re-skins at once.
+一个可主题化的 **React + TypeScript** 设计系统。46 个组件完全由 CSS 变量 token 驱动(primitive → semantic → component)。Prism 内置 **Apple 风格默认主题** 与 **中性预设**——也可以传入你自己的品牌,所有组件一次性换肤。
 
-## Install
+## 安装
 
 ```bash
 npm install @prism-ds/react
-# or: pnpm add @prism-ds/react
+# 或:pnpm add @prism-ds/react
 ```
 
 ```bash
-# local development of this repo
+# 本仓库本地开发
 pnpm install
 pnpm build            # tsup -> dist/index.{js,cjs,d.ts} + dist/index.css
-pnpm storybook        # local preview at :6006
-pnpm build-storybook  # static storybook -> storybook-static/
+pnpm storybook        # 本地预览 :6006
+pnpm build-storybook  # 静态 storybook -> storybook-static/
 ```
 
-## Usage
+## 用法
 
 ```tsx
 import { ThemeProvider, Button } from "@prism-ds/react";
@@ -36,17 +36,17 @@ export default function App() {
 }
 ```
 
-## Theming
+## 主题
 
-Every brand-relevant value (accent, status colors, fonts, radii, focus ring) is a CSS variable with a sensible default. Override them per subtree via the `theme` prop, or globally by redefining the variables in your own CSS.
+每一个与品牌相关的取值(强调色、状态色、字体、圆角、焦点环)都是带合理默认值的 CSS 变量。可通过 `theme` 属性按子树覆盖,或在你自己的 CSS 中重定义变量做全局覆盖。
 
 ```tsx
 import { ThemeProvider, neutral, type Theme } from "@prism-ds/react";
 
-// Use a built-in preset…
+// 使用内置预设……
 <ThemeProvider theme={neutral}>{/* … */}</ThemeProvider>
 
-// …or supply your own brand (unset fields fall back to the default preset).
+// ……或提供你自己的品牌(未设置的字段回退到默认预设)。
 const brand: Theme = {
   accent: "#7c3aed",
   fontSans: "Inter, system-ui, sans-serif",
@@ -55,16 +55,16 @@ const brand: Theme = {
 <ThemeProvider theme={brand} colorScheme="dark">{/* … */}</ThemeProvider>
 ```
 
-- **Presets** — `apple` (default, Apple-inspired) and `neutral` (brand-agnostic, geometric radii, system font) are exported from the package.
-- **`themeToVars(theme)`** — converts a `Theme` into inline CSS custom properties if you want to apply them yourself.
-- **Color scheme** — `colorScheme="light" | "dark"` flips light/dark; dark mode also follows `prefers-color-scheme`. (Note: a `theme` value applies to both schemes — inline variables outrank the dark-mode selector. See `docs/THEMING.md`.)
+- **预设** —— 包内导出 `apple`(默认,Apple 风格)与 `neutral`(品牌无关、几何圆角、系统字体)。
+- **`themeToVars(theme)`** —— 把一个 `Theme` 转换为内联 CSS 自定义属性,便于你自行应用。
+- **配色方案** —— `colorScheme="light" | "dark"` 切换明暗;暗色模式同时跟随 `prefers-color-scheme`。(注意:`theme` 取值对明暗两套都生效——内联变量优先级高于暗色选择器。详见 `docs/THEMING.md`。)
 
-## Idiom
+## 约定
 
-- **Tokens are the source of truth** — CSS variables in `src/styles/tokens.css` (primitive → semantic → component). Reference `var(--color-accent)`, `var(--s-4)`, `var(--radius-card)`, never hard-coded values.
-- **Styling** — each component ships scoped `prism-*` CSS; layout glue uses global utility classes (`.stack`, `.row`, `.text-headline`, …) from `src/styles/global.css`.
-- **Provider** — wrap in `<ThemeProvider colorScheme="light|dark" theme={...}>` to establish typography, color scheme and brand.
+- **token 是唯一真源** —— CSS 变量在 `src/styles/tokens.css`(primitive → semantic → component)。引用 `var(--color-accent)`、`var(--s-4)`、`var(--radius-card)`,绝不写死值。
+- **样式** —— 每个组件附带带作用域的 `prism-*` CSS;布局拼接用 `src/styles/global.css` 里的全局工具类(`.stack`、`.row`、`.text-headline`……)。
+- **Provider** —— 用 `<ThemeProvider colorScheme="light|dark" theme={...}>` 包裹,以确立排版、配色方案与品牌。
 
-## License
+## 许可证
 
 MIT
