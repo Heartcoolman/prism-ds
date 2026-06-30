@@ -1,17 +1,17 @@
 {
-  "name": "@prism-ds/react",
+  "name": "@Heartcoolman/prism-ds",
   "version": "1.0.0",
   "type": "module",
   "description": "Prism — a themeable React + TypeScript design system. 46 components driven by CSS-variable tokens; ships an Apple-inspired default theme and a neutral preset, or supply your own brand.",
   "license": "MIT",
   "author": "Prism DS contributors",
-  "homepage": "https://github.com/prism-ds/react#readme",
+  "homepage": "https://github.com/Heartcoolman/prism-ds#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prism-ds/react.git"
+    "url": "git+https://github.com/Heartcoolman/prism-ds.git"
   },
   "bugs": {
-    "url": "https://github.com/prism-ds/react/issues"
+    "url": "https://github.com/Heartcoolman/prism-ds/issues"
   },
   "keywords": [
     "react",
