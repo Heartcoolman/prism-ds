@@ -1,5 +1,9 @@
 # Prism
 
+**English** · [简体中文](./README.zh-CN.md)
+
+> 📖 Docs: <https://heartcoolman.github.io/prism-ds/> — also available for **Compose Multiplatform** (Android / iOS / Desktop), see [`prism-compose/`](./prism-compose/).
+
 A themeable **React + TypeScript** design system. 46 components driven entirely by CSS-variable tokens (primitive → semantic → component). Prism ships with an **Apple-inspired default theme** and a **neutral preset** — or pass your own brand and every component re-skins at once.
 
 ## Install

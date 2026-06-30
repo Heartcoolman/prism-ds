@@ -1,5 +1,7 @@
 # prism-compose
 
+**English** · [简体中文](./README.zh-CN.md)
+
 Kotlin / Compose Multiplatform port of the **Prism** design system — the App-side
 track of the hybrid strategy in [`../docs/COMPOSE-MIGRATION.md`](../docs/COMPOSE-MIGRATION.md).
 Web stays on `@prism-ds/react`; this covers Android / iOS / Desktop and shares ONE
