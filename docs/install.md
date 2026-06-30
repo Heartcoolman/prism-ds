@@ -14,31 +14,31 @@ Targets: `android` · `ios` · `desktop (jvm)`. The web is a separate React pack
 
 ## Add the dependency
 
-!!! warning "Pre-release"
-    Prism Compose is not yet on Maven Central. For now consume the modules from source — clone the repo and add them as an included build, or copy the `prism-compose/` modules into your project. The coordinates below are the planned published form.
+::: warning Pre-release
+Prism Compose is not yet on Maven Central. For now consume the modules from source — clone the repo and add them as an included build, or copy the `prism-compose/` modules into your project. The coordinates below are the planned published form.
+:::
 
-=== "Gradle (planned coordinates)"
+::: code-group
 
-    ```kotlin
-    // build.gradle.kts
-    dependencies {
-        implementation("io.github.heartcoolman.prism:prism-core:0.1.0")
-        implementation("io.github.heartcoolman.prism:prism-ui:0.1.0")
-        implementation("io.github.heartcoolman.prism:prism-icons:0.1.0")
-        // optional:
-        implementation("io.github.heartcoolman.prism:prism-charts:0.1.0")
-        implementation("io.github.heartcoolman.prism:prism-glass:0.1.0")
-    }
-    ```
+```kotlin [Gradle (planned)]
+// build.gradle.kts
+dependencies {
+    implementation("io.github.heartcoolman.prism:prism-core:0.1.0")
+    implementation("io.github.heartcoolman.prism:prism-ui:0.1.0")
+    implementation("io.github.heartcoolman.prism:prism-icons:0.1.0")
+    // optional:
+    implementation("io.github.heartcoolman.prism:prism-charts:0.1.0")
+    implementation("io.github.heartcoolman.prism:prism-glass:0.1.0")
+}
+```
 
-=== "From source (today)"
+```kotlin [From source (today)]
+// settings.gradle.kts
+includeBuild("path/to/prism-ds/prism-compose")
+// then depend on the modules by their project coordinates
+```
 
-    ```kotlin
-    // settings.gradle.kts
-    includeBuild("path/to/prism-ds/prism-compose")
-    ```
-
-    Then depend on the modules by their project coordinates.
+:::
 
 ## Wrap your app
 

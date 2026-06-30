@@ -9,5 +9,9 @@ storybook-static
 .ds-sync/
 ds-bundle/
 
-# MkDocs build output
+# docs site build output (VitePress)
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+
+# stray static output
 site/

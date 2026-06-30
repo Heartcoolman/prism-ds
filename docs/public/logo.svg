@@ -1,0 +1,21 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Prism">
+  <defs>
+    <linearGradient id="spectrum" x1="120" y1="70" x2="185" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3393ff"/>
+      <stop offset="0.5" stop-color="#0066cc"/>
+      <stop offset="1" stop-color="#004a99"/>
+    </linearGradient>
+    <linearGradient id="prism" x1="60" y1="40" x2="120" y2="160" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5aa9ff"/>
+      <stop offset="1" stop-color="#0066cc"/>
+    </linearGradient>
+  </defs>
+  <!-- incoming light ray -->
+  <rect x="8" y="98" width="56" height="4" rx="2" fill="#aeaeb2"/>
+  <!-- refracted spectrum fan -->
+  <path d="M118 100 L188 64 L188 92 Z" fill="url(#spectrum)" opacity="0.95"/>
+  <path d="M118 100 L188 96 L188 120 Z" fill="url(#spectrum)" opacity="0.7"/>
+  <path d="M118 100 L188 124 L188 152 Z" fill="url(#spectrum)" opacity="0.45"/>
+  <!-- the prism -->
+  <path d="M70 36 L128 150 L42 150 Z" fill="url(#prism)" stroke="#ffffff" stroke-opacity="0.18" stroke-width="2" stroke-linejoin="round"/>
+</svg>
